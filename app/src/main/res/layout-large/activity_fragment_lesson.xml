@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentLesson" >
+
+    <LinearLayout
+        android:id="@+id/thingMergeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        tools:ignore="UseCompoundDrawables" >
+
+        <ImageView
+            android:id="@+id/thingImageView"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/thing_view"
+            android:src="@drawable/shop" />
+
+        <TextView
+            android:id="@+id/thingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1.07"
+            android:paddingLeft="85dp"
+            android:text="@string/thing_view"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foodMergeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <ImageView
+            android:id="@+id/foodImageView"
+            android:layout_width="217dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/food_view"
+            android:src="@drawable/patty" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="0dip"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1.28"
+            android:paddingLeft="40dp"
+            android:text="@string/food_view"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/greetingMergeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/foodMergeView"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        tools:ignore="UseCompoundDrawables" >
+
+        <ImageView
+            android:id="@+id/greetImageView"
+            android:layout_width="218dp"
+            android:layout_height="224dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/greeting_view"
+            android:src="@drawable/greeting" />
+
+        <TextView
+            android:id="@+id/greetingTextView"
+            android:layout_width="132dp"
+            android:layout_height="0dip"
+            android:layout_marginTop="18dp"
+            android:layout_weight="0.42"
+            android:paddingLeft="40dp"
+            android:text="@string/greeting_view"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentCulture" >
+
+    <LinearLayout
+        android:id="@+id/mapMergeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/mapImageView"
+            android:layout_width="308dp"
+            android:layout_height="0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.48"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/maplocation"
+            android:src="@drawable/patty" />
+
+        <TextView
+            android:id="@+id/mapTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="60dp"
+            android:text="@string/maplocation"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/galleryMergeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mapMergeView"
+        android:layout_alignRight="@+id/mapMergeView"
+        android:layout_below="@+id/mapMergeView"
+        android:layout_marginTop="26dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/galleryImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2.15"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/gallery"
+            android:src="@drawable/shop" />
+
+        <TextView
+            android:id="@+id/galleryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1.07"
+            android:paddingLeft="85dp"
+            android:text="@string/gallery"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
