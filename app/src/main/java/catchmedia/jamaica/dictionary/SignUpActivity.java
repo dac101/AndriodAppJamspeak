@@ -18,7 +18,9 @@ import java.util.List;
 
 import SharedPreferences.SessionManager;
 import database.DatabaseHandler;
+import database.DatabaseInfo;
 import database.User;
+import database.Word;
 
 /**
  * Activity Which Allows person to Sign Up
@@ -99,9 +101,18 @@ public class SignUpActivity extends Activity {
 
 	public boolean SignUp(String email, String password, TextView errors) {
 		List<User> users = new ArrayList<User>();
+        List<Word> words = new ArrayList<Word>();
+
+        words = db.getAllWords();
 
 		errors.setText(" ");
 		users = db.getAllUsers();
+        //Todo make this into a function
+        if(words.size() == 0 )
+        {
+            DatabaseInfo info = new DatabaseInfo(db);
+            info.insertWords();
+        }
 		check();
 		try {
 			if (!checkEmail(users, email)) {
