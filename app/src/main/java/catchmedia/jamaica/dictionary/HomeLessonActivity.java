@@ -14,9 +14,11 @@ import android.widget.TextView;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 import SharedPreferences.SessionManager;
 import database.DatabaseHandler;
@@ -91,10 +93,24 @@ public class HomeLessonActivity extends Activity {
         }
     }
 
+    public static int randInt(int min, int max) {
+
+        // NOTE: Usually this should be a field rather than a method
+        // variable so that it is not re-seeded every call.
+        Random rand = new Random();
+
+        // nextInt is normally exclusive of the top value,
+        // so add 1 to make it inclusive
+        int randomNum = rand.nextInt((max - min) + 1) + min;
+
+        return randomNum;
+    }
+
+
     public void generateQuestion() {
-        answer.setText("");
-        java.util.Random generator = new java.util.Random( // Create a new Random object, seeding with the current time
-                System.currentTimeMillis());
+
+        Random generator = new Random(System.currentTimeMillis());
+
         RadioButton answer1 = (RadioButton) findViewById(R.id.answer1);
         RadioButton answer2 = (RadioButton) findViewById(R.id.answer2);
         RadioButton answer3 = (RadioButton) findViewById(R.id.answer3);
@@ -102,43 +118,67 @@ public class HomeLessonActivity extends Activity {
         RadioGroup section = (RadioGroup)  findViewById(R.id.selection);
         ImageView imageWord = (ImageView) findViewById(R.id.lessonImageView);
 
-        int selectedid = section.getCheckedRadioButtonId();
-        if (selectedid > 0) {
-            section.clearCheck();
-        }
+        int selectedId = section.getCheckedRadioButtonId();
+        int counter = 0;
+        int i = generator.nextInt(info.size());
+        int currentWordId = 0;
+        int[] selectedWordIds = new int[4] ;
+        int[] selectedWordIdsTemp = new int[4] ;
+
         String[] wrongAnswer = { "ackee", "Bulla", "Nyam", "Yeh ,", "Wappun",
                 "Tanks", "My yute", "Inna di Lights", "Leggo", "JamDown",
                 "Higga", "fren", "Deh here","Feel no way","A true" ,"Bwoy (b-why)","Cut yeye"
                 ,"Zeen","Zed","Yaad","Yahso","Yeyewata","Undastan","Satday","Rhaatid"};
 
-        List<Word> words = new ArrayList<Word>();
-        words = db.getAllWords();
-        int counter = 0;
-        int i = generator.nextInt(info.size()); // 0 <= i < limit (Java 1.2 and
-        // later)
+        List<String> answers = new ArrayList<String>();
+        List<Integer> answersTempId = new ArrayList<Integer>();
+        List<Word> words = db.getAllWords();
+
+        answer.setText("");
+
+        if (selectedId > 0) {
+            section.clearCheck();
+        }
+
         for (Word word : words) {
             counter++;
-            //Log.i("Word", word.getWord());
 
             str1 = cleanString(info.get(i).getName().toLowerCase(),"_jamaicaword", "_");
             str2 = word.getWord().toLowerCase();
 
-            ///Log.i(str2, str1);
-
             if (word.getCategory().equals(wordType)) {
                 if (str1.contains(str2) || str2.contains(str1)) {
-                    //	Log.i("Reaching", "image");
+
+                    answers.add(wrongAnswer[generator.nextInt(wrongAnswer.length)]);
+                    answers.add(wrongAnswer[generator.nextInt(wrongAnswer.length)]);
+                    answers.add(wrongAnswer[generator.nextInt(wrongAnswer.length)]);
+                    answers.add( word.getWord());
+
+
+                    answersTempId.add(0);
+                    answersTempId.add(1);
+                    answersTempId.add(2);
+                    answersTempId.add(3);
+
                     imageWord.setImageResource(info.get(i).getId());
 
-                    answer1.setText(wrongAnswer[generator
-                            .nextInt(wrongAnswer.length)]);
-                    answer2.setText(wrongAnswer[generator
-                            .nextInt(wrongAnswer.length)]);
-                    answer3.setText(wrongAnswer[generator
-                            .nextInt(wrongAnswer.length)]);
-                    answer4.setText(word.getWord());
 
-                    imageWord.setImageResource(info.get(i).getId());
+
+                    selectedWordIds[0]= -1;
+                    selectedWordIds[1]= -1;
+                    selectedWordIds[2]= -1;
+                    selectedWordIds[3]= -1;
+
+
+                    RandomizeFunction(selectedWordIds, answersTempId);
+                    CheckForDuplicates(selectedWordIds, answersTempId);
+
+
+                    answer1.setText(answers.get(selectedWordIds[0]));
+                    answer2.setText(answers.get(selectedWordIds[1]));
+                    answer3.setText(answers.get(selectedWordIds[2]));
+                    answer4.setText(answers.get(selectedWordIds[3]));
+
                     correctAnswer = word.getWord();
                     return;
                 }
@@ -147,8 +187,54 @@ public class HomeLessonActivity extends Activity {
         }
         if(counter == words.size())
         {
-            //Log.i("Counter "+ counter, "Word Size: " + words.size());
             generateQuestion();
+        }
+    }
+
+    private void CheckForDuplicates(int[] selectedWordIds, List<Integer> answersTempId) {
+        boolean notDuplicate = false;
+
+        while(notDuplicate != true){
+            int repeatedTime = 0;
+            for(int x = 0; x < selectedWordIds.length ; x++)
+            {
+                for(int y =0; x < selectedWordIds.length;x++)
+                {
+                    if(selectedWordIds[x] == selectedWordIds[y])
+                    {
+                        repeatedTime++;
+                    }
+                }
+            }
+          if(repeatedTime > 1)
+          {
+              notDuplicate = false;
+              RandomizeFunction(selectedWordIds, answersTempId);
+          }
+          else{
+              notDuplicate    = true;
+          }
+        }
+    }
+
+    private void RandomizeFunction(int[] selectedWordIds, List<Integer> answersTempId) {
+        int[] selectedWordIdsTemp;
+        int currentWordId;
+        for(int x = 0 ; x < selectedWordIds.length; x++){
+            selectedWordIdsTemp  = Arrays.copyOf(selectedWordIds, selectedWordIds.length) ;
+                int findOrNot = 0;
+                while (true) {
+                    Arrays.sort(selectedWordIdsTemp);
+                    currentWordId = randInt(0, answersTempId.size() - 1);
+                    findOrNot = Arrays.binarySearch(selectedWordIdsTemp, currentWordId);
+                    if(findOrNot <= -1 && findOrNot >= -5)
+                    {
+
+                        break;
+                    }
+            }
+            selectedWordIds[x] =answersTempId.get(currentWordId);
+
         }
     }
 
@@ -261,17 +347,7 @@ public class HomeLessonActivity extends Activity {
             }
         }
 
-//		for(UserLesson x : all)
-//		{
-//			//Log.i("before",x.toString());
-//		}
-//		
         db.createUserLesson(new UserLesson(id,wordId,1));
-//		all = db.getAllUserLesson();
-//		
-//		for(UserLesson x : all)
-//		{
-//			Log.i("After",x.toString());
-//		}
+
     }
 }
