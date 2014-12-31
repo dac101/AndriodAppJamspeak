@@ -53,19 +53,19 @@ public class Adapter extends ArrayAdapter<Word>{
         ImageView wordImage = (ImageView) convertView.findViewById(R.id.wordImage);
 		wordView.setText(word.getWord());
         typeOfWord.setText(word.getCategory());
-     //   wordImage.setImageResource(R.drawable.ackee_jamaicaword);
+
 
         Field[] drawables = R.drawable.class.getFields();
-        int[] resArray = new int[drawables.length];
+
         for (int i = 0; i < drawables.length; i++) {
             try {
-                if (drawables[i].getName().contains(word.getWord().substring(0,2))) {
-                    resArray[i] = drawables[i].getInt(null);
+                String currentPic = drawables[i].getName().toLowerCase().split("_")[0];
+                if (currentPic.toLowerCase().contains(word.getWord().toLowerCase().replaceAll(" ",""))) {
                     wordImage.setImageResource(drawables[i].getInt(null));
                     break;
-                }else{
-                    wordImage.setImageResource(R.drawable.ackee_jamaicaword);
-
+                }
+                if(currentPic.toLowerCase().contains(word.getWord().toLowerCase().substring(0,2))){
+                    wordImage.setImageResource(drawables[i].getInt(null));
                 }
             } catch (IllegalAccessException e) {
                 // TODO Auto-generated catch block
@@ -75,8 +75,10 @@ public class Adapter extends ArrayAdapter<Word>{
                 e.printStackTrace();
             }
         }
-
-
+        if (wordImage.getResources()== null)
+        {
+            wordImage.setImageResource(R.drawable.ackee_jamaicaword);
+        }
 
 		return convertView;
 	}
