@@ -469,28 +469,37 @@ containing a value of this type.
         public static final int common_signin_btn_light_text_disabled=0x7f050007;
         public static final int common_signin_btn_light_text_focused=0x7f050008;
         public static final int common_signin_btn_light_text_pressed=0x7f050009;
-        public static final int common_signin_btn_text_dark=0x7f050017;
-        public static final int common_signin_btn_text_light=0x7f050018;
-        public static final int wallet_bright_foreground_disabled_holo_light=0x7f05000a;
-        public static final int wallet_bright_foreground_holo_dark=0x7f05000b;
-        public static final int wallet_bright_foreground_holo_light=0x7f05000c;
-        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f05000d;
-        public static final int wallet_dim_foreground_holo_dark=0x7f05000e;
-        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f05000f;
-        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f050010;
-        public static final int wallet_highlighted_text_holo_dark=0x7f050011;
-        public static final int wallet_highlighted_text_holo_light=0x7f050012;
-        public static final int wallet_hint_foreground_holo_dark=0x7f050013;
-        public static final int wallet_hint_foreground_holo_light=0x7f050014;
-        public static final int wallet_holo_blue_light=0x7f050015;
-        public static final int wallet_link_text_light=0x7f050016;
-        public static final int wallet_primary_text_holo_light=0x7f050019;
-        public static final int wallet_secondary_text_holo_dark=0x7f05001a;
+        public static final int common_signin_btn_text_dark=0x7f05001e;
+        public static final int common_signin_btn_text_light=0x7f05001f;
+        public static final int genre=0x7f05000a;
+        public static final int list_divider=0x7f05000b;
+        public static final int list_row_end_color=0x7f05000c;
+        public static final int list_row_hover_end_color=0x7f05000d;
+        public static final int list_row_hover_start_color=0x7f05000e;
+        public static final int list_row_start_color=0x7f05000f;
+        public static final int wallet_bright_foreground_disabled_holo_light=0x7f050010;
+        public static final int wallet_bright_foreground_holo_dark=0x7f050011;
+        public static final int wallet_bright_foreground_holo_light=0x7f050012;
+        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f050013;
+        public static final int wallet_dim_foreground_holo_dark=0x7f050014;
+        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f050015;
+        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f050016;
+        public static final int wallet_highlighted_text_holo_dark=0x7f050017;
+        public static final int wallet_highlighted_text_holo_light=0x7f050018;
+        public static final int wallet_hint_foreground_holo_dark=0x7f050019;
+        public static final int wallet_hint_foreground_holo_light=0x7f05001a;
+        public static final int wallet_holo_blue_light=0x7f05001b;
+        public static final int wallet_link_text_light=0x7f05001c;
+        public static final int wallet_primary_text_holo_light=0x7f050020;
+        public static final int wallet_secondary_text_holo_dark=0x7f050021;
+        public static final int year=0x7f05001d;
     }
     public static final class dimen {
-        public static final int activity_horizontal_margin=0x7f060000;
-        public static final int activity_vertical_margin=0x7f060001;
-        public static final int default_gap=0x7f060002;
+        public static final int TypeOfWord=0x7f060000;
+        public static final int activity_horizontal_margin=0x7f060001;
+        public static final int activity_vertical_margin=0x7f060002;
+        public static final int default_gap=0x7f060003;
+        public static final int title=0x7f060004;
     }
     public static final class drawable {
         public static final int ackee_jamaicaword=0x7f020000;
@@ -551,42 +560,46 @@ containing a value of this type.
         public static final int light_jamaicaword=0x7f020037;
         public static final int lights_jamaicaword=0x7f020038;
         public static final int link_jamaicaword=0x7f020039;
-        public static final int mash_jamaicaword=0x7f02003a;
-        public static final int mon_2_jamaicaword=0x7f02003b;
-        public static final int mon_3_jamaicaword=0x7f02003c;
-        public static final int more_jamaicaword=0x7f02003d;
-        public static final int naa_jamaciaword=0x7f02003e;
-        public static final int nyam_jamaicaword=0x7f02003f;
-        public static final int nyami_jamaicaword=0x7f020040;
-        public static final int ochorios_gallery=0x7f020041;
-        public static final int patty=0x7f020042;
-        public static final int place_jamaciaword=0x7f020043;
-        public static final int powered_by_google_dark=0x7f020044;
-        public static final int powered_by_google_light=0x7f020045;
-        public static final int ppun_jamaicaword=0x7f020046;
-        public static final int profile=0x7f020047;
-        public static final int rebelsalute_gallery=0x7f020048;
-        public static final int rifting=0x7f020049;
-        public static final int search=0x7f02004a;
-        public static final int shop=0x7f02004b;
-        public static final int shuffle=0x7f02004c;
-        public static final int tanks_jamaicaword=0x7f02004d;
-        public static final int testing3=0x7f02004e;
-        public static final int testing6=0x7f02004f;
-        public static final int wa_jamaicaword=0x7f020050;
-        public static final int yeh_1_jamaicaword=0x7f020051;
-        public static final int yeh_2_jamaicaword=0x7f020052;
-        public static final int yeh_jamaicaword=0x7f020053;
-        public static final int yute_jamaicaword=0x7f020054;
+        public static final int list_row_bg=0x7f02003a;
+        public static final int list_row_bg_hover=0x7f02003b;
+        public static final int list_row_selector=0x7f02003c;
+        public static final int mash_jamaicaword=0x7f02003d;
+        public static final int mon_2_jamaicaword=0x7f02003e;
+        public static final int mon_3_jamaicaword=0x7f02003f;
+        public static final int more_jamaicaword=0x7f020040;
+        public static final int naa_jamaciaword=0x7f020041;
+        public static final int nyam_jamaicaword=0x7f020042;
+        public static final int nyami_jamaicaword=0x7f020043;
+        public static final int ochorios_gallery=0x7f020044;
+        public static final int patty=0x7f020045;
+        public static final int place_jamaciaword=0x7f020046;
+        public static final int powered_by_google_dark=0x7f020047;
+        public static final int powered_by_google_light=0x7f020048;
+        public static final int ppun_jamaicaword=0x7f020049;
+        public static final int profile=0x7f02004a;
+        public static final int rebelsalute_gallery=0x7f02004b;
+        public static final int rifting=0x7f02004c;
+        public static final int search=0x7f02004d;
+        public static final int shop=0x7f02004e;
+        public static final int shuffle=0x7f02004f;
+        public static final int tanks_jamaicaword=0x7f020050;
+        public static final int testing3=0x7f020051;
+        public static final int testing6=0x7f020052;
+        public static final int wa_jamaicaword=0x7f020053;
+        public static final int yeh_1_jamaicaword=0x7f020054;
+        public static final int yeh_2_jamaicaword=0x7f020055;
+        public static final int yeh_jamaicaword=0x7f020056;
+        public static final int yute_jamaicaword=0x7f020057;
     }
     public static final class id {
         public static final int LessonTextView=0x7f0b004f;
         public static final int LoginScreen=0x7f0b0050;
         public static final int Logout=0x7f0b0054;
         public static final int SignUp=0x7f0b0051;
-        public static final int Wordname=0x7f0b005e;
-        public static final int action_profile=0x7f0b0060;
-        public static final int action_settings=0x7f0b005f;
+        public static final int TypeOfWord=0x7f0b005f;
+        public static final int Wordname=0x7f0b0060;
+        public static final int action_profile=0x7f0b0062;
+        public static final int action_settings=0x7f0b0061;
         public static final int adjust_height=0x7f0b0012;
         public static final int adjust_width=0x7f0b0013;
         public static final int alignBounds=0x7f0b0002;
@@ -634,10 +647,10 @@ containing a value of this type.
         public static final int holo_light=0x7f0b001a;
         public static final int horizontal=0x7f0b0000;
         public static final int hybrid=0x7f0b0015;
-        public static final int inputSearch=0x7f0b003e;
+        public static final int inputSearch=0x7f0b003f;
         public static final int left=0x7f0b000e;
         public static final int lessonImageView=0x7f0b0045;
-        public static final int list_view=0x7f0b003f;
+        public static final int list_view=0x7f0b003e;
         public static final int login=0x7f0b004d;
         public static final int login_form=0x7f0b002b;
         public static final int login_status=0x7f0b0029;
@@ -676,6 +689,7 @@ containing a value of this type.
         public static final int thingTextView=0x7f0b0037;
         public static final int top=0x7f0b0011;
         public static final int vertical=0x7f0b0001;
+        public static final int wordImage=0x7f0b005e;
         public static final int wrap_content=0x7f0b0021;
     }
     public static final class integer {
@@ -814,6 +828,7 @@ containing a value of this type.
         public static final int user_name=0x7f08005d;
         public static final int wallet_buy_button_place_holder=0x7f08005e;
         public static final int wordComplete=0x7f08005f;
+        public static final int wordImage=0x7f080060;
     }
     public static final class style {
         /** 

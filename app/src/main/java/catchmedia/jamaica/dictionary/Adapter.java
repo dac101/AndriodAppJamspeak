@@ -1,17 +1,21 @@
 package catchmedia.jamaica.dictionary;
 
 import android.content.Context;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Filter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import database.Word;
+import utility.ImageInfo;
 
 
 public class Adapter extends ArrayAdapter<Word>{
@@ -20,7 +24,8 @@ public class Adapter extends ArrayAdapter<Word>{
 	private ArrayList<Word> wordList;
 	private Context context;
 	private Filter filter;
-	
+    ArrayList<ImageInfo> info ;
+
 	public Adapter(Context context,
 			ArrayList<Word> wordList) {
 		super(context, R.layout.row_layout, wordList);
@@ -29,6 +34,7 @@ public class Adapter extends ArrayAdapter<Word>{
 		this.originalList = new ArrayList<Word>();
 		this.originalList.addAll(wordList);
 		this.context = context;
+       this.info = new ArrayList<ImageInfo>();
 	}
 
 	@Override
@@ -43,7 +49,35 @@ public class Adapter extends ArrayAdapter<Word>{
 		Word word = wordList.get(position);
 		
 		TextView wordView = (TextView) convertView.findViewById(R.id.Wordname);
+        TextView typeOfWord = (TextView) convertView.findViewById(R.id.TypeOfWord);
+        ImageView wordImage = (ImageView) convertView.findViewById(R.id.wordImage);
 		wordView.setText(word.getWord());
+        typeOfWord.setText(word.getCategory());
+     //   wordImage.setImageResource(R.drawable.ackee_jamaicaword);
+
+        Field[] drawables = R.drawable.class.getFields();
+        int[] resArray = new int[drawables.length];
+        for (int i = 0; i < drawables.length; i++) {
+            try {
+                if (drawables[i].getName().contains(word.getWord().substring(0,2))) {
+                    resArray[i] = drawables[i].getInt(null);
+                    wordImage.setImageResource(drawables[i].getInt(null));
+                    break;
+                }else{
+                    wordImage.setImageResource(R.drawable.ackee_jamaicaword);
+
+                }
+            } catch (IllegalAccessException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (IllegalArgumentException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+
+
+
 		return convertView;
 	}
 
@@ -100,7 +134,9 @@ public class Adapter extends ArrayAdapter<Word>{
 				add(wordList.get(i));
 			notifyDataSetInvalidated();
 		}
+
 		
 		
 	}
+
 }

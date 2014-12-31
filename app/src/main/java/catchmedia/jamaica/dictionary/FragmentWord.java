@@ -48,7 +48,7 @@ public class FragmentWord extends Fragment {
 		
 		lv = (ListView)rootView.findViewById(R.id.list_view);
 		
-        inputSearch = (EditText) rootView.findViewById(R.id.inputSearch);
+      //  inputSearch = (EditText) rootView.findViewById(R.id.inputSearch);
         
         // Adding items to listview
 
@@ -60,27 +60,27 @@ public class FragmentWord extends Fragment {
         /**
          * Enabling Search Filter
          * */
-        inputSearch.addTextChangedListener(new TextWatcher() {
-			
-			@Override
-			public void onTextChanged(CharSequence cs, int start, int before, int count) {
-				// When user changed the Text
-				Log.i("User input", cs.toString());
-				adapt.getFilter().filter(cs.toString());
-			}
-				
-				@Override
-			public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
-					int arg3) {
-				// TODO Auto-generated method stub
-				
-			}
-			
-			@Override
-			public void afterTextChanged(Editable arg0) {
-				// TODO Auto-generated method stub							
-			}
-		});
+//        inputSearch.addTextChangedListener(new TextWatcher() {
+//
+//			@Override
+//			public void onTextChanged(CharSequence cs, int start, int before, int count) {
+//				// When user changed the Text
+//				Log.i("User input", cs.toString());
+//				adapt.getFilter().filter(cs.toString());
+//			}
+//
+//				@Override
+//			public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
+//					int arg3) {
+//				// TODO Auto-generated method stub
+//
+//			}
+//
+//			@Override
+//			public void afterTextChanged(Editable arg0) {
+//				// TODO Auto-generated method stub
+//			}
+//		});
 		
 
 		return rootView;

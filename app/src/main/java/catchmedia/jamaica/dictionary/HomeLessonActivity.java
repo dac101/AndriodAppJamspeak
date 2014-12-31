@@ -120,10 +120,10 @@ public class HomeLessonActivity extends Activity {
 
         int selectedId = section.getCheckedRadioButtonId();
         int counter = 0;
+
         int i = generator.nextInt(info.size());
-        int currentWordId = 0;
         int[] selectedWordIds = new int[4] ;
-        int[] selectedWordIdsTemp = new int[4] ;
+
 
         String[] wrongAnswer = { "ackee", "Bulla", "Nyam", "Yeh ,", "Wappun",
                 "Tanks", "My yute", "Inna di Lights", "Leggo", "JamDown",
@@ -162,8 +162,6 @@ public class HomeLessonActivity extends Activity {
 
                     imageWord.setImageResource(info.get(i).getId());
 
-
-
                     selectedWordIds[0]= -1;
                     selectedWordIds[1]= -1;
                     selectedWordIds[2]= -1;
@@ -172,7 +170,6 @@ public class HomeLessonActivity extends Activity {
 
                     RandomizeFunction(selectedWordIds, answersTempId);
                     CheckForDuplicates(selectedWordIds, answersTempId);
-
 
                     answer1.setText(answers.get(selectedWordIds[0]));
                     answer2.setText(answers.get(selectedWordIds[1]));

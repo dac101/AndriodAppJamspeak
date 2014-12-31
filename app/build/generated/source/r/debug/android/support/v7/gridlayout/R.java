@@ -22,7 +22,7 @@ public final class R {
 		public static final int useDefaultMargins = 0x7f010006;
 	}
 	public static final class dimen {
-		public static final int default_gap = 0x7f060002;
+		public static final int default_gap = 0x7f060003;
 	}
 	public static final class id {
 		public static final int alignBounds = 0x7f0b0002;
