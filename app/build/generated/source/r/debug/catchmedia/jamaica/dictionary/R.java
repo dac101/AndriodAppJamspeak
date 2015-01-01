@@ -593,8 +593,8 @@ containing a value of this type.
         public static final int SignUp=0x7f0b0051;
         public static final int TypeOfWord=0x7f0b005f;
         public static final int Wordname=0x7f0b0060;
-        public static final int action_profile=0x7f0b0062;
-        public static final int action_settings=0x7f0b0061;
+        public static final int action_profile=0x7f0b0063;
+        public static final int action_settings=0x7f0b0062;
         public static final int adjust_height=0x7f0b0012;
         public static final int adjust_width=0x7f0b0013;
         public static final int alignBounds=0x7f0b0002;
@@ -685,6 +685,7 @@ containing a value of this type.
         public static final int top=0x7f0b0011;
         public static final int vertical=0x7f0b0001;
         public static final int wordImage=0x7f0b005e;
+        public static final int wordMeaning=0x7f0b0061;
         public static final int wrap_content=0x7f0b0021;
     }
     public static final class integer {
@@ -824,6 +825,7 @@ containing a value of this type.
         public static final int wallet_buy_button_place_holder=0x7f08005e;
         public static final int wordComplete=0x7f08005f;
         public static final int wordImage=0x7f080060;
+        public static final int wordMeaning=0x7f080061;
     }
     public static final class style {
         /** 

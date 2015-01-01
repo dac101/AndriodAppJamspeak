@@ -39,8 +39,8 @@ public class Adapter extends ArrayAdapter<Word>{
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		// TODO Auto-generated method stub
-		if(convertView == null)
+
+            if(convertView == null)
 		{
 			LayoutInflater vi = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			convertView = vi.inflate(R.layout.row_layout,parent,false);
@@ -50,10 +50,12 @@ public class Adapter extends ArrayAdapter<Word>{
 		
 		TextView wordView = (TextView) convertView.findViewById(R.id.Wordname);
         TextView typeOfWord = (TextView) convertView.findViewById(R.id.TypeOfWord);
+        TextView wordMeaning = (TextView) convertView.findViewById(R.id.wordMeaning);
         ImageView wordImage = (ImageView) convertView.findViewById(R.id.wordImage);
+
 		wordView.setText(word.getWord());
         typeOfWord.setText(word.getCategory());
-
+        wordMeaning.setText(word.getTranslation());
 
         Field[] drawables = R.drawable.class.getFields();
 

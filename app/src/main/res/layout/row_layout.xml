@@ -18,7 +18,7 @@
         android:id="@+id/Wordname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:text="youu"
         android:textStyle="bold"
         android:textIsSelectable="false"
@@ -29,6 +29,17 @@
 
 
     <!-- Type of Word -->
+    <TextView
+        android:id="@+id/wordMeaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="something else"
+        android:textStyle="normal"
+        android:layout_alignBottom="@+id/wordImage"
+        android:layout_toRightOf="@+id/wordImage"
+        android:layout_toEndOf="@+id/wordImage" />
+
     <TextView
         android:id="@+id/TypeOfWord"
         android:layout_width="wrap_content"
