@@ -52,6 +52,7 @@ public class DatabaseInfo {
         words.add(new Word("Fren", "Friend", "things", 1, ""));
         words.add(new Word("Fimi", " Shows possession. A fi mi car.","things", 1, ""));
 
+
         for (Word x : words) {
             db.createWord(x);
         }
