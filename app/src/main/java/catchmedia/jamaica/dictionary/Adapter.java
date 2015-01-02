@@ -56,6 +56,7 @@ public class Adapter extends ArrayAdapter<Word>{
 		wordView.setText(word.getWord());
         typeOfWord.setText(word.getCategory());
         wordMeaning.setText(word.getTranslation());
+        word.setAudiofile(word.getWord().replaceAll(" ","")+ ".mp3");
 
         Field[] drawables = R.drawable.class.getFields();
 

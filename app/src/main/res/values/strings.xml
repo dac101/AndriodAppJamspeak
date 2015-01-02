@@ -70,4 +70,5 @@
 	<string name="colorTextView">#ffcc33</string>
     <string name="wordImage">wordImage</string>
     <string name="wordMeaning">WordMeaning</string>
+    <string name="rowItem">rowItem</string>
 </resources>

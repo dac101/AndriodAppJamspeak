@@ -36,15 +36,15 @@ public class DatabaseInfo {
         words.add(new Word("My yute"," My youth. Friendly expression of calling a friend.", "greeting", 1, ""));
         words.add(new Word("More time ","Popular expression for saying good-bye.","greeting", 1, ""));
         words.add(new Word("Link up ","Slang for Hooking up.", "greeting", 1, ""));
-        words.add(new Word("Lickle more", "A saying of goodbye.", "greeting",  1, ""));
+        words.add(new Word("Likkle more", "A saying of goodbye.", "greeting",  1, ""));
         words.add(new Word( "Jah guide","A Rasta farewell and good-bye. means God shall guide.","greeting", 1, ""));
-        words.add(new Word("Inna di lights ","Expression to say tomorrow","greeting", 1, ""));
+        words.add(new Word("Inna di lates ","Expression to say tomorrow","greeting", 1, ""));
         words.add(new Word( "Irie","Means everything is alright.", "greeting", 1, ""));
 
         /**
          * Things
          */
-        words.add(new Word("Mon "," can represent every person  man, woman,and child.", "things", 1, ""));
+        words.add(new Word("Mon"," can represent every person  man, woman,and child.", "things", 1, ""));
         words.add(new Word("Mash it up ", "Expression of doing well","things", 1, ""));
         words.add(new Word("Leggo","To let go", "things", 1, ""));
         words.add(new Word("Jamdown", "Word for Jamaica.", "things", 1, ""));

@@ -1,18 +1,23 @@
 package catchmedia.jamaica.dictionary;
 
 import android.app.Activity;
+
+import android.content.res.AssetFileDescriptor;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.media.MediaPlayer;
 
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 import database.DatabaseHandler;
@@ -21,7 +26,7 @@ import database.Word;
 public class FragmentWord extends Fragment {
 
 	// List view
-	private ListView lv;
+	private ListView listView;
 
 	// Listview Adapter
 	Adapter adapt;
@@ -46,17 +51,31 @@ public class FragmentWord extends Fragment {
 		View rootView = inflater.inflate(R.layout.activity_fragment_word,
 				container, false);
 		
-		lv = (ListView)rootView.findViewById(R.id.list_view);
+		listView = (ListView)rootView.findViewById(R.id.list_view);
 		
       //  inputSearch = (EditText) rootView.findViewById(R.id.inputSearch);
         
         // Adding items to listview
 
         adapt = new Adapter(getActivity().getBaseContext(),words);
+        listView.setAdapter(adapt);
+        listView.setTextFilterEnabled(true);
 
-        lv.setAdapter(adapt);
-      
-        lv.setTextFilterEnabled(true);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                AssetFileDescriptor afd = null;
+                try {
+                    afd = getActivity().getAssets().openFd(adapt.getItem(position).getAudiofile());
+                    MediaPlayer player = new MediaPlayer();
+                    player.setDataSource(afd.getFileDescriptor(),afd.getStartOffset(),afd.getLength());
+                    player.prepare();
+                    player.start();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
         /**
          * Enabling Search Filter
          * */
@@ -91,4 +110,5 @@ public class FragmentWord extends Fragment {
 		super.onAttach(activity);
 		db = new DatabaseHandler(activity);
 	}
+
 }
