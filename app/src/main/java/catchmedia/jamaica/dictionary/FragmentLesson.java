@@ -24,7 +24,7 @@ public class FragmentLesson extends Fragment {
 			@Override
 			public void onClick(View view) {
 				Intent intent = new Intent(getActivity(), HomeLessonActivity.class);
-				intent.putExtra("Type","food");
+				intent.putExtra("Type","Foods");
 				getActivity().startActivity(intent);
 
 			}
@@ -33,7 +33,7 @@ public class FragmentLesson extends Fragment {
 			@Override
 			public void onClick(View view) {
 				Intent intent = new Intent(getActivity(), HomeLessonActivity.class);
-				intent.putExtra("Type","things" );
+				intent.putExtra("Type","Things" );
 				getActivity().startActivity(intent);
 
 			}
@@ -43,7 +43,7 @@ public class FragmentLesson extends Fragment {
 			@Override
 			public void onClick(View view) {
 				Intent intent = new Intent(getActivity(), HomeLessonActivity.class);
-				intent.putExtra("Type","greeting");
+				intent.putExtra("Type","Greetings");
 				getActivity().startActivity(intent);
 
 			}

@@ -15,15 +15,13 @@ import android.widget.TextView;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
-import SharedPreferences.SessionManager;
 import database.DatabaseHandler;
-import database.User;
-import database.UserLesson;
+
 import database.Word;
 import utility.ImageInfo;
 
@@ -33,8 +31,7 @@ public class HomeLessonActivity extends Activity {
     DatabaseHandler db = new DatabaseHandler(this);
     String correctAnswer = null;
     ArrayList<ImageInfo> info = new ArrayList<ImageInfo>();
-    Word word = new Word();
-    String str1, str2, wordType;
+    String imageWord, currentWordToLowerCase, wordType;
     RadioGroup section;
 
     @Override
@@ -86,7 +83,7 @@ public class HomeLessonActivity extends Activity {
         //	Log.i(selection.getCheckedRadioButtonId() + "id", "id");
         if (answer1.getText().equals(correctAnswer)) {
             answer.setText("Correct");
-            saveLesson(correctAnswer);
+          //  saveLesson(correctAnswer);
             generateQuestion();
         } else {
             answer.setText("Answer is:  " + correctAnswer);
@@ -105,7 +102,6 @@ public class HomeLessonActivity extends Activity {
 
         return randomNum;
     }
-
 
     public void generateQuestion() {
 
@@ -136,18 +132,16 @@ public class HomeLessonActivity extends Activity {
 
         answer.setText("");
 
-        if (selectedId > 0) {
-            section.clearCheck();
-        }
+        clearSelection(section, selectedId);
 
         for (Word word : words) {
             counter++;
 
-            str1 = cleanString(info.get(i).getName().toLowerCase(),"_jamaicaword", "_");
-            str2 = word.getWord().toLowerCase();
+            this.imageWord = cleanString(info.get(i).getName().toLowerCase(),"_jamaicaword", "_");
+            currentWordToLowerCase = word.getWord().toLowerCase();
 
-            if (word.getCategory().equals(wordType)) {
-                if (str1.contains(str2) || str2.contains(str1)) {
+            if (word.getCategory().contains(wordType)) {
+                if (this.imageWord.contains(currentWordToLowerCase) || currentWordToLowerCase.contains(this.imageWord)) {
 
                     answers.add(wrongAnswer[generator.nextInt(wrongAnswer.length)]);
                     answers.add(wrongAnswer[generator.nextInt(wrongAnswer.length)]);
@@ -188,33 +182,30 @@ public class HomeLessonActivity extends Activity {
         }
     }
 
-    private void CheckForDuplicates(int[] selectedWordIds, List<Integer> answersTempId) {
-        boolean notDuplicate = false;
-
-        while(notDuplicate != true){
-            int repeatedTime = 0;
-            for(int x = 0; x < selectedWordIds.length ; x++)
-            {
-                for(int y =0; x < selectedWordIds.length;x++)
-                {
-                    if(selectedWordIds[x] == selectedWordIds[y])
-                    {
-                        repeatedTime++;
-                    }
-                }
-            }
-          if(repeatedTime > 1)
-          {
-              notDuplicate = false;
-              RandomizeFunction(selectedWordIds, answersTempId);
-          }
-          else{
-              notDuplicate    = true;
-          }
+    public void clearSelection(RadioGroup section, int selectedId) {
+        if (selectedId > 0) {
+            section.clearCheck();
         }
     }
 
-    private void RandomizeFunction(int[] selectedWordIds, List<Integer> answersTempId) {
+    private void CheckForDuplicates(int[] selectedWordIds, List<Integer> answersTempId) {
+
+        int repeatedTime = 0;
+
+        Set<Integer> set = new HashSet<Integer>();
+        for(int i : selectedWordIds) {
+            if(!set.add(i)) {
+                repeatedTime++;
+            }
+        }
+        if (repeatedTime > 1) {
+            RandomizeFunction(selectedWordIds, answersTempId);
+            CheckForDuplicates(selectedWordIds, answersTempId);
+        }
+
+    }
+
+    public void RandomizeFunction(int[] selectedWordIds, List<Integer> answersTempId) {
         int[] selectedWordIdsTemp;
         int currentWordId;
         for(int x = 0 ; x < selectedWordIds.length; x++){
@@ -254,14 +245,6 @@ public class HomeLessonActivity extends Activity {
         }
     }
 
-    public void delete() {
-        List<Word> words = new ArrayList<Word>();
-        words = db.getAllWords();
-        for (Word x : words) {
-            db.delete(x.getId(), "word");
-        }
-    }
-
     /**
      * Takes out all the number words, symbol base on the parameter
      *
@@ -276,75 +259,4 @@ public class HomeLessonActivity extends Activity {
         return str;
     }
 
-    public List<Word> SortArray(List<Word> words,String type)
-    {
-        List<Word> newArray = new ArrayList<Word>();
-        for(Word x:words)
-        {
-            if(x.getCategory().equals(type))
-            {
-                newArray.add(x);
-            }
-        }
-
-        return newArray;
-    }
-
-    //lesson is word
-    public void saveLesson(String word)
-    {
-        SessionManager session = new SessionManager(this);
-
-        HashMap<String, String> h = new HashMap<String, String>();
-        List<UserLesson> all =  new ArrayList<UserLesson>();
-        List<User> users = new ArrayList<User>();
-        List<Word> words = new ArrayList<Word>();
-
-        String value = "";
-        int id = 0;
-        int wordId=0;
-
-        all= db.getAllUserLesson();
-        h = session.getUserDetails();
-        users = db.getAllUsers();
-        words = db.getAllWords();
-
-        Iterator<String> myVeryOwnIterator = h.keySet().iterator();
-
-        while (myVeryOwnIterator.hasNext()) {
-            String key = (String) myVeryOwnIterator.next();
-            value = (String) h.get(key);
-            //Log.i("Key: " + key, " Value: " + value);
-            break;
-        }
-
-
-        for(User x: users)
-        {
-            if(x.getEmail().equals(value))
-            {
-                id = x.getId();
-            }
-        }
-
-        for(Word x: words)
-        {
-            if(x.getWord().equals(word))
-            {
-                wordId = x.getId();
-            }
-        }
-
-        for(UserLesson x : all)
-        {
-            if(x.getLesson_id() == wordId && x.getUser_id() == id)
-            {
-                //	Log.i("Failed","Failed");
-                return;
-            }
-        }
-
-        db.createUserLesson(new UserLesson(id,wordId,1));
-
-    }
 }

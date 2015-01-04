@@ -35,9 +35,9 @@
     <string name="reset_password">Forgot something? Reset your password</string>
     <string name="title_activity_home"><b>Home</b></string>
     <string name="a_picture">This is a picture</string>
-    <string name="food_view">Food </string>
-    <string name="greeting_view">Greeting </string>
-    <string name="thing_view">Thing </string>
+    <string name="food_view">Foods</string>
+    <string name="greeting_view">Greetings </string>
+    <string name="thing_view">Things </string>
     <string name="title_activity_home_lesson">Lesson</string>
     <string name="lesson_image_content">I</string>
     <string name="answer">Answer</string>
