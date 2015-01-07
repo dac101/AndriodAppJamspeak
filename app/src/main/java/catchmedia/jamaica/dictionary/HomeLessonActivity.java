@@ -4,13 +4,19 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -33,6 +39,7 @@ public class HomeLessonActivity extends Activity {
     ArrayList<ImageInfo> info = new ArrayList<ImageInfo>();
     String imageWord, currentWordToLowerCase, wordType;
     RadioGroup section;
+    AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +50,21 @@ public class HomeLessonActivity extends Activity {
         answer = (TextView) findViewById(R.id.answer);
         wordType = i.getStringExtra("Type");
         section = (RadioGroup)  findViewById(R.id.selection);
+
+        // Gets the ad view defined in layout/ad_fragment.xml with ad unit ID set in
+        // values/strings.xml.
+        mAdView = (AdView)findViewById(R.id.adView);
+
+        // Create an ad request. Check logcat output for the hashed device ID to
+        // get test ads on a physical device. e.g.
+        // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("abc")
+                .build();
+
+        // Start loading the ad in the background.
+        mAdView.loadAd(adRequest);
 
         getImages();
         generateQuestion();
@@ -62,7 +84,7 @@ public class HomeLessonActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.home_lesson, menu);
+
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
@@ -116,7 +138,6 @@ public class HomeLessonActivity extends Activity {
 
         int selectedId = section.getCheckedRadioButtonId();
         int counter = 0;
-
         int i = generator.nextInt(info.size());
         int[] selectedWordIds = new int[4] ;
 
@@ -136,41 +157,21 @@ public class HomeLessonActivity extends Activity {
 
         for (Word word : words) {
             counter++;
-
             this.imageWord = cleanString(info.get(i).getName().toLowerCase(),"_jamaicaword", "_");
             currentWordToLowerCase = word.getWord().toLowerCase();
 
             if (word.getCategory().contains(wordType)) {
-                if (this.imageWord.contains(currentWordToLowerCase) || currentWordToLowerCase.contains(this.imageWord)) {
+                boolean isImageWordEqualToWord = this.imageWord.contains(currentWordToLowerCase) || currentWordToLowerCase.contains(this.imageWord);
 
-                    answers.add(wrongAnswer[generator.nextInt(wrongAnswer.length)]);
-                    answers.add(wrongAnswer[generator.nextInt(wrongAnswer.length)]);
-                    answers.add(wrongAnswer[generator.nextInt(wrongAnswer.length)]);
-                    answers.add( word.getWord());
+                if (isImageWordEqualToWord) {
 
-
-                    answersTempId.add(0);
-                    answersTempId.add(1);
-                    answersTempId.add(2);
-                    answersTempId.add(3);
-
+                    initializeAnswerAndTemp(generator, wrongAnswer, answers, answersTempId, word);
                     imageWord.setImageResource(info.get(i).getId());
-
-                    selectedWordIds[0]= -1;
-                    selectedWordIds[1]= -1;
-                    selectedWordIds[2]= -1;
-                    selectedWordIds[3]= -1;
-
-
+                    initializeArray(selectedWordIds);
                     RandomizeFunction(selectedWordIds, answersTempId);
                     CheckForDuplicates(selectedWordIds, answersTempId);
+                    setAnswerToText(answer1, answer2, answer3, answer4, selectedWordIds, answers, word);
 
-                    answer1.setText(answers.get(selectedWordIds[0]));
-                    answer2.setText(answers.get(selectedWordIds[1]));
-                    answer3.setText(answers.get(selectedWordIds[2]));
-                    answer4.setText(answers.get(selectedWordIds[3]));
-
-                    correctAnswer = word.getWord();
                     return;
                 }
             }
@@ -180,6 +181,34 @@ public class HomeLessonActivity extends Activity {
         {
             generateQuestion();
         }
+    }
+
+    public void setAnswerToText(RadioButton answer1, RadioButton answer2, RadioButton answer3, RadioButton answer4, int[] selectedWordIds, List<String> answers, Word word) {
+        answer1.setText(answers.get(selectedWordIds[0]));
+        answer2.setText(answers.get(selectedWordIds[1]));
+        answer3.setText(answers.get(selectedWordIds[2]));
+        answer4.setText(answers.get(selectedWordIds[3]));
+        correctAnswer = word.getWord();
+    }
+
+    public void initializeAnswerAndTemp(Random generator, String[] wrongAnswer, List<String> answers, List<Integer> answersTempId, Word word) {
+        answers.add(wrongAnswer[generator.nextInt(wrongAnswer.length)]);
+        answers.add(wrongAnswer[generator.nextInt(wrongAnswer.length)]);
+        answers.add(wrongAnswer[generator.nextInt(wrongAnswer.length)]);
+        answers.add( word.getWord());
+
+
+        answersTempId.add(0);
+        answersTempId.add(1);
+        answersTempId.add(2);
+        answersTempId.add(3);
+    }
+
+    public void initializeArray(int[] selectedWordIds) {
+        selectedWordIds[0]= -1;
+        selectedWordIds[1]= -1;
+        selectedWordIds[2]= -1;
+        selectedWordIds[3]= -1;
     }
 
     public void clearSelection(RadioGroup section, int selectedId) {

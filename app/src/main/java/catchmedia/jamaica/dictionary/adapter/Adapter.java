@@ -24,7 +24,7 @@ public class Adapter extends ArrayAdapter<Word>{
 	private ArrayList<Word> originalList;
 	private ArrayList<Word> wordList;
 	private Context context;
-	private Filter filter;
+
     ArrayList<ImageInfo> info ;
 
 	public Adapter(Context context,	ArrayList<Word> wordList) {
@@ -100,63 +100,5 @@ public class Adapter extends ArrayAdapter<Word>{
             }
         }
     }
-
-    @Override
-	public Filter getFilter() {
-		// TODO Auto-generated method stub
-		
-		if(filter == null){
-			filter = new WordFilter();
-		}
-		return filter;
-	}
-	
-	private class WordFilter extends Filter{
-
-		@Override
-		protected FilterResults performFiltering(CharSequence constraint) {
-			// TODO Auto-generated method stub
-			constraint = constraint.toString().toLowerCase();
-			FilterResults result = new FilterResults();
-			if (constraint != null && constraint.toString().length() > 0) {
-				ArrayList<Word> filteredItems = new ArrayList<Word>();
-
-				for (int i = 0, l = originalList.size(); i < l; i++) {
-					Word word = originalList.get(i);
-					if (word.getWord().toLowerCase()
-							.contains(constraint))
-						filteredItems.add(word);
-				}
-				result.count = filteredItems.size();
-				result.values = filteredItems;
-			} else {
-				synchronized (this) {
-					result.values = originalList;
-					result.count = originalList.size();
-				}
-			}
-			return result;
-		}
-
-		@SuppressWarnings("unchecked")
-		@Override
-		protected void publishResults(CharSequence constraint,
-				FilterResults results) {
-			// TODO Auto-generated method stub
-			wordList = (ArrayList<Word>) results.values;
-			for(Word word: wordList)
-			{
-				Log.i("filter Result" , word.toString());
-			}
-			notifyDataSetChanged();
-			clear();
-			for (int i = 0, l = wordList.size(); i < l; i++)
-				add(wordList.get(i));
-			notifyDataSetInvalidated();
-		}
-
-		
-		
-	}
 
 }

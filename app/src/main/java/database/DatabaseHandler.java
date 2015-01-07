@@ -36,10 +36,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 			+ " integer," + KEY_AudioFile + " TEXT," + KEY_CATEGORY + " TEXT "
 			+ ")";
 
-	private static final String KEY_LESSON_ID = "lessonId";
-
-
-
 	// private static final String LOG = DatabaseHandler.class.getName();
 	// Database Version
 	private static final int DATABASE_VERSION = 7;
@@ -55,14 +51,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	public void onCreate(SQLiteDatabase db) {
 		// creating required tables
 		db.execSQL(CREATE_TABLE_WORD);
-
 	}
 
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
 		db.execSQL("DROP TABLE IF EXISTS " + TABLE_WORD);
-
 		// create table
 		onCreate(db);
 	}

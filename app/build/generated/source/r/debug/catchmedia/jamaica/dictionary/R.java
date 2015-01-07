@@ -44,120 +44,6 @@ containing a value of this type.
 </table>
          */
         public static final int alignmentMode=0x7f010007;
-        /** <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
-<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
-</table>
-         */
-        public static final int appTheme=0x7f010022;
-        /** <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
-<tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
-</table>
-         */
-        public static final int buyButtonAppearance=0x7f010029;
-        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-<p>May be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
-<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
-</table>
-         */
-        public static final int buyButtonHeight=0x7f010026;
-        /** <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
-<tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
-<tr><td><code>book_now</code></td><td>3</td><td></td></tr>
-<tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
-</table>
-         */
-        public static final int buyButtonText=0x7f010028;
-        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-<p>May be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
-<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
-</table>
-         */
-        public static final int buyButtonWidth=0x7f010027;
-        /** <p>Must be a floating point value, such as "<code>1.2</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int cameraBearing=0x7f010013;
-        /** <p>Must be a floating point value, such as "<code>1.2</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int cameraTargetLat=0x7f010014;
-        /** <p>Must be a floating point value, such as "<code>1.2</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int cameraTargetLng=0x7f010015;
-        /** <p>Must be a floating point value, such as "<code>1.2</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int cameraTilt=0x7f010016;
-        /** <p>Must be a floating point value, such as "<code>1.2</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int cameraZoom=0x7f010017;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -182,33 +68,6 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int columnOrderPreserved=0x7f010009;
-        /** <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>production</code></td><td>1</td><td></td></tr>
-<tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
-<tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
-</table>
-         */
-        public static final int environment=0x7f010023;
-        /** <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
-<tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
-</table>
-         */
-        public static final int fragmentMode=0x7f010025;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int fragmentStyle=0x7f010024;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -284,72 +143,6 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int layout_rowSpan=0x7f01000b;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int liteMode=0x7f010018;
-        /** <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>none</code></td><td>0</td><td></td></tr>
-<tr><td><code>normal</code></td><td>1</td><td></td></tr>
-<tr><td><code>satellite</code></td><td>2</td><td></td></tr>
-<tr><td><code>terrain</code></td><td>3</td><td></td></tr>
-<tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
-</table>
-         */
-        public static final int mapType=0x7f010012;
-        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         */
-        public static final int maskedWalletDetailsBackground=0x7f01002c;
-        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         */
-        public static final int maskedWalletDetailsButtonBackground=0x7f01002e;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int maskedWalletDetailsButtonTextAppearance=0x7f01002d;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f01002b;
-        /** <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
-</table>
-         */
-        public static final int maskedWalletDetailsLogoImageType=0x7f010030;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int maskedWalletDetailsLogoTextColor=0x7f01002f;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int maskedWalletDetailsTextAppearance=0x7f01002a;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -384,79 +177,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiCompass=0x7f010019;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int uiMapToolbar=0x7f010021;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int uiRotateGestures=0x7f01001a;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int uiScrollGestures=0x7f01001b;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int uiTiltGestures=0x7f01001c;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int uiZoomControls=0x7f01001d;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int uiZoomGestures=0x7f01001e;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
         public static final int useDefaultMargins=0x7f010006;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int useViewLifecycle=0x7f01001f;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int zOrderOnTop=0x7f010020;
     }
     public static final class color {
         public static final int common_action_bar_splitter=0x7f050000;
@@ -469,30 +190,15 @@ containing a value of this type.
         public static final int common_signin_btn_light_text_disabled=0x7f050007;
         public static final int common_signin_btn_light_text_focused=0x7f050008;
         public static final int common_signin_btn_light_text_pressed=0x7f050009;
-        public static final int common_signin_btn_text_dark=0x7f05001e;
-        public static final int common_signin_btn_text_light=0x7f05001f;
+        public static final int common_signin_btn_text_dark=0x7f050011;
+        public static final int common_signin_btn_text_light=0x7f050012;
         public static final int genre=0x7f05000a;
         public static final int list_divider=0x7f05000b;
         public static final int list_row_end_color=0x7f05000c;
         public static final int list_row_hover_end_color=0x7f05000d;
         public static final int list_row_hover_start_color=0x7f05000e;
         public static final int list_row_start_color=0x7f05000f;
-        public static final int wallet_bright_foreground_disabled_holo_light=0x7f050010;
-        public static final int wallet_bright_foreground_holo_dark=0x7f050011;
-        public static final int wallet_bright_foreground_holo_light=0x7f050012;
-        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f050013;
-        public static final int wallet_dim_foreground_holo_dark=0x7f050014;
-        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f050015;
-        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f050016;
-        public static final int wallet_highlighted_text_holo_dark=0x7f050017;
-        public static final int wallet_highlighted_text_holo_light=0x7f050018;
-        public static final int wallet_hint_foreground_holo_dark=0x7f050019;
-        public static final int wallet_hint_foreground_holo_light=0x7f05001a;
-        public static final int wallet_holo_blue_light=0x7f05001b;
-        public static final int wallet_link_text_light=0x7f05001c;
-        public static final int wallet_primary_text_holo_light=0x7f050020;
-        public static final int wallet_secondary_text_holo_dark=0x7f050021;
-        public static final int year=0x7f05001d;
+        public static final int year=0x7f050010;
     }
     public static final class dimen {
         public static final int TypeOfWord=0x7f060000;
@@ -502,162 +208,188 @@ containing a value of this type.
         public static final int title=0x7f060004;
     }
     public static final class drawable {
-        public static final int ackee_jamaicaword=0x7f020000;
-        public static final int action_search=0x7f020001;
-        public static final int appletonestate_gallery=0x7f020002;
-        public static final int apptheme_btn_default_holo_dark=0x7f020003;
-        public static final int backgradient=0x7f020004;
-        public static final int beach_gallery=0x7f020005;
-        public static final int bulla_jamaicaword=0x7f020006;
-        public static final int carinval_gallery=0x7f020007;
-        public static final int common_full_open_on_phone=0x7f020008;
-        public static final int common_ic_googleplayservices=0x7f020009;
-        public static final int common_signin_btn_icon_dark=0x7f02000a;
-        public static final int common_signin_btn_icon_disabled_dark=0x7f02000b;
-        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f02000c;
-        public static final int common_signin_btn_icon_disabled_focus_light=0x7f02000d;
-        public static final int common_signin_btn_icon_disabled_light=0x7f02000e;
-        public static final int common_signin_btn_icon_focus_dark=0x7f02000f;
-        public static final int common_signin_btn_icon_focus_light=0x7f020010;
-        public static final int common_signin_btn_icon_light=0x7f020011;
-        public static final int common_signin_btn_icon_normal_dark=0x7f020012;
-        public static final int common_signin_btn_icon_normal_light=0x7f020013;
-        public static final int common_signin_btn_icon_pressed_dark=0x7f020014;
-        public static final int common_signin_btn_icon_pressed_light=0x7f020015;
-        public static final int common_signin_btn_text_dark=0x7f020016;
-        public static final int common_signin_btn_text_disabled_dark=0x7f020017;
-        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020018;
-        public static final int common_signin_btn_text_disabled_focus_light=0x7f020019;
-        public static final int common_signin_btn_text_disabled_light=0x7f02001a;
-        public static final int common_signin_btn_text_focus_dark=0x7f02001b;
-        public static final int common_signin_btn_text_focus_light=0x7f02001c;
-        public static final int common_signin_btn_text_light=0x7f02001d;
-        public static final int common_signin_btn_text_normal_dark=0x7f02001e;
-        public static final int common_signin_btn_text_normal_light=0x7f02001f;
-        public static final int common_signin_btn_text_pressed_dark=0x7f020020;
-        public static final int common_signin_btn_text_pressed_light=0x7f020021;
-        public static final int dacorie=0x7f020022;
-        public static final int dophincove_gallery=0x7f020023;
-        public static final int dunsriver_gallery=0x7f020024;
-        public static final int favor_gallery=0x7f020025;
-        public static final int fimi_jamaicaword=0x7f020026;
-        public static final int fren_jamaicaword=0x7f020027;
-        public static final int gallery=0x7f020028;
-        public static final int greeting=0x7f020029;
-        public static final int higgla_jamaicaword=0x7f02002a;
-        public static final int ic_launcher=0x7f02002b;
-        public static final int ic_launcher_jamspeak=0x7f02002c;
-        public static final int ic_plusone_medium_off_client=0x7f02002d;
-        public static final int ic_plusone_small_off_client=0x7f02002e;
-        public static final int ic_plusone_standard_off_client=0x7f02002f;
-        public static final int ic_plusone_tall_off_client=0x7f020030;
-        public static final int innadilights_jamaicaword=0x7f020031;
-        public static final int irie_jamaicaword=0x7f020032;
-        public static final int jahguide_jamaicaword=0x7f020033;
-        public static final int jamaicabeach=0x7f020034;
-        public static final int jamdown_jamaicaword=0x7f020035;
-        public static final int jazzblues_gallery=0x7f020036;
-        public static final int licklemore_jamaicaword=0x7f020037;
-        public static final int lights_jamaicaword=0x7f020038;
-        public static final int linkup_jamaicaword=0x7f020039;
-        public static final int list_row_bg=0x7f02003a;
-        public static final int list_row_bg_hover=0x7f02003b;
-        public static final int list_row_selector=0x7f02003c;
-        public static final int mashitup_jamaicaword=0x7f02003d;
-        public static final int mon_jamaicaword=0x7f02003e;
-        public static final int moretime_jamaicaword=0x7f02003f;
-        public static final int myyute_jamaicaword=0x7f020040;
-        public static final int naa_jamaciaword=0x7f020041;
-        public static final int nyam_jamaicaword=0x7f020042;
-        public static final int nyami_jamaicaword=0x7f020043;
-        public static final int ochorios_gallery=0x7f020044;
-        public static final int patty=0x7f020045;
-        public static final int place_jamaciaword=0x7f020046;
-        public static final int powered_by_google_dark=0x7f020047;
-        public static final int powered_by_google_light=0x7f020048;
-        public static final int profile=0x7f020049;
-        public static final int rebelsalute_gallery=0x7f02004a;
-        public static final int rifting=0x7f02004b;
-        public static final int search=0x7f02004c;
-        public static final int shop=0x7f02004d;
-        public static final int shuffle=0x7f02004e;
-        public static final int tanks_jamaicaword=0x7f02004f;
-        public static final int wah_jamaicaword=0x7f020050;
-        public static final int wappun_jamaicaword=0x7f020051;
-        public static final int yeh_jamaicaword=0x7f020052;
+        public static final int ab_background_textured_jamspeak=0x7f020000;
+        public static final int ab_background_textured_style=0x7f020001;
+        public static final int ab_bottom_solid_jamspeak=0x7f020002;
+        public static final int ab_bottom_solid_style=0x7f020003;
+        public static final int ab_solid_jamspeak=0x7f020004;
+        public static final int ab_solid_style=0x7f020005;
+        public static final int ab_stacked_solid_jamspeak=0x7f020006;
+        public static final int ab_stacked_solid_style=0x7f020007;
+        public static final int ab_texture_tile_jamspeak=0x7f020008;
+        public static final int ab_texture_tile_style=0x7f020009;
+        public static final int ab_transparent_jamspeak=0x7f02000a;
+        public static final int ab_transparent_style=0x7f02000b;
+        public static final int ackee_jamaicaword=0x7f02000c;
+        public static final int action_search=0x7f02000d;
+        public static final int apptheme_btn_default_holo_dark=0x7f02000e;
+        public static final int backgradient=0x7f02000f;
+        public static final int btn_cab_done_default_jamspeak=0x7f020010;
+        public static final int btn_cab_done_default_style=0x7f020011;
+        public static final int btn_cab_done_focused_jamspeak=0x7f020012;
+        public static final int btn_cab_done_focused_style=0x7f020013;
+        public static final int btn_cab_done_jamspeak=0x7f020014;
+        public static final int btn_cab_done_pressed_jamspeak=0x7f020015;
+        public static final int btn_cab_done_pressed_style=0x7f020016;
+        public static final int btn_cab_done_style=0x7f020017;
+        public static final int bulla_jamaicaword=0x7f020018;
+        public static final int cab_background_bottom_jamspeak=0x7f020019;
+        public static final int cab_background_bottom_style=0x7f02001a;
+        public static final int cab_background_top_jamspeak=0x7f02001b;
+        public static final int cab_background_top_style=0x7f02001c;
+        public static final int common_full_open_on_phone=0x7f02001d;
+        public static final int common_ic_googleplayservices=0x7f02001e;
+        public static final int common_signin_btn_icon_dark=0x7f02001f;
+        public static final int common_signin_btn_icon_disabled_dark=0x7f020020;
+        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020021;
+        public static final int common_signin_btn_icon_disabled_focus_light=0x7f020022;
+        public static final int common_signin_btn_icon_disabled_light=0x7f020023;
+        public static final int common_signin_btn_icon_focus_dark=0x7f020024;
+        public static final int common_signin_btn_icon_focus_light=0x7f020025;
+        public static final int common_signin_btn_icon_light=0x7f020026;
+        public static final int common_signin_btn_icon_normal_dark=0x7f020027;
+        public static final int common_signin_btn_icon_normal_light=0x7f020028;
+        public static final int common_signin_btn_icon_pressed_dark=0x7f020029;
+        public static final int common_signin_btn_icon_pressed_light=0x7f02002a;
+        public static final int common_signin_btn_text_dark=0x7f02002b;
+        public static final int common_signin_btn_text_disabled_dark=0x7f02002c;
+        public static final int common_signin_btn_text_disabled_focus_dark=0x7f02002d;
+        public static final int common_signin_btn_text_disabled_focus_light=0x7f02002e;
+        public static final int common_signin_btn_text_disabled_light=0x7f02002f;
+        public static final int common_signin_btn_text_focus_dark=0x7f020030;
+        public static final int common_signin_btn_text_focus_light=0x7f020031;
+        public static final int common_signin_btn_text_light=0x7f020032;
+        public static final int common_signin_btn_text_normal_dark=0x7f020033;
+        public static final int common_signin_btn_text_normal_light=0x7f020034;
+        public static final int common_signin_btn_text_pressed_dark=0x7f020035;
+        public static final int common_signin_btn_text_pressed_light=0x7f020036;
+        public static final int fimi_jamaicaword=0x7f020037;
+        public static final int fren_jamaicaword=0x7f020038;
+        public static final int gallery=0x7f020039;
+        public static final int greeting=0x7f02003a;
+        public static final int higgla_jamaicaword=0x7f02003b;
+        public static final int ic_launcher=0x7f02003c;
+        public static final int ic_launcher_jamspeak=0x7f02003d;
+        public static final int ic_plusone_medium_off_client=0x7f02003e;
+        public static final int ic_plusone_small_off_client=0x7f02003f;
+        public static final int ic_plusone_standard_off_client=0x7f020040;
+        public static final int ic_plusone_tall_off_client=0x7f020041;
+        public static final int innadilights_jamaicaword=0x7f020042;
+        public static final int irie_jamaicaword=0x7f020043;
+        public static final int jahguide_jamaicaword=0x7f020044;
+        public static final int jamdown_jamaicaword=0x7f020045;
+        public static final int licklemore_jamaicaword=0x7f020046;
+        public static final int lights_jamaicaword=0x7f020047;
+        public static final int linkup_jamaicaword=0x7f020048;
+        public static final int list_focused_jamspeak=0x7f020049;
+        public static final int list_focused_style=0x7f02004a;
+        public static final int list_pressed_jamspeak=0x7f02004b;
+        public static final int list_pressed_style=0x7f02004c;
+        public static final int list_row_bg=0x7f02004d;
+        public static final int list_row_bg_hover=0x7f02004e;
+        public static final int list_row_selector=0x7f02004f;
+        public static final int mashitup_jamaicaword=0x7f020050;
+        public static final int menu_dropdown_panel_jamspeak=0x7f020051;
+        public static final int menu_dropdown_panel_style=0x7f020052;
+        public static final int mon_jamaicaword=0x7f020053;
+        public static final int moretime_jamaicaword=0x7f020054;
+        public static final int myyute_jamaicaword=0x7f020055;
+        public static final int naa_jamaciaword=0x7f020056;
+        public static final int nyam_jamaicaword=0x7f020057;
+        public static final int nyami_jamaicaword=0x7f020058;
+        public static final int patty=0x7f020059;
+        public static final int place_jamaciaword=0x7f02005a;
+        public static final int profile=0x7f02005b;
+        public static final int progress_bg_jamspeak=0x7f02005c;
+        public static final int progress_bg_style=0x7f02005d;
+        public static final int progress_horizontal_jamspeak=0x7f02005e;
+        public static final int progress_horizontal_style=0x7f02005f;
+        public static final int progress_primary_jamspeak=0x7f020060;
+        public static final int progress_primary_style=0x7f020061;
+        public static final int progress_secondary_jamspeak=0x7f020062;
+        public static final int progress_secondary_style=0x7f020063;
+        public static final int search=0x7f020064;
+        public static final int selectable_background_jamspeak=0x7f020065;
+        public static final int selectable_background_style=0x7f020066;
+        public static final int shop=0x7f020067;
+        public static final int shuffle=0x7f020068;
+        public static final int spinner_ab_default_jamspeak=0x7f020069;
+        public static final int spinner_ab_default_style=0x7f02006a;
+        public static final int spinner_ab_disabled_jamspeak=0x7f02006b;
+        public static final int spinner_ab_disabled_style=0x7f02006c;
+        public static final int spinner_ab_focused_jamspeak=0x7f02006d;
+        public static final int spinner_ab_focused_style=0x7f02006e;
+        public static final int spinner_ab_pressed_jamspeak=0x7f02006f;
+        public static final int spinner_ab_pressed_style=0x7f020070;
+        public static final int spinner_background_ab_jamspeak=0x7f020071;
+        public static final int spinner_background_ab_style=0x7f020072;
+        public static final int tab_indicator_ab_jamspeak=0x7f020073;
+        public static final int tab_indicator_ab_style=0x7f020074;
+        public static final int tab_selected_focused_jamspeak=0x7f020075;
+        public static final int tab_selected_focused_style=0x7f020076;
+        public static final int tab_selected_jamspeak=0x7f020077;
+        public static final int tab_selected_pressed_jamspeak=0x7f020078;
+        public static final int tab_selected_pressed_style=0x7f020079;
+        public static final int tab_selected_style=0x7f02007a;
+        public static final int tab_unselected_focused_jamspeak=0x7f02007b;
+        public static final int tab_unselected_focused_style=0x7f02007c;
+        public static final int tab_unselected_jamspeak=0x7f02007d;
+        public static final int tab_unselected_pressed_jamspeak=0x7f02007e;
+        public static final int tab_unselected_pressed_style=0x7f02007f;
+        public static final int tab_unselected_style=0x7f020080;
+        public static final int tanks_jamaicaword=0x7f020081;
+        public static final int wah_jamaicaword=0x7f020082;
+        public static final int wappun_jamaicaword=0x7f020083;
+        public static final int yeh_jamaicaword=0x7f020084;
     }
     public static final class id {
-        public static final int TypeOfWord=0x7f0b0041;
-        public static final int Wordname=0x7f0b0042;
-        public static final int action_profile=0x7f0b0046;
-        public static final int action_settings=0x7f0b0045;
-        public static final int adjust_height=0x7f0b0012;
-        public static final int adjust_width=0x7f0b0013;
-        public static final int alignBounds=0x7f0b0002;
-        public static final int alignMargins=0x7f0b0003;
-        public static final int answer=0x7f0b0036;
-        public static final int answer1=0x7f0b0039;
-        public static final int answer2=0x7f0b003a;
-        public static final int answer3=0x7f0b003b;
-        public static final int answer4=0x7f0b003c;
-        public static final int book_now=0x7f0b0022;
-        public static final int bottom=0x7f0b0004;
-        public static final int buyButton=0x7f0b001e;
-        public static final int buy_now=0x7f0b0023;
-        public static final int buy_with_google=0x7f0b0024;
-        public static final int center=0x7f0b0005;
-        public static final int center_horizontal=0x7f0b0006;
-        public static final int center_vertical=0x7f0b0007;
-        public static final int check=0x7f0b0035;
-        public static final int classic=0x7f0b0026;
-        public static final int clip_horizontal=0x7f0b0008;
-        public static final int clip_vertical=0x7f0b0009;
-        public static final int donate_with_google=0x7f0b0025;
-        public static final int end=0x7f0b000a;
-        public static final int fill=0x7f0b000b;
-        public static final int fill_horizontal=0x7f0b000c;
-        public static final int fill_vertical=0x7f0b000d;
-        public static final int foodImageView=0x7f0b002d;
-        public static final int foodMergeView=0x7f0b002c;
-        public static final int grayscale=0x7f0b0027;
-        public static final int greetImageView=0x7f0b0030;
-        public static final int greetingMergeView=0x7f0b002f;
-        public static final int greetingTextView=0x7f0b0031;
-        public static final int holo_dark=0x7f0b0019;
-        public static final int holo_light=0x7f0b001a;
-        public static final int horizontal=0x7f0b0000;
-        public static final int hybrid=0x7f0b0015;
-        public static final int inputSearch=0x7f0b0033;
-        public static final int left=0x7f0b000e;
-        public static final int lessonImageView=0x7f0b0037;
-        public static final int list_view=0x7f0b0032;
-        public static final int map=0x7f0b003d;
-        public static final int match_parent=0x7f0b0020;
-        public static final int monochrome=0x7f0b0028;
-        public static final int none=0x7f0b0014;
-        public static final int normal=0x7f0b0016;
-        public static final int pager=0x7f0b0034;
-        public static final int picture=0x7f0b003e;
-        public static final int production=0x7f0b001b;
-        public static final int right=0x7f0b000f;
-        public static final int sandbox=0x7f0b001c;
-        public static final int satellite=0x7f0b0017;
-        public static final int selection=0x7f0b0038;
-        public static final int selectionDetails=0x7f0b001f;
-        public static final int start=0x7f0b0010;
-        public static final int strict_sandbox=0x7f0b001d;
-        public static final int terrain=0x7f0b0018;
-        public static final int text=0x7f0b003f;
-        public static final int textView1=0x7f0b0044;
-        public static final int textView2=0x7f0b002e;
-        public static final int thingImageView=0x7f0b002a;
-        public static final int thingMergeView=0x7f0b0029;
-        public static final int thingTextView=0x7f0b002b;
-        public static final int top=0x7f0b0011;
-        public static final int vertical=0x7f0b0001;
-        public static final int wordImage=0x7f0b0040;
-        public static final int wordMeaning=0x7f0b0043;
-        public static final int wrap_content=0x7f0b0021;
+        public static final int TypeOfWord=0x7f0a002b;
+        public static final int Wordname=0x7f0a002c;
+        public static final int adView=0x7f0a0029;
+        public static final int adjust_height=0x7f0a0012;
+        public static final int adjust_width=0x7f0a0013;
+        public static final int alignBounds=0x7f0a0002;
+        public static final int alignMargins=0x7f0a0003;
+        public static final int answer=0x7f0a0022;
+        public static final int answer1=0x7f0a0025;
+        public static final int answer2=0x7f0a0026;
+        public static final int answer3=0x7f0a0027;
+        public static final int answer4=0x7f0a0028;
+        public static final int bottom=0x7f0a0004;
+        public static final int center=0x7f0a0005;
+        public static final int center_horizontal=0x7f0a0006;
+        public static final int center_vertical=0x7f0a0007;
+        public static final int check=0x7f0a0021;
+        public static final int clip_horizontal=0x7f0a0008;
+        public static final int clip_vertical=0x7f0a0009;
+        public static final int end=0x7f0a000a;
+        public static final int fill=0x7f0a000b;
+        public static final int fill_horizontal=0x7f0a000c;
+        public static final int fill_vertical=0x7f0a000d;
+        public static final int foodImageView=0x7f0a0019;
+        public static final int foodMergeView=0x7f0a0018;
+        public static final int greetImageView=0x7f0a001c;
+        public static final int greetingMergeView=0x7f0a001b;
+        public static final int greetingTextView=0x7f0a001d;
+        public static final int horizontal=0x7f0a0000;
+        public static final int inputSearch=0x7f0a001f;
+        public static final int left=0x7f0a000e;
+        public static final int lessonImageView=0x7f0a0023;
+        public static final int list_view=0x7f0a001e;
+        public static final int none=0x7f0a0014;
+        public static final int pager=0x7f0a0020;
+        public static final int right=0x7f0a000f;
+        public static final int selection=0x7f0a0024;
+        public static final int start=0x7f0a0010;
+        public static final int textView1=0x7f0a002e;
+        public static final int textView2=0x7f0a001a;
+        public static final int thingImageView=0x7f0a0016;
+        public static final int thingMergeView=0x7f0a0015;
+        public static final int thingTextView=0x7f0a0017;
+        public static final int top=0x7f0a0011;
+        public static final int vertical=0x7f0a0001;
+        public static final int wordImage=0x7f0a002a;
+        public static final int wordMeaning=0x7f0a002d;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f070000;
@@ -667,25 +399,7 @@ containing a value of this type.
         public static final int activity_fragment_word=0x7f030001;
         public static final int activity_home=0x7f030002;
         public static final int activity_home_lesson=0x7f030003;
-        public static final int activity_map=0x7f030004;
-        public static final int gridview_item=0x7f030005;
-        public static final int row_layout=0x7f030006;
-    }
-    public static final class menu {
-        public static final int forgetting=0x7f0a0000;
-        public static final int fragment_culture=0x7f0a0001;
-        public static final int fragment_lesson=0x7f0a0002;
-        public static final int fragment_word=0x7f0a0003;
-        public static final int full_image=0x7f0a0004;
-        public static final int gallery=0x7f0a0005;
-        public static final int home=0x7f0a0006;
-        public static final int home_lesson=0x7f0a0007;
-        public static final int login=0x7f0a0008;
-        public static final int main=0x7f0a0009;
-        public static final int map=0x7f0a000a;
-        public static final int progress=0x7f0a000b;
-        public static final int sign_up=0x7f0a000c;
-        public static final int word=0x7f0a000d;
+        public static final int row_layout=0x7f030004;
     }
     public static final class raw {
         public static final int gtm_analytics=0x7f040000;
@@ -709,109 +423,93 @@ containing a value of this type.
         public static final int auto_complete=0x7f08000f;
         public static final int back=0x7f080010;
         public static final int background_image=0x7f080011;
-        public static final int check=0x7f080012;
-        public static final int colorTextView=0x7f080013;
-        public static final int common_android_wear_notification_needs_update_text=0x7f080014;
-        public static final int common_android_wear_update_text=0x7f080015;
-        public static final int common_android_wear_update_title=0x7f080016;
-        public static final int common_google_play_services_enable_button=0x7f080017;
-        public static final int common_google_play_services_enable_text=0x7f080018;
-        public static final int common_google_play_services_enable_title=0x7f080019;
-        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f08001a;
-        public static final int common_google_play_services_install_button=0x7f08001b;
-        public static final int common_google_play_services_install_text_phone=0x7f08001c;
-        public static final int common_google_play_services_install_text_tablet=0x7f08001d;
-        public static final int common_google_play_services_install_title=0x7f08001e;
-        public static final int common_google_play_services_invalid_account_text=0x7f08001f;
-        public static final int common_google_play_services_invalid_account_title=0x7f080020;
-        public static final int common_google_play_services_needs_enabling_title=0x7f080021;
-        public static final int common_google_play_services_network_error_text=0x7f080022;
-        public static final int common_google_play_services_network_error_title=0x7f080023;
-        public static final int common_google_play_services_notification_needs_installation_title=0x7f080024;
-        public static final int common_google_play_services_notification_needs_update_title=0x7f080025;
-        public static final int common_google_play_services_notification_ticker=0x7f080026;
-        public static final int common_google_play_services_unknown_issue=0x7f080027;
-        public static final int common_google_play_services_unsupported_text=0x7f080028;
-        public static final int common_google_play_services_unsupported_title=0x7f080029;
-        public static final int common_google_play_services_update_button=0x7f08002a;
-        public static final int common_google_play_services_update_text=0x7f08002b;
-        public static final int common_google_play_services_update_title=0x7f08002c;
-        public static final int common_open_on_phone=0x7f08002d;
-        public static final int common_signin_button_text=0x7f08002e;
-        public static final int common_signin_button_text_long=0x7f08002f;
-        public static final int create_calendar_message=0x7f080030;
-        public static final int create_calendar_title=0x7f080031;
-        public static final int decline=0x7f080032;
-        public static final int error_field_required=0x7f080033;
-        public static final int error_incorrect_password=0x7f080034;
-        public static final int error_invalid_email=0x7f080035;
-        public static final int error_invalid_password=0x7f080036;
-        public static final int food_view=0x7f080037;
-        public static final int gallery=0x7f080038;
-        public static final int greeting_view=0x7f080039;
-        public static final int hello_world=0x7f08003a;
-        public static final int image_help=0x7f08003b;
-        public static final int jam_dictionary=0x7f08003c;
-        public static final int lesson_image_content=0x7f08003d;
-        public static final int login=0x7f08003e;
-        public static final int login_progress_signing_in=0x7f08003f;
-        public static final int map=0x7f080040;
-        public static final int maplocation=0x7f080041;
-        public static final int pass_word=0x7f080042;
-        public static final int profile=0x7f080043;
-        public static final int prompt_email=0x7f080044;
-        public static final int prompt_firstname=0x7f080045;
-        public static final int prompt_lastname=0x7f080046;
-        public static final int prompt_password=0x7f080047;
-        public static final int random=0x7f080048;
-        public static final int reset_password=0x7f080049;
-        public static final int rowItem=0x7f08004a;
-        public static final int search_word=0x7f08004b;
-        public static final int show_password=0x7f08004c;
-        public static final int sign_up=0x7f08004d;
-        public static final int store_picture_message=0x7f08004e;
-        public static final int store_picture_title=0x7f08004f;
-        public static final int thing_view=0x7f080050;
-        public static final int title_activity_forgetting=0x7f080051;
-        public static final int title_activity_fragment_culture=0x7f080052;
-        public static final int title_activity_fragment_lesson=0x7f080053;
-        public static final int title_activity_fragment_word=0x7f080054;
-        public static final int title_activity_full_image=0x7f080055;
-        public static final int title_activity_gallery=0x7f080056;
-        public static final int title_activity_home=0x7f080057;
-        public static final int title_activity_home_lesson=0x7f080058;
-        public static final int title_activity_login=0x7f080059;
-        public static final int title_activity_map=0x7f08005a;
-        public static final int title_activity_progress=0x7f08005b;
-        public static final int title_activity_sign_up=0x7f08005c;
+        public static final int banner_ad_unit_id=0x7f080012;
+        public static final int check=0x7f080013;
+        public static final int colorTextView=0x7f080014;
+        public static final int common_android_wear_notification_needs_update_text=0x7f080015;
+        public static final int common_android_wear_update_text=0x7f080016;
+        public static final int common_android_wear_update_title=0x7f080017;
+        public static final int common_google_play_services_enable_button=0x7f080018;
+        public static final int common_google_play_services_enable_text=0x7f080019;
+        public static final int common_google_play_services_enable_title=0x7f08001a;
+        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f08001b;
+        public static final int common_google_play_services_install_button=0x7f08001c;
+        public static final int common_google_play_services_install_text_phone=0x7f08001d;
+        public static final int common_google_play_services_install_text_tablet=0x7f08001e;
+        public static final int common_google_play_services_install_title=0x7f08001f;
+        public static final int common_google_play_services_invalid_account_text=0x7f080020;
+        public static final int common_google_play_services_invalid_account_title=0x7f080021;
+        public static final int common_google_play_services_needs_enabling_title=0x7f080022;
+        public static final int common_google_play_services_network_error_text=0x7f080023;
+        public static final int common_google_play_services_network_error_title=0x7f080024;
+        public static final int common_google_play_services_notification_needs_installation_title=0x7f080025;
+        public static final int common_google_play_services_notification_needs_update_title=0x7f080026;
+        public static final int common_google_play_services_notification_ticker=0x7f080027;
+        public static final int common_google_play_services_unknown_issue=0x7f080028;
+        public static final int common_google_play_services_unsupported_text=0x7f080029;
+        public static final int common_google_play_services_unsupported_title=0x7f08002a;
+        public static final int common_google_play_services_update_button=0x7f08002b;
+        public static final int common_google_play_services_update_text=0x7f08002c;
+        public static final int common_google_play_services_update_title=0x7f08002d;
+        public static final int common_open_on_phone=0x7f08002e;
+        public static final int common_signin_button_text=0x7f08002f;
+        public static final int common_signin_button_text_long=0x7f080030;
+        public static final int create_calendar_message=0x7f080031;
+        public static final int create_calendar_title=0x7f080032;
+        public static final int decline=0x7f080033;
+        public static final int error_field_required=0x7f080034;
+        public static final int error_incorrect_password=0x7f080035;
+        public static final int error_invalid_email=0x7f080036;
+        public static final int error_invalid_password=0x7f080037;
+        public static final int food_view=0x7f080038;
+        public static final int gallery=0x7f080039;
+        public static final int greeting_view=0x7f08003a;
+        public static final int hello_blank_fragment=0x7f08003b;
+        public static final int hello_world=0x7f08003c;
+        public static final int image_help=0x7f08003d;
+        public static final int jam_dictionary=0x7f08003e;
+        public static final int lesson_image_content=0x7f08003f;
+        public static final int login=0x7f080040;
+        public static final int login_progress_signing_in=0x7f080041;
+        public static final int map=0x7f080042;
+        public static final int maplocation=0x7f080043;
+        public static final int pass_word=0x7f080044;
+        public static final int profile=0x7f080045;
+        public static final int prompt_email=0x7f080046;
+        public static final int prompt_firstname=0x7f080047;
+        public static final int prompt_lastname=0x7f080048;
+        public static final int prompt_password=0x7f080049;
+        public static final int random=0x7f08004a;
+        public static final int reset_password=0x7f08004b;
+        public static final int rowItem=0x7f08004c;
+        public static final int search_word=0x7f08004d;
+        public static final int show_password=0x7f08004e;
+        public static final int sign_up=0x7f08004f;
+        public static final int store_picture_message=0x7f080050;
+        public static final int store_picture_title=0x7f080051;
+        public static final int thing_view=0x7f080052;
+        public static final int title_activity_forgetting=0x7f080053;
+        public static final int title_activity_fragment_culture=0x7f080054;
+        public static final int title_activity_fragment_lesson=0x7f080055;
+        public static final int title_activity_fragment_word=0x7f080056;
+        public static final int title_activity_full_image=0x7f080057;
+        public static final int title_activity_gallery=0x7f080058;
+        public static final int title_activity_home=0x7f080059;
+        public static final int title_activity_home_lesson=0x7f08005a;
+        public static final int title_activity_map=0x7f08005b;
+        public static final int title_activity_progress=0x7f08005c;
         public static final int title_activity_word=0x7f08005d;
         public static final int user_name=0x7f08005e;
-        public static final int wallet_buy_button_place_holder=0x7f08005f;
-        public static final int wordComplete=0x7f080060;
-        public static final int wordImage=0x7f080061;
-        public static final int wordMeaning=0x7f080062;
+        public static final int wordComplete=0x7f08005f;
+        public static final int wordImage=0x7f080060;
+        public static final int wordMeaning=0x7f080061;
     }
     public static final class style {
-        /** 
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-
-        
+        public static final int ActionBar_Solid_Style=0x7f090000;
+        public static final int Theme_IAPTheme=0x7f090001;
+        /**  Light.DarkActionBar specific 
          */
-        public static final int AppBaseTheme=0x7f090000;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
-        public static final int AppTheme=0x7f090001;
-        public static final int LoginFormContainer=0x7f090002;
-        public static final int MyActionBarTheme=0x7f090003;
-        public static final int MyCustomTheme=0x7f090004;
-        public static final int SignIn=0x7f090005;
-        public static final int Theme_IAPTheme=0x7f090006;
-        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f090007;
-        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f090008;
-        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f090009;
-        public static final int WalletFragmentDefaultStyle=0x7f09000a;
+        public static final int Theme_Style=0x7f090002;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
@@ -1230,570 +928,5 @@ containing a value of this type.
           @attr name catchmedia.jamaica.dictionary:imageAspectRatioAdjust
         */
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;
-        /** Attributes that can be used with a MapAttrs.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing catchmedia.jamaica.dictionary:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat catchmedia.jamaica.dictionary:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng catchmedia.jamaica.dictionary:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt catchmedia.jamaica.dictionary:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom catchmedia.jamaica.dictionary:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_liteMode catchmedia.jamaica.dictionary:liteMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType catchmedia.jamaica.dictionary:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass catchmedia.jamaica.dictionary:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiMapToolbar catchmedia.jamaica.dictionary:uiMapToolbar}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures catchmedia.jamaica.dictionary:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures catchmedia.jamaica.dictionary:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures catchmedia.jamaica.dictionary:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls catchmedia.jamaica.dictionary:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures catchmedia.jamaica.dictionary:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle catchmedia.jamaica.dictionary:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop catchmedia.jamaica.dictionary:zOrderOnTop}</code></td><td></td></tr>
-           </table>
-           @see #MapAttrs_cameraBearing
-           @see #MapAttrs_cameraTargetLat
-           @see #MapAttrs_cameraTargetLng
-           @see #MapAttrs_cameraTilt
-           @see #MapAttrs_cameraZoom
-           @see #MapAttrs_liteMode
-           @see #MapAttrs_mapType
-           @see #MapAttrs_uiCompass
-           @see #MapAttrs_uiMapToolbar
-           @see #MapAttrs_uiRotateGestures
-           @see #MapAttrs_uiScrollGestures
-           @see #MapAttrs_uiTiltGestures
-           @see #MapAttrs_uiZoomControls
-           @see #MapAttrs_uiZoomGestures
-           @see #MapAttrs_useViewLifecycle
-           @see #MapAttrs_zOrderOnTop
-         */
-        public static final int[] MapAttrs = {
-            0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015,
-            0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019,
-            0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d,
-            0x7f01001e, 0x7f01001f, 0x7f010020, 0x7f010021
-        };
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#cameraBearing}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a floating point value, such as "<code>1.2</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:cameraBearing
-        */
-        public static final int MapAttrs_cameraBearing = 1;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#cameraTargetLat}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a floating point value, such as "<code>1.2</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:cameraTargetLat
-        */
-        public static final int MapAttrs_cameraTargetLat = 2;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#cameraTargetLng}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a floating point value, such as "<code>1.2</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:cameraTargetLng
-        */
-        public static final int MapAttrs_cameraTargetLng = 3;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#cameraTilt}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a floating point value, such as "<code>1.2</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:cameraTilt
-        */
-        public static final int MapAttrs_cameraTilt = 4;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#cameraZoom}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a floating point value, such as "<code>1.2</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:cameraZoom
-        */
-        public static final int MapAttrs_cameraZoom = 5;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#liteMode}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:liteMode
-        */
-        public static final int MapAttrs_liteMode = 6;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#mapType}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>none</code></td><td>0</td><td></td></tr>
-<tr><td><code>normal</code></td><td>1</td><td></td></tr>
-<tr><td><code>satellite</code></td><td>2</td><td></td></tr>
-<tr><td><code>terrain</code></td><td>3</td><td></td></tr>
-<tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
-</table>
-          @attr name catchmedia.jamaica.dictionary:mapType
-        */
-        public static final int MapAttrs_mapType = 0;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiCompass}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiCompass
-        */
-        public static final int MapAttrs_uiCompass = 7;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiMapToolbar}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiMapToolbar
-        */
-        public static final int MapAttrs_uiMapToolbar = 15;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiRotateGestures}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiRotateGestures
-        */
-        public static final int MapAttrs_uiRotateGestures = 8;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiScrollGestures}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiScrollGestures
-        */
-        public static final int MapAttrs_uiScrollGestures = 9;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiTiltGestures}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiTiltGestures
-        */
-        public static final int MapAttrs_uiTiltGestures = 10;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiZoomControls}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiZoomControls
-        */
-        public static final int MapAttrs_uiZoomControls = 11;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiZoomGestures}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiZoomGestures
-        */
-        public static final int MapAttrs_uiZoomGestures = 12;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#useViewLifecycle}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:useViewLifecycle
-        */
-        public static final int MapAttrs_useViewLifecycle = 13;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#zOrderOnTop}
-          attribute's value can be found in the {@link #MapAttrs} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:zOrderOnTop
-        */
-        public static final int MapAttrs_zOrderOnTop = 14;
-        /** Attributes that can be used with a WalletFragmentOptions.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_appTheme catchmedia.jamaica.dictionary:appTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_environment catchmedia.jamaica.dictionary:environment}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode catchmedia.jamaica.dictionary:fragmentMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle catchmedia.jamaica.dictionary:fragmentStyle}</code></td><td></td></tr>
-           </table>
-           @see #WalletFragmentOptions_appTheme
-           @see #WalletFragmentOptions_environment
-           @see #WalletFragmentOptions_fragmentMode
-           @see #WalletFragmentOptions_fragmentStyle
-         */
-        public static final int[] WalletFragmentOptions = {
-            0x7f010022, 0x7f010023, 0x7f010024, 0x7f010025
-        };
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#appTheme}
-          attribute's value can be found in the {@link #WalletFragmentOptions} array.
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
-<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
-</table>
-          @attr name catchmedia.jamaica.dictionary:appTheme
-        */
-        public static final int WalletFragmentOptions_appTheme = 0;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#environment}
-          attribute's value can be found in the {@link #WalletFragmentOptions} array.
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>production</code></td><td>1</td><td></td></tr>
-<tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
-<tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
-</table>
-          @attr name catchmedia.jamaica.dictionary:environment
-        */
-        public static final int WalletFragmentOptions_environment = 1;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#fragmentMode}
-          attribute's value can be found in the {@link #WalletFragmentOptions} array.
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
-<tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
-</table>
-          @attr name catchmedia.jamaica.dictionary:fragmentMode
-        */
-        public static final int WalletFragmentOptions_fragmentMode = 3;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#fragmentStyle}
-          attribute's value can be found in the {@link #WalletFragmentOptions} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name catchmedia.jamaica.dictionary:fragmentStyle
-        */
-        public static final int WalletFragmentOptions_fragmentStyle = 2;
-        /** Attributes that can be used with a WalletFragmentStyle.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance catchmedia.jamaica.dictionary:buyButtonAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight catchmedia.jamaica.dictionary:buyButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText catchmedia.jamaica.dictionary:buyButtonText}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth catchmedia.jamaica.dictionary:buyButtonWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground catchmedia.jamaica.dictionary:maskedWalletDetailsBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground catchmedia.jamaica.dictionary:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance catchmedia.jamaica.dictionary:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance catchmedia.jamaica.dictionary:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType catchmedia.jamaica.dictionary:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor catchmedia.jamaica.dictionary:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance catchmedia.jamaica.dictionary:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
-           </table>
-           @see #WalletFragmentStyle_buyButtonAppearance
-           @see #WalletFragmentStyle_buyButtonHeight
-           @see #WalletFragmentStyle_buyButtonText
-           @see #WalletFragmentStyle_buyButtonWidth
-           @see #WalletFragmentStyle_maskedWalletDetailsBackground
-           @see #WalletFragmentStyle_maskedWalletDetailsButtonBackground
-           @see #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance
-           @see #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance
-           @see #WalletFragmentStyle_maskedWalletDetailsLogoImageType
-           @see #WalletFragmentStyle_maskedWalletDetailsLogoTextColor
-           @see #WalletFragmentStyle_maskedWalletDetailsTextAppearance
-         */
-        public static final int[] WalletFragmentStyle = {
-            0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029,
-            0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d,
-            0x7f01002e, 0x7f01002f, 0x7f010030
-        };
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#buyButtonAppearance}
-          attribute's value can be found in the {@link #WalletFragmentStyle} array.
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
-<tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
-</table>
-          @attr name catchmedia.jamaica.dictionary:buyButtonAppearance
-        */
-        public static final int WalletFragmentStyle_buyButtonAppearance = 3;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#buyButtonHeight}
-          attribute's value can be found in the {@link #WalletFragmentStyle} array.
-
-
-          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-<p>May be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
-<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
-</table>
-          @attr name catchmedia.jamaica.dictionary:buyButtonHeight
-        */
-        public static final int WalletFragmentStyle_buyButtonHeight = 0;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#buyButtonText}
-          attribute's value can be found in the {@link #WalletFragmentStyle} array.
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
-<tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
-<tr><td><code>book_now</code></td><td>3</td><td></td></tr>
-<tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
-</table>
-          @attr name catchmedia.jamaica.dictionary:buyButtonText
-        */
-        public static final int WalletFragmentStyle_buyButtonText = 2;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#buyButtonWidth}
-          attribute's value can be found in the {@link #WalletFragmentStyle} array.
-
-
-          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-<p>May be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
-<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
-</table>
-          @attr name catchmedia.jamaica.dictionary:buyButtonWidth
-        */
-        public static final int WalletFragmentStyle_buyButtonWidth = 1;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsBackground}
-          attribute's value can be found in the {@link #WalletFragmentStyle} array.
-
-
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsBackground
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsButtonBackground}
-          attribute's value can be found in the {@link #WalletFragmentStyle} array.
-
-
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsButtonBackground
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsButtonTextAppearance}
-          attribute's value can be found in the {@link #WalletFragmentStyle} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsButtonTextAppearance
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsHeaderTextAppearance}
-          attribute's value can be found in the {@link #WalletFragmentStyle} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsHeaderTextAppearance
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsLogoImageType}
-          attribute's value can be found in the {@link #WalletFragmentStyle} array.
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
-</table>
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsLogoImageType
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsLogoTextColor}
-          attribute's value can be found in the {@link #WalletFragmentStyle} array.
-
-
-          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsLogoTextColor
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
-        /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsTextAppearance}
-          attribute's value can be found in the {@link #WalletFragmentStyle} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsTextAppearance
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
     };
 }

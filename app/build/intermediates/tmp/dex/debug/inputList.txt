@@ -2,5 +2,6 @@ C:\Users\dacorie\AndroidstudioProjects\JamaicanDictionary\app\build\intermediate
 C:\Users\dacorie\AndroidstudioProjects\JamaicanDictionary\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-ebe6a5240a7b0dbcbc7dc2021c8688c8b586988a.jar
 C:\Users\dacorie\AndroidstudioProjects\JamaicanDictionary\app\build\intermediates\pre-dexed\debug\classes-1a973ed39f74753812314ba7e8da4ff137395a8c.jar
 C:\Users\dacorie\AndroidstudioProjects\JamaicanDictionary\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-300ddbeffed43cd9d2ee8e3eaec4ceb4b337cc8d.jar
+C:\Users\dacorie\AndroidstudioProjects\JamaicanDictionary\app\build\intermediates\pre-dexed\debug\classes-9eed9dc6755a8789260bad3fb96484ded450d47e.jar
 C:\Users\dacorie\AndroidstudioProjects\JamaicanDictionary\app\build\intermediates\pre-dexed\debug\classes-93d92ad0c121235be20526d2d87bde31e9cab9ac.jar
-C:\Users\dacorie\AndroidstudioProjects\JamaicanDictionary\app\build\intermediates\pre-dexed\debug\classes-7a319b14db1deb4e139ca89b22cbd813c92fd643.jar
+C:\Users\dacorie\AndroidstudioProjects\JamaicanDictionary\app\build\intermediates\pre-dexed\debug\classes-47988893c230cf7bbc94f9528aff18a5d6642ba6.jar

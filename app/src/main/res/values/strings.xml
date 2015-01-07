@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="banner_ad_unit_id">ca-app-pub-2544282160390706/4460493931</string>
 
     <!-- Strings related to login -->
 
@@ -14,15 +15,13 @@
     <string name="action_sign_in_register"><b>Sign in</b> or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="action_forgot_password">Recover lost password</string>
-    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="login_progress_signing_in">Signing in…</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
-
-
     <string name="image_help">Full size images</string>
-	<string name="search_word">Search Words</string>
+    <string name="search_word">Search Words</string>
     <string name="sign_up">Sign Up</string>
     <string name="app_name"><b>Jam Speak</b></string>
     <string name="action_settings">Settings</string>
@@ -31,7 +30,7 @@
     <string name="login"><b>Login</b></string>
     <string name="user_name">UserName</string>
     <string name="background_image">Background Image</string>
-    <string name="show_password" />
+    <string name="show_password"></string>
     <string name="reset_password">Forgot something? Reset your password</string>
     <string name="title_activity_home"><b>Home</b></string>
     <string name="a_picture">This is a picture</string>
@@ -66,9 +65,11 @@
     <string name="Logout">Logout</string>
     <string name="map"><b>Map</b></string>
     <string name="title_activity_full_image">FullImageActivity</string>
-	<string name="wordComplete">Words</string>
-	<string name="colorTextView">#ffcc33</string>
+    <string name="wordComplete">Words</string>
+    <string name="colorTextView">#ffcc33</string>
     <string name="wordImage">wordImage</string>
     <string name="wordMeaning">WordMeaning</string>
     <string name="rowItem">rowItem</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
