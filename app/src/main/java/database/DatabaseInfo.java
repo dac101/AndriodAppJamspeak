@@ -44,7 +44,7 @@ public class DatabaseInfo {
         /**
          * Things
          */
-        words.add(new Word("Mon", " can represent every person  man, woman,and child.", "Things", 1, ""));
+        words.add(new Word("Monn", " can represent every person  man, woman,and child.", "Things", 1, ""));
         words.add(new Word("Mash it up ", "Expression of doing well", "Things", 1, ""));
         words.add(new Word("Leggo", "To let go", "Things", 1, ""));
         words.add(new Word("Jamdown", "Word for Jamaica.", "Things", 1, ""));

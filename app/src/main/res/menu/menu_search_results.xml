@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="catchmedia.jamaica.dictionary.SearchResultsActivity">
+
+    <item android:id="@+id/action_search"
+    android:title="@string/action_search"
+    android:icon="@drawable/search"
+    android:actionViewClass="android.widget.SearchView"
+    android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/About_Us"
+        android:title="@string/About_Us"
+        />
+
+    <item android:id="@+id/Tell_A_Friend"
+        android:title="@string/Tell_A_Friend"
+        />
+</menu>

@@ -40,6 +40,7 @@ public class Adapter extends ArrayAdapter<Word>{
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 
+
         convertView = getRowLayoutView(convertView, parent);
         Word word = wordList.get(position);
         Field[] drawables = R.drawable.class.getFields();

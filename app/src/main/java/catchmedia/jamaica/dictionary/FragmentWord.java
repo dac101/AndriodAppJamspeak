@@ -13,7 +13,10 @@ import android.widget.ListView;
 import android.media.MediaPlayer;
 
 import java.io.IOException;
+import java.sql.Wrapper;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 import catchmedia.jamaica.dictionary.adapter.Adapter;
 import database.DatabaseHandler;
@@ -32,6 +35,8 @@ public class FragmentWord extends Fragment {
 			Bundle savedInstanceState) {
 
         ArrayList<Word>	words = (ArrayList<Word>) db.getAllWords();
+        Collections.sort(words, Word.WordNameComparator);
+
 		View rootView = inflater.inflate(R.layout.activity_fragment_word,container, false);
 		
 		listView = (ListView)rootView.findViewById(R.id.list_view);

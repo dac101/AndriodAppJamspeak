@@ -6,6 +6,6 @@
 
     <dimen name="title">17sp</dimen>
     <dimen name="TypeOfWord">15sp</dimen>
-
+    <dimen name="CatchMedia">45sp</dimen>
 
 </resources>

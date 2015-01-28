@@ -1,15 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'JamSpeak'
+            keyPassword 'davaska34'
+            storeFile file('C:/Users/dacorie/Documents/Business Related Documents/JamSpeak.jks')
+            storePassword 'davaska34'
+        }
+    }
     compileSdkVersion 'Google Inc.:Google APIs:19'
     buildToolsVersion "21.1.2"
-
     defaultConfig {
         applicationId "catchmedia.jamaica.dictionary"
         minSdkVersion 14
         targetSdkVersion 21
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -22,5 +28,4 @@ dependencies {
     compile 'com.android.support:support-v4:21.0.0'
     compile 'com.android.support:gridlayout-v7:19.1.0'
     compile 'com.google.android.gms:play-services-ads:6.5.+'
-
 }

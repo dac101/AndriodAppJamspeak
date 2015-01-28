@@ -1,9 +1,10 @@
 package database;
+import java.util.Comparator;
 
 /**
  * Created by Dacorie Smith on 10/9/13.
  */
-public class Word {
+public class Word implements Comparable<Word> {
     int id;
     String word;
     String translation;
@@ -85,5 +86,31 @@ public class Word {
 
     }
 
+    @Override
+    public int compareTo(Word another) {
 
+
+        if(this.word.toLowerCase().equals(another.word)){
+            return 0;
+        }else{
+            return -1;
+        }
+
+    }
+
+    public static Comparator<Word> WordNameComparator  = new Comparator<Word>() {
+
+        public int compare(Word word1, Word word2) {
+
+            String wordName1 = word1.getWord().toUpperCase();
+            String wordName2 = word2.getWord().toUpperCase();
+
+            //ascending order
+            return wordName1.compareTo(wordName2);
+
+             //descending order
+             // return fruitName2.compareTo(fruitName1);
+        }
+
+    };
 }
