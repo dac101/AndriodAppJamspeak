@@ -180,25 +180,26 @@ containing a value of this type.
         public static final int useDefaultMargins=0x7f010006;
     }
     public static final class color {
-        public static final int common_action_bar_splitter=0x7f060000;
-        public static final int common_signin_btn_dark_text_default=0x7f060001;
-        public static final int common_signin_btn_dark_text_disabled=0x7f060002;
-        public static final int common_signin_btn_dark_text_focused=0x7f060003;
-        public static final int common_signin_btn_dark_text_pressed=0x7f060004;
-        public static final int common_signin_btn_default_background=0x7f060005;
-        public static final int common_signin_btn_light_text_default=0x7f060006;
-        public static final int common_signin_btn_light_text_disabled=0x7f060007;
-        public static final int common_signin_btn_light_text_focused=0x7f060008;
-        public static final int common_signin_btn_light_text_pressed=0x7f060009;
-        public static final int common_signin_btn_text_dark=0x7f060011;
-        public static final int common_signin_btn_text_light=0x7f060012;
-        public static final int genre=0x7f06000a;
-        public static final int list_divider=0x7f06000b;
-        public static final int list_row_end_color=0x7f06000c;
-        public static final int list_row_hover_end_color=0x7f06000d;
-        public static final int list_row_hover_start_color=0x7f06000e;
-        public static final int list_row_start_color=0x7f06000f;
-        public static final int year=0x7f060010;
+        public static final int actionbar_text=0x7f060000;
+        public static final int common_action_bar_splitter=0x7f060001;
+        public static final int common_signin_btn_dark_text_default=0x7f060002;
+        public static final int common_signin_btn_dark_text_disabled=0x7f060003;
+        public static final int common_signin_btn_dark_text_focused=0x7f060004;
+        public static final int common_signin_btn_dark_text_pressed=0x7f060005;
+        public static final int common_signin_btn_default_background=0x7f060006;
+        public static final int common_signin_btn_light_text_default=0x7f060007;
+        public static final int common_signin_btn_light_text_disabled=0x7f060008;
+        public static final int common_signin_btn_light_text_focused=0x7f060009;
+        public static final int common_signin_btn_light_text_pressed=0x7f06000a;
+        public static final int common_signin_btn_text_dark=0x7f060012;
+        public static final int common_signin_btn_text_light=0x7f060013;
+        public static final int genre=0x7f06000b;
+        public static final int list_divider=0x7f06000c;
+        public static final int list_row_end_color=0x7f06000d;
+        public static final int list_row_hover_end_color=0x7f06000e;
+        public static final int list_row_hover_start_color=0x7f06000f;
+        public static final int list_row_start_color=0x7f060010;
+        public static final int year=0x7f060011;
     }
     public static final class dimen {
         public static final int CatchMedia=0x7f070000;
@@ -347,6 +348,7 @@ containing a value of this type.
         public static final int TypeOfWord=0x7f0c002c;
         public static final int Wordname=0x7f0c002d;
         public static final int action_search=0x7f0c002f;
+        public static final int action_settings=0x7f0c0032;
         public static final int adView=0x7f0c0022;
         public static final int adjust_height=0x7f0c0012;
         public static final int adjust_width=0x7f0c0013;
@@ -398,16 +400,24 @@ containing a value of this type.
     }
     public static final class layout {
         public static final int activity_about_us=0x7f030000;
-        public static final int activity_fragment_lesson=0x7f030001;
-        public static final int activity_fragment_word=0x7f030002;
-        public static final int activity_home=0x7f030003;
-        public static final int activity_home_lesson=0x7f030004;
-        public static final int activity_search_results=0x7f030005;
-        public static final int row_layout=0x7f030006;
+        public static final int activity_add_word_to_server=0x7f030001;
+        public static final int activity_fragment_lesson=0x7f030002;
+        public static final int activity_fragment_word=0x7f030003;
+        public static final int activity_home=0x7f030004;
+        public static final int activity_home_lesson=0x7f030005;
+        public static final int activity_map=0x7f030006;
+        public static final int activity_places_to_see=0x7f030007;
+        public static final int activity_search_results=0x7f030008;
+        public static final int activity_translator=0x7f030009;
+        public static final int row_layout=0x7f03000a;
     }
     public static final class menu {
         public static final int home_lesson=0x7f0b0000;
-        public static final int menu_search_results=0x7f0b0001;
+        public static final int menu_add_word_to_server=0x7f0b0001;
+        public static final int menu_map=0x7f0b0002;
+        public static final int menu_places_to_see=0x7f0b0003;
+        public static final int menu_search_results=0x7f0b0004;
+        public static final int menu_translator=0x7f0b0005;
     }
     public static final class raw {
         public static final int gtm_analytics=0x7f050000;
@@ -498,35 +508,37 @@ containing a value of this type.
         public static final int rowItem=0x7f090052;
         public static final int search_hint=0x7f090053;
         public static final int search_word=0x7f090054;
-        public static final int show_password=0x7f090055;
-        public static final int sign_up=0x7f090056;
-        public static final int store_picture_message=0x7f090057;
-        public static final int store_picture_title=0x7f090058;
-        public static final int thing_view=0x7f090059;
-        public static final int title_activity_about_us=0x7f09005a;
-        public static final int title_activity_forgetting=0x7f09005b;
-        public static final int title_activity_fragment_culture=0x7f09005c;
-        public static final int title_activity_fragment_lesson=0x7f09005d;
-        public static final int title_activity_fragment_word=0x7f09005e;
-        public static final int title_activity_full_image=0x7f09005f;
-        public static final int title_activity_gallery=0x7f090060;
-        public static final int title_activity_home=0x7f090061;
-        public static final int title_activity_home_lesson=0x7f090062;
-        public static final int title_activity_map=0x7f090063;
-        public static final int title_activity_progress=0x7f090064;
-        public static final int title_activity_search_results=0x7f090065;
-        public static final int title_activity_share_us=0x7f090066;
-        public static final int title_activity_word=0x7f090067;
-        public static final int user_name=0x7f090068;
-        public static final int wordComplete=0x7f090069;
-        public static final int wordImage=0x7f09006a;
-        public static final int wordMeaning=0x7f09006b;
+        public static final int send_feed_back=0x7f090055;
+        public static final int show_password=0x7f090056;
+        public static final int sign_up=0x7f090057;
+        public static final int store_picture_message=0x7f090058;
+        public static final int store_picture_title=0x7f090059;
+        public static final int thing_view=0x7f09005a;
+        public static final int title_activity_about_us=0x7f09005b;
+        public static final int title_activity_add_word_to_server=0x7f09005c;
+        public static final int title_activity_forgetting=0x7f09005d;
+        public static final int title_activity_fragment_culture=0x7f09005e;
+        public static final int title_activity_fragment_lesson=0x7f09005f;
+        public static final int title_activity_fragment_word=0x7f090060;
+        public static final int title_activity_full_image=0x7f090061;
+        public static final int title_activity_gallery=0x7f090062;
+        public static final int title_activity_home=0x7f090063;
+        public static final int title_activity_home_lesson=0x7f090064;
+        public static final int title_activity_map=0x7f090065;
+        public static final int title_activity_places_to_see=0x7f090066;
+        public static final int title_activity_progress=0x7f090067;
+        public static final int title_activity_search_results=0x7f090068;
+        public static final int title_activity_share_us=0x7f090069;
+        public static final int title_activity_translator=0x7f09006a;
+        public static final int title_activity_word=0x7f09006b;
+        public static final int user_name=0x7f09006c;
+        public static final int wordComplete=0x7f09006d;
+        public static final int wordImage=0x7f09006e;
+        public static final int wordMeaning=0x7f09006f;
     }
     public static final class style {
         public static final int ActionBar_Solid_Style=0x7f0a0000;
         public static final int Theme_IAPTheme=0x7f0a0001;
-        /**  Light.DarkActionBar specific 
-         */
         public static final int Theme_Style=0x7f0a0002;
     }
     public static final class xml {

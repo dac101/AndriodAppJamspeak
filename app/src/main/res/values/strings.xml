@@ -75,13 +75,14 @@
     <string name="action_search">Search</string>
     <string name="About_Us">About Us</string>
     <string name="Tell_A_Friend">Tell A Friend</string>
-    <string name="search_hint">Search hint</string>
-    <string name="title_activity_search_results">SearchResultsActivity</string>
+    <string name="search_hint">Search Words</string>
+    <string name="title_activity_search_results">Search Results</string>
     <string name="title_activity_about_us">AboutUs</string>
     <string name="title_activity_share_us">ShareUsActivity</string>
     <string name="catchMediaWebsite">www.catchmedia.co</string>
     <string name="catchName">CatchMedia</string>
-
-
-
+    <string name="title_activity_translator">TranslatorActivity</string>
+    <string name="title_activity_places_to_see">PlacesToSeeActivity</string>
+    <string name="title_activity_add_word_to_server">AddWordToServerActivity</string>
+    <string name="send_feed_back">Send Feedback</string>
 </resources>

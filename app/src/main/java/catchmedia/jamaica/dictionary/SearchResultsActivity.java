@@ -33,6 +33,7 @@ public class SearchResultsActivity extends Activity {
     AdView mAdView;
 
     Adapter listViewAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -46,8 +47,8 @@ public class SearchResultsActivity extends Activity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         handleIntent(getIntent());
 
-        listView = (ListView)findViewById(R.id.list_view);
-        listViewAdapter = new Adapter(getApplicationContext(),filteredWords);
+        listView = (ListView) findViewById(R.id.list_view);
+        listViewAdapter = new Adapter(getApplicationContext(), filteredWords);
         listView.setAdapter(listViewAdapter);
         listView.setTextFilterEnabled(true);
 
@@ -67,7 +68,7 @@ public class SearchResultsActivity extends Activity {
             }
         });
 
-        mAdView = (AdView)findViewById(R.id.adView);
+        mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
     }
@@ -124,12 +125,23 @@ public class SearchResultsActivity extends Activity {
             String query = intent.getStringExtra(SearchManager.QUERY);
             List<Word> words = db.getAllWords();
 
-            for(Word x : words){
-                if(x.getWord().toLowerCase().contains(query.toLowerCase())){
+            for (Word x : words) {
+                if (x.getWord().toLowerCase().contains(query.toLowerCase())) {
                     filteredWords.add(x);
                 }
             }
-            Collections.sort(filteredWords, Word.WordNameComparator);
+
+            if (filteredWords.isEmpty()) {
+                String subquery = query.substring(0,2);
+                for (Word x : words) {
+                        if (x.getWord().toLowerCase().contains(subquery.toLowerCase()))
+                        {
+                            filteredWords.add(x);
+                        }
+                    }
+                }
         }
+        Collections.sort(filteredWords, Word.WordNameComparator);
     }
 }
+

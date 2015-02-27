@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -65,7 +66,6 @@
             </intent-filter>
 
             <meta-data
-
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
         </activity>
@@ -73,9 +73,24 @@
             android:name=".AboutUs"
             android:label="@string/title_activity_about_us"
             android:parentActivityName=".HomeActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
             android:screenOrientation="portrait"
-           >
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name=".TranslatorActivity"
+            android:label="@string/title_activity_translator" >
+        </activity>
+        <activity
+            android:name=".PlacesToSeeActivity"
+            android:label="@string/title_activity_places_to_see" >
+        </activity>
+        <activity
+            android:name=".AddWordToServerActivity"
+            android:label="@string/title_activity_add_word_to_server" >
         </activity>
     </application>
 
