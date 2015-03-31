@@ -114,7 +114,6 @@ public class SearchResultsActivity extends Activity {
 
     @Override
     protected void onNewIntent(Intent intent) {
-
         handleIntent(intent);
     }
 
@@ -132,6 +131,12 @@ public class SearchResultsActivity extends Activity {
             }
 
             if (filteredWords.isEmpty()) {
+                if(query.length() <2 ){
+                    for (Word x : words) {
+                        filteredWords.add(x);
+                   }
+                    return;
+                }
                 String subquery = query.substring(0,2);
                 for (Word x : words) {
                         if (x.getWord().toLowerCase().contains(subquery.toLowerCase()))
@@ -139,7 +144,7 @@ public class SearchResultsActivity extends Activity {
                             filteredWords.add(x);
                         }
                     }
-                }
+               }
         }
         Collections.sort(filteredWords, Word.WordNameComparator);
     }

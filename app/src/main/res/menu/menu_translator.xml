@@ -1,6 +1,30 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="catchmedia.jamaica.dictionary.TranslatorActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" android:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings" />
+
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/search"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_search" />
+
+    <item
+        android:id="@+id/About_Us"
+        android:title="@string/About_Us" />
+
+    <item
+        android:id="@+id/Tell_A_Friend"
+        android:title="@string/Tell_A_Friend" />
+
+
+    <item
+        android:id="@+id/send_feed_back"
+        android:title="@string/send_feed_back" />
 </menu>

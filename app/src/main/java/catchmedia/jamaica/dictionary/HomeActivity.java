@@ -37,7 +37,7 @@ public class HomeActivity extends FragmentActivity implements
     DatabaseHandler db = new DatabaseHandler(this);
     AdView mAdView;
 
-    private String[] tabsTitles = {"Words", "Classroom" };
+    private String[] tabsTitles = {"Words", "Classroom" ,"Places"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

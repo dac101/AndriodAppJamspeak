@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import catchmedia.jamaica.dictionary.FragmentLesson;
 import catchmedia.jamaica.dictionary.FragmentWord;
+import catchmedia.jamaica.dictionary.MyPlaceFragment;
 
 public class TabsPagerAdapter  extends FragmentPagerAdapter {
 
@@ -22,6 +23,8 @@ public class TabsPagerAdapter  extends FragmentPagerAdapter {
             return new FragmentWord();
 		case 1:
             return new FragmentLesson();
+         case 2:
+          return new MyPlaceFragment();
 
 		}
 
@@ -32,7 +35,7 @@ public class TabsPagerAdapter  extends FragmentPagerAdapter {
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return 2;
+		return 3;
 	}
 
 }

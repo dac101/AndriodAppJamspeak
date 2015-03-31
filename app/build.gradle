@@ -28,4 +28,5 @@ dependencies {
     compile 'com.android.support:support-v4:21.0.0'
     compile 'com.android.support:gridlayout-v7:19.1.0'
     compile 'com.google.android.gms:play-services-ads:6.5.+'
+    compile 'com.google.android.gms:play-services-maps:6.+'
 }

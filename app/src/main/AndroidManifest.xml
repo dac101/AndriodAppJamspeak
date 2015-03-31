@@ -14,6 +14,10 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher_jamspeak"
@@ -92,6 +96,15 @@
             android:name=".AddWordToServerActivity"
             android:label="@string/title_activity_add_word_to_server" >
         </activity>
+        <!-- Goolge Maps API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAHmM1TPrxRq1a_RCqJ_Om4EwdI-P6MqKg" />
+
+        <meta-data
+            android:name ="com.google.android.gms.version"
+            android:value = "@integer/google_play_services_version"
+            />
     </application>
 
 </manifest>
