@@ -8,8 +8,8 @@ import java.util.ArrayList;
 
 public class DatabaseInfo {
 
-    public Word word;
     public ArrayList<Word> words;
+    public ArrayList<Marker> markers;
     public DatabaseHandler db;
 
     public DatabaseInfo(DatabaseHandler db) {
@@ -18,6 +18,7 @@ public class DatabaseInfo {
 
     public void insertWords() {
         words = new ArrayList<Word>();
+        markers = new ArrayList<Marker>();
         /**
          * Foods
          */
@@ -105,26 +106,40 @@ public class DatabaseInfo {
         words.add(new Word("first light", "tomorrow     ", "Things", 1, ""));
         words.add(new Word("forward", "   1. to go, move on, set out 2. in the future      ", "Things", 1, ""));
         words.add(new Word("fullness", "completely, absolutely, totally", "Things", 1, ""));
-        words.add(new Word("funds", "money ", "Things", 1, ""));
-        words.add(new Word("crucial", "serious, great, hard, dread  ", "Things", 1, ""));
-        words.add(new Word("crucial", "serious, great, hard, dread  ", "Things", 1, ""));
-        words.add(new Word("crucial", "serious, great, hard, dread  ", "Things", 1, ""));
-        words.add(new Word("crucial", "serious, great, hard, dread  ", "Things", 1, ""));
-        words.add(new Word("crucial", "serious, great, hard, dread  ", "Things", 1, ""));
-        words.add(new Word("crucial", "serious, great, hard, dread  ", "Things", 1, ""));
+        words.add(new Word("ganja", "herb, marijuana  ", "Things", 1, ""));
+        words.add(new Word("gansey ", "t-shirt, any knit shirt , great, hard, dread  ", "Things", 1, ""));
+        words.add(new Word("general ", "cool operator ", "Things", 1, ""));
+        words.add(new Word("grindsman ", "one who displays great prowess in bed", "Things", 1, ""));
+        words.add(new Word("haffi ", "to have to. ", "Things", 1, ""));
+        words.add(new Word("hail ", " a greeting  ", "Things", 1, ""));
+        words.add(new Word("hard ", "excellent, proficient, skillful, uncompromising  ", "Things", 1, ""));
+        words.add(new Word("hiez-haad   ", " ears-hard, thick skulled, stubborn, unwilling or unable to hear.", "Things", 1, ""));
+        words.add(new Word("hitey-titey  ", " upper class, high tone, stoosh.", "Things", 1, ""));
+        words.add(new Word("hot-stepper", " fugitive from jail or gun court ", "Things", 1, ""));
+        words.add(new Word("ignorant ", " short-tempered, easy to vex, irate. ", "Things", 1, ""));
+        words.add(new Word("jammin ", "to be having a good time, to be dancing calypso/soca ", "Things", 1, ""));
+        words.add(new Word("jah know   ", " lord knows   ", "Things", 1, ""));
+        words.add(new Word("jah ", "god", "Things", 1, ""));
+        words.add(new Word("jelly ", "  a young coconut, full of jelly.  ", "Things", 1, ""));
+        words.add(new Word("janga ", " shrimp, crayfish.", "Things", 1, ""));
+        words.add(new Word("jook", "to pierce or stick, as with a thorn or a long pointed sti", "Things", 1, ""));
+        words.add(new Word("judgin", "adjective, everyday or ordinary clothes or shoes worn in the yard  ","Things", 1, ""));
+        words.add(new Word("kallaloo ", "a dark, green leafy vegetable, very nutritious and cheap.   ", "Things", 1, ""));
+        words.add(new Word("kiss me neck!", "common exclamation of surprise.  ", "Things", 1, ""));
+        words.add(new Word("Kiss teet", "hissing noise of disappoval, dislike, vexation or disappointment", "Things", 1, ""));
+        words.add(new Word("ku deh! ", "look at", "Things", 1, ""));
+        words.add(new Word("ku ya!", "look here!  ", "Expression", 1, ""));
 
-
-
-
-
-
-
-
-
-
+        /*Place */
+        markers.add(new Marker("discovery bay St.ann",-77.3995230,18.4603030,"Antonet Bar","antonetbar@gmail.com","antonetbar.com","813-1787",1,"Sport's bar"));
 
         for (Word x : words) {
             db.createWord(x);
+        }
+
+        for(Marker x : markers )
+        {
+            db.createMarker(x);
         }
     }
 }

@@ -6,19 +6,85 @@ package database;
 public class Marker {
     int id;
     String address;
-    float longitude;
-    float latitude;
+    double longitude;
+    double latitude;
     String Name;
     String email;
     String website;
     String number;
+    int isTopRated;
+    String type;
+    String icon;
 
+    public Marker(int id, String address, double longitude, double latitude, String name, String email, String website, String number, int isTopRated, String type, String icon) {
+        this.id = id;
+        this.address = address;
+        this.longitude = longitude;
+        this.latitude = latitude;
+        Name = name;
+        this.email = email;
+        this.website = website;
+        this.number = number;
+        this.isTopRated = isTopRated;
+        this.type = type;
+        this.icon = icon;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
+    }
+
+    public int isTopRated() {
+        return isTopRated;
+    }
+
+    public void setTopRated(int isTopRated) {
+        this.isTopRated = isTopRated;
+    }
+
+
+
+    public Marker(String address, double longitude, double latitude, String name, String email, String website, String number, int isTopRated, String type) {
+        this.address = address;
+        this.longitude = longitude;
+        this.latitude = latitude;
+        this.Name = name;
+        this.email = email;
+        this.website = website;
+        this.number = number;
+        this.isTopRated = isTopRated;
+        this.type = type;
+    }
+
+    public Marker(int id, String address, double longitude, double latitude, String name, String email, String website, String number, int isTopRated) {
+        this.id = id;
+        this.address = address;
+        this.longitude = longitude;
+        this.latitude = latitude;
+        Name = name;
+        this.email = email;
+        this.website = website;
+        this.number = number;
+        this.isTopRated = isTopRated;
+    }
 
     public String getEmail() {
         return email;
     }
 
-    public Marker(int id, String address, float longitude, float latitude, String name, String email, String website, String number) {
+    public Marker(int id, String address, double longitude, double latitude, String name, String email, String website, String number) {
 
         this.id = id;
         this.address = address;
@@ -29,6 +95,9 @@ public class Marker {
         this.website = website;
         this.number = number;
     }
+
+
+
 
     public void setEmail(String email) {
         email = email;
@@ -77,16 +146,16 @@ public class Marker {
     public void setAddress(String address) {
         this.address = address;
     }
-    public float getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
-    public void setLongitude(float longitude) {
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
-    public float getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
-    public void setLatitude(float latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
     public String getName() {
@@ -95,7 +164,7 @@ public class Marker {
     public void setName(String name) {
         Name = name;
     }
-    public Marker(int id, String address, float longitude, float latitude,
+    public Marker(int id, String address, double longitude, double latitude,
                   String name) {
         super();
         this.id = id;

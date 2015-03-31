@@ -46,6 +46,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_EMAIL = "email";
     private static final String KEY_WEBSITE = "website";
     private static final String KEY_NUMBER = "number";
+    private static final String KEY_MARKERS_ISTOPRATED= "isTopRated";
+    private static final String KEY_MARKERS_BUSINESS_TYPE= "type";
+    private static final String KEY_MARKERS_ICON= "icon";
+
 
     private static final String CREATE_TABLE_MARKERS = "CREATE TABLE "
             + TABLE_MARKERS + "("
@@ -56,10 +60,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             + KEY_MARKERS_NAME + " Text, "
             +  KEY_EMAIL + " text,"
             + KEY_WEBSITE + " text,"
-            + KEY_NUMBER + " text"
+            + KEY_NUMBER + " text,"
+            + KEY_MARKERS_ISTOPRATED + " integer,"
+            + KEY_MARKERS_BUSINESS_TYPE + " text,"
+            + KEY_MARKERS_ICON + " text "
             +")";
 	// Database Version
-	private static final int DATABASE_VERSION = 8;
+	private static final int DATABASE_VERSION = 9;
 
 	// Database Name
 	private static final String DATABASE_NAME = "jamaicaDictionary";
@@ -183,6 +190,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_EMAIL, marker.getEmail());
         values.put(KEY_NUMBER, marker.getNumber());
         values.put(KEY_WEBSITE, marker.getWebsite());
+        values.put(KEY_MARKERS_BUSINESS_TYPE, marker.getType());
+        values.put(KEY_MARKERS_ICON, marker.getIcon());
+        values.put(KEY_MARKERS_ISTOPRATED, marker.isTopRated());
+
         db.insert(TABLE_MARKERS, null, values);
         db.close();
     }
@@ -205,6 +216,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 t.setEmail(c.getString(c.getColumnIndex(KEY_EMAIL)));
                 t.setWebsite(c.getString(c.getColumnIndex(KEY_WEBSITE)));
                 t.setNumber(c.getString(c.getColumnIndex(KEY_NUMBER)));
+                t.setIcon(c.getString(c.getColumnIndex(KEY_MARKERS_ICON)));
+                t.setTopRated(c.getInt(c.getColumnIndex(KEY_MARKERS_ISTOPRATED)));
+                t.setType(c.getString(c.getColumnIndex(KEY_MARKERS_BUSINESS_TYPE)));
                 word.add(t);
             } while (c.moveToNext());
         }
@@ -230,6 +244,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 t.setEmail(c.getString(c.getColumnIndex(KEY_EMAIL)));
                 t.setWebsite(c.getString(c.getColumnIndex(KEY_WEBSITE)));
                 t.setName(c.getString(c.getColumnIndex(KEY_MARKERS_NAME)));
+                t.setIcon(c.getString(c.getColumnIndex(KEY_MARKERS_ICON)));
+                t.setTopRated(c.getInt(c.getColumnIndex(KEY_MARKERS_ISTOPRATED)));
+                t.setType(c.getString(c.getColumnIndex(KEY_MARKERS_BUSINESS_TYPE)));
                 word.add(t);
             } while (c.moveToNext());
         }
@@ -249,7 +266,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_EMAIL, marker.getEmail());
         values.put(KEY_NUMBER, marker.getNumber());
         values.put(KEY_WEBSITE, marker.getWebsite());
-
+        values.put(KEY_MARKERS_BUSINESS_TYPE, marker.getType());
+        values.put(KEY_MARKERS_ICON, marker.getIcon());
+        values.put(KEY_MARKERS_ISTOPRATED, marker.isTopRated());
 
         // updating row
         return db.update(TABLE_MARKERS, values, KEY_ID + " = ?",
