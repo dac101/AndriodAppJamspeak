@@ -102,6 +102,10 @@
             android:value="AIzaSyAHmM1TPrxRq1a_RCqJ_Om4EwdI-P6MqKg" />
 
         <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAaJSvvwj8a6-1sqqGAQbNs4MY90_qgRN"/>
+
+        <meta-data
             android:name ="com.google.android.gms.version"
             android:value = "@integer/google_play_services_version"
             />

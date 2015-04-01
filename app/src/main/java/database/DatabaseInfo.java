@@ -130,8 +130,34 @@ public class DatabaseInfo {
         words.add(new Word("ku deh! ", "look at", "Things", 1, ""));
         words.add(new Word("ku ya!", "look here!  ", "Expression", 1, ""));
 
+        words.add(new Word("ku", "look ", "Expression", 1, ""));
+        words.add(new Word("kya ", "to care; donkya, don't care, careless;  ", "Expression", 1, ""));
+        words.add(new Word("kyaan", "can't  ", "Expression", 1, ""));
+        words.add(new Word("Kyai", "to carry ", "Expression", 1, ""));
+        words.add(new Word("kyan ", "can", "Expression", 1, ""));
+        words.add(new Word("laba-laba", "to chat,gab;gossip", "Expression", 1, ""));
+        words.add(new Word("labrish", "gossip,chit-chat ", "Expression", 1, ""));
+        words.add(new Word("large ", "respected ", "Expression", 1, ""));
+        words.add(new Word("leggo beas", "wild, disorderly, like a let-go beast ", "Expression", 1, ""));
+        words.add(new Word("licky-licky", "fawning,flattering,obsequious", "Expression", 1, ""));
+        words.add(new Word("lilly bit ", "little bit, tiny", "Expression", 1, ""));
+        words.add(new Word("(too) likky-likky", "look here!  ", "Expression", 1, ""));
+        words.add(new Word("maama man", "a gay person, an effeminate man, a weakling   ", "Expression", 1, ""));
+        words.add(new Word("maca ", "thorn, prickle.   ", "Expression", 1, ""));
+        words.add(new Word("madda ", "mother", "Expression", 1, ""));
+        words.add(new Word("maga dog ", "    mongrel  ", "Expression", 1, ""));
+        words.add(new Word("maga ", "thin", "Expression", 1, ""));
+        words.add(new Word("marina ", "look here!  ", "a man's undershirt, guernsey; a tank-top style", 1, ""));
+        words.add(new Word("no true? ", "isn't it so?   ", "Expression", 1, ""));
+        words.add(new Word("monks  ", "amongst", "Expression", 1, ""));
+        words.add(new Word("mash up, mash down  ", "destroy", "Expression", 1, ""));
+
         /*Place */
         markers.add(new Marker("discovery bay St.ann",-77.3995230,18.4603030,"Antonet Bar","antonetbar@gmail.com","antonetbar.com","813-1787",1,"Sport's bar"));
+        markers.add(new Marker("Appleton Estate",-77.7529073,18.1640921,"Appleton Sugar and Rum Factory","","","(876) 963-9215",1,"Agriculture"));
+        markers.add(new Marker("Discovery Bay ",-77.374478,18.460723,"green grotto caves jamaica ","","","",1,"Beach"));
+        markers.add(new Marker("Ocho Rios",-77.134854,18.414845,"Dunn's River Falls  ","","","",1,"Beach"));
+        markers.add(new Marker("Ocho Rios",-77.13036,18.417266,"Dolphin Cove","","","",1,"Beach"));
 
         for (Word x : words) {
             db.createWord(x);

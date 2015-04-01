@@ -16,12 +16,22 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONObject;
+
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
 import database.DatabaseHandler;
 import database.Marker;
+import utility.GooglePlaces;
 import utility.ImageInfo;
 
 
@@ -43,6 +53,38 @@ public class MyPlaceFragment extends Fragment {
         GridView gridView = (GridView)rootView.findViewById(R.id.grid_view);
 
         getImages("a");
+        GooglePlaces x = new GooglePlaces();
+        JSONObject y =x.getValue();
+        Log.d("Places",y + "");
+
+        RequestQueue queue = Volley.newRequestQueue(this.getActivity().getApplicationContext());
+
+        JsonObjectRequest jsObjRequest = new JsonObjectRequest
+                (Request.Method.GET, "https://maps.googleapis.com/maps/api/place/search/json?location=-33.88471,151.218237&radius=100&sensor=true&key=AIzaSyAHmM1TPrxRq1a_RCqJ_Om4EwdI-P6MqKg", null, new Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Log.e(response + "", "places");
+                        System.out.println("Response: " + response.toString());
+
+                    }
+                }, new Response.ErrorListener() {
+
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // TODO Auto-generated method stub
+
+                    }
+                });
+
+        queue.add(jsObjRequest);
+
+
+
+
+
+
+
         gridView.setAdapter(new MyAdapter(rootView.getContext(),info));
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
