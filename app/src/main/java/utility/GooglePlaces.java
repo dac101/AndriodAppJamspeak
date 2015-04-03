@@ -32,6 +32,7 @@ public class GooglePlaces {
     private double _longitude;
     private double _radius;
     public JSONObject d;
+
     public JSONObject getValue(){
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest

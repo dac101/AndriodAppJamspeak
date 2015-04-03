@@ -152,12 +152,38 @@ public class DatabaseInfo {
         words.add(new Word("monks  ", "amongst", "Expression", 1, ""));
         words.add(new Word("mash up, mash down  ", "destroy", "Expression", 1, ""));
 
+
+        words.add(new Word("no kya  ", " no matter, as in no kya weh im tun, no matter where he turns.   ", "Expression", 1, ""));
+        words.add(new Word("obeah   ", " traditional african science", "Expression", 1, ""));
+        words.add(new Word("ongle   ", "only", "Expression", 1, ""));
+        words.add(new Word("patu   ", "owl", "Expression", 1, ""));
+        words.add(new Word("peenywally   ", "a kind of large fire fly, actually a type of flying beetle", "Expression", 1, ""));
+        words.add(new Word("peer   ", "avocado pear", "Expression", 1, ""));
+        words.add(new Word("picky  ", " brush haircut ", "Expression", 1, ""));
+        words.add(new Word("picky-picky  ", "finicky or choosy ", "Expression", 1, ""));
+        words.add(new Word("pikny   ", "child", "Thing", 1, ""));
+        words.add(new Word("pinda   ", "peanut", "Expression", 1, ""));
+        words.add(new Word("polytricks   ", "politicians", "Expression", 1, ""));
+        words.add(new Word("poppy-show    ", " make fun of someone", "Expression", 1, ""));
+        words.add(new Word("pum-pum    ", "a woman's genitals", "Expression", 1, ""));
+        words.add(new Word("punaani or punni   ", "  a woman's genitals ", "Expression", 1, ""));
+        words.add(new Word("puttin' away   ", "a preposition, meaning except for, or except.", "Expression", 1, ""));
+        words.add(new Word("pyaa-pyaa     ", " sickly, weak; feeble, of no account. ", "Expression", 1, ""));
+        words.add(new Word("raatid!   ", "a common mild expletive of surprise or vexation", "Expression", 1, ""));
+        words.add(new Word("ranking   ", "  highly respected ", "Expression", 1, ""));
+        words.add(new Word("ras or rass  ", " backside, rump", "Expression", 1, ""));
+        words.add(new Word("(to) raas     ", "really?, damn!  ", "Expression", 1, ""));
+        words.add(new Word("rat-bat  ", "bat, the night-flying rodent.", "Expression", 1, ""));
+
         /*Place */
         markers.add(new Marker("discovery bay St.ann",-77.3995230,18.4603030,"Antonet Bar","antonetbar@gmail.com","antonetbar.com","813-1787",1,"Sport's bar"));
         markers.add(new Marker("Appleton Estate",-77.7529073,18.1640921,"Appleton Sugar and Rum Factory","","","(876) 963-9215",1,"Agriculture"));
         markers.add(new Marker("Discovery Bay ",-77.374478,18.460723,"green grotto caves jamaica ","","","",1,"Beach"));
         markers.add(new Marker("Ocho Rios",-77.134854,18.414845,"Dunn's River Falls  ","","","",1,"Beach"));
         markers.add(new Marker("Ocho Rios",-77.13036,18.417266,"Dolphin Cove","","","",1,"Beach"));
+        markers.add(new Marker("Falmouth",-77.62835,18.48295,"Glistening Waters ","","","",1,"Restaurant"));
+        markers.add(new Marker("Ocho Rios",-77.125971,18.414132,"Mystic Mountain","","","",1,"Beach"));
+        markers.add(new Marker("Portland",-76.3869172,18.1702993,"Blue Lagoon","","","",1,"Beach"));
 
         for (Word x : words) {
             db.createWord(x);
