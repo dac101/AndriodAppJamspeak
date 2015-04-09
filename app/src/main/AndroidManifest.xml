@@ -99,11 +99,11 @@
         <!-- Goolge Maps API Key -->
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyAHmM1TPrxRq1a_RCqJ_Om4EwdI-P6MqKg" />
+            android:value="AIzaSyAs_8InaZfPDzmaD1d9N4ZwXs5dgOB2_gs" />
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAaJSvvwj8a6-1sqqGAQbNs4MY90_qgRN"/>
+        <!--<meta-data-->
+            <!--android:name="com.google.android.geo.API_KEY"-->
+            <!--android:value="AIzaSyAaJSvvwj8a6-1sqqGAQbNs4MY90_qgRN"/>-->
 
         <meta-data
             android:name ="com.google.android.gms.version"

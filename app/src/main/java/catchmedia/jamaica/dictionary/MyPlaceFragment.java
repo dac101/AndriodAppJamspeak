@@ -1,12 +1,9 @@
 package catchmedia.jamaica.dictionary;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,13 +13,6 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-
 import org.json.JSONObject;
 
 import java.lang.reflect.Field;
@@ -31,90 +21,69 @@ import java.util.List;
 
 import database.DatabaseHandler;
 import database.Marker;
-import utility.GooglePlaces;
 import utility.ImageInfo;
 
 
 public class MyPlaceFragment extends Fragment {
 
-
+     JSONObject places;
     public MyPlaceFragment() {
         // Required empty public constructor
     }
+
     ArrayList<ImageInfo> info = new ArrayList<ImageInfo>();
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
 
-
         final View rootView = inflater.inflate(R.layout.fragment_my_place, container, false);
-        GridView gridView = (GridView)rootView.findViewById(R.id.grid_view);
+        GridView gridView = (GridView) rootView.findViewById(R.id.grid_view);
 
-        getImages("a");
-        GooglePlaces x = new GooglePlaces();
-        JSONObject y =x.getValue();
-        Log.d("Places",y + "");
+        getImages("travel");
+        //GooglePlaces place = new GooglePlaces();
 
-        RequestQueue queue = Volley.newRequestQueue(this.getActivity().getApplicationContext());
-
-        JsonObjectRequest jsObjRequest = new JsonObjectRequest
-                (Request.Method.GET, "https://maps.googleapis.com/maps/api/place/search/json?location=-33.88471,151.218237&radius=100&sensor=true&key=AIzaSyAHmM1TPrxRq1a_RCqJ_Om4EwdI-P6MqKg", null, new Response.Listener<JSONObject>() {
-
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        Log.e(response + "", "places");
-                        System.out.println("Response: " + response.toString());
-
-                    }
-                }, new Response.ErrorListener() {
-
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        // TODO Auto-generated method stub
-
-                    }
-                });
-
-        queue.add(jsObjRequest);
+      //
+      // places = place.getValue(this.getActivity().getApplicationContext());
 
 
 
-
-
-
-
-        gridView.setAdapter(new MyAdapter(rootView.getContext(),info));
+        gridView.setAdapter(new MyAdapter(rootView.getContext(), info));
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View v,
-                                    int position, long id) {
-
-                List<Marker> markers = new ArrayList<Marker>();
+            public void onItemClick(AdapterView<?> parent, View v,int position, long id) {
+                List<Marker> markers;
                 DatabaseHandler db = new DatabaseHandler(rootView.getContext());
                 Marker mark = new Marker();
                 markers = db.getAllMarker();
-                for(Marker x : markers){
-                    if(x.getName().contains(info.get(position).getName())){
+
+                for (Marker x : markers) {
+                    if (x.getName().contains(info.get(position).getName())) {
                         mark = x;
                         break;
                     }
-
                 }
+                if (mark.getLatitude() == 0.0)
+                {
+                    mark= markers.get(1);
+                }
+
                 // Sending intent
                 Intent i = new Intent(getActivity(),
                         MapActivity.class);
                 // passing array index
                 i.putExtra("longitude", mark.getLongitude());
                 i.putExtra("latitude", mark.getLatitude());
-                i.putExtra("website",mark.getWebsite());
-                i.putExtra("number",mark.getNumber());
-                i.putExtra("email",mark.getEmail());
-                i.putExtra("name",mark.getName());
+                i.putExtra("website", mark.getWebsite());
+                i.putExtra("number", mark.getNumber());
+                i.putExtra("email", mark.getEmail());
+                i.putExtra("name", mark.getName());
                 startActivity(i);
             }
         });
+
         return rootView;
     }
 
@@ -122,17 +91,17 @@ public class MyPlaceFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
     }
+
     private class MyAdapter extends BaseAdapter {
         private List<Item> items = new ArrayList<Item>();
         private LayoutInflater inflater;
 
 
-
-        public MyAdapter(Context context,ArrayList<ImageInfo> info) {
+        public MyAdapter(Context context, ArrayList<ImageInfo> info) {
             inflater = LayoutInflater.from(context);
 
-            for(ImageInfo x : info ){
-                items.add(new Item(x.getName().replace("_gallery", ""),x.getId()));
+            for (ImageInfo x : info) {
+                items.add(new Item(x.getName().replace("_gallery", ""), x.getId()));
             }
         }
 
@@ -187,7 +156,7 @@ public class MyPlaceFragment extends Fragment {
 
     /**
      * @param @dyamically gets all the images id and name put it
-     * @param @class call ImageInfo
+     * @param @class      call ImageInfo
      * @by using fields
      */
     public void getImages(String imageFilter) {
@@ -206,7 +175,7 @@ public class MyPlaceFragment extends Fragment {
             } catch (IllegalAccessException e) {
                 return;
             } catch (IllegalArgumentException e) {
-              return;
+                return;
             }
         }
     }

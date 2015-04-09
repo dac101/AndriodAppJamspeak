@@ -4,113 +4,63 @@ package catchmedia.jamaica.dictionary;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.widget.Toast;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import org.json.JSONObject;
+
+import database.DatabaseHandler;
+import database.Marker;
+import utility.GooglePlace;
+import utility.Helper;
+import utility.MapUtilities;
 
 public class MapActivity extends FragmentActivity {
 
     // Google Map
     private GoogleMap googleMap;
-
+    JSONObject places;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
-        Intent intent = getIntent();
 
         try {
-            // Loading map
             initilizeMap();
-            // Changing map type
-            googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-            // googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-            // googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-            // googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
-            // googleMap.setMapType(GoogleMap.MAP_TYPE_NONE);
+            MapUtilities.setMapSetting(googleMap);
 
-            // Showing / hiding your current location
-            googleMap.setMyLocationEnabled(true);
+            Intent intent = getIntent();
+            DatabaseHandler db = new DatabaseHandler(this);
+            java.util.List<Marker> markers = db.getAllMarker();
+            GooglePlace place = new GooglePlace();
+            places = place.getValue(getApplicationContext());
 
-            // Enable / Disable zooming controls
-            googleMap.getUiSettings().setZoomControlsEnabled(true);
 
-            // Enable / Disable my location button
-            googleMap.getUiSettings().setMyLocationButtonEnabled(true);
+            for(Marker x : markers){
+                googleMap.addMarker(getMarkerOptions(x));
+            }
 
-            // Enable / Disable Compass icon
-            googleMap.getUiSettings().setCompassEnabled(true);
-
-            // Enable / Disable Rotate gesture
-            googleMap.getUiSettings().setRotateGesturesEnabled(true);
-
-            // Enable / Disable zooming functionality
-            googleMap.getUiSettings().setZoomGesturesEnabled(true);
-
-            double latitude = 18.4602994;
-            double longitude = -77.4006122;
-
-            // lets place some 10 random markers
-            for (int i = 0; i < 10; i++) {
-                // random latitude and logitude
-                double[] randomLocation = createRandLocation(latitude,
-                        longitude);
-
-                // Adding a marker
-                MarkerOptions marker = new MarkerOptions().position(
-                        new LatLng(randomLocation[0], randomLocation[1]))
-                        .title("Hello Maps " + i);
-
-                // changing marker color
-                if (i == 0)
-                    marker.icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
-                if (i == 1)
-                    marker.icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
-                if (i == 2)
-                    marker.icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_CYAN));
-                if (i == 3)
-                    marker.icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
-                if (i == 4)
-                    marker.icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
-                if (i == 5)
-                    marker.icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
-                if (i == 6)
-                    marker.icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_RED));
-                if (i == 7)
-                    marker.icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_ROSE));
-                if (i == 8)
-                    marker.icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_VIOLET));
-                if (i == 9)
-                    marker.icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW));
-
-                googleMap.addMarker(marker);
-
-                // Move the camera to last position with a zoom level
-                if (i == 9) {
-                    CameraPosition cameraPosition = new CameraPosition.Builder()
-                            .target(new LatLng(randomLocation[0],
-                                    randomLocation[1])).zoom(15).build();
-
-                    googleMap.animateCamera(CameraUpdateFactory
-                            .newCameraPosition(cameraPosition));
+            for(Marker x : markers)
+            {
+                if(intent.getStringExtra("name").equals(x.getName()))
+                {
+                    MapUtilities.setCameraPosition(x, 9, googleMap);
+                    break;
                 }
+                MapUtilities.setCameraPosition(x, 9, googleMap);
             }
 
         } catch (Exception e) {
@@ -118,17 +68,19 @@ public class MapActivity extends FragmentActivity {
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_map, menu);
-        return true;
+    private MarkerOptions getMarkerOptions(Marker x) {
+        MarkerOptions marker = new MarkerOptions().position(
+                new LatLng(
+                           x.getLatitude(),
+                           x.getLongitude()))
+                           .title(x.getName() + " \n" + " \n" + x.getType());
+
+        marker.icon(BitmapDescriptorFactory.defaultMarker(Helper.setIconColor(x)));
+        return marker;
     }
 
-    /**
-     * function to load map. If map is not created it will create it for you
-     */
-    private void initilizeMap() {
+
+    public void initilizeMap() {
         if (googleMap == null) {
             googleMap = ((MapFragment) getFragmentManager().findFragmentById(
                     R.id.map)).getMap();
@@ -145,18 +97,20 @@ public class MapActivity extends FragmentActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_map, menu);
+        return true;
+    }
+
+    /**
+     * function to load map. If map is not created it will create it for you
+     */
+
+    @Override
     protected void onResume() {
         super.onResume();
         initilizeMap();
     }
 
-    /*
-     * creating random postion around a location for testing purpose only
-	 */
-    private double[] createRandLocation(double latitude, double longitude) {
-
-        return new double[]{latitude + ((Math.random() - 0.5) / 500),
-                longitude + ((Math.random() - 0.5) / 500),
-                150 + ((Math.random() - 0.5) * 10)};
-    }
 }

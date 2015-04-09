@@ -53,6 +53,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     private static final String CREATE_TABLE_MARKERS = "CREATE TABLE "
             + TABLE_MARKERS + "("
+            + KEY_ID
             + " INTEGER PRIMARY KEY,"
             + KEY_MARKERS_ADDRESS + " text,"
             + KEY_MARKERS_LONGITUDE + " real,"
@@ -66,7 +67,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             + KEY_MARKERS_ICON + " text "
             +")";
 	// Database Version
-	private static final int DATABASE_VERSION = 9;
+	private static final int DATABASE_VERSION = 10;
 
 	// Database Name
 	private static final String DATABASE_NAME = "jamaicaDictionary";

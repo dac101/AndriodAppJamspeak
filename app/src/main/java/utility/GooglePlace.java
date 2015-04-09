@@ -1,11 +1,14 @@
 package utility;
 
+import android.content.Context;
 import android.util.Log;
 
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.http.javanet.NetHttpTransport;
 
@@ -15,13 +18,10 @@ import org.json.JSONObject;
 /**
  * Created by dacorie on 01/04/2015.
  */
-public class GooglePlaces {
-    /** Global instance of the HTTP transport. */
-    private static final HttpTransport HTTP_TRANSPORT = new
-            NetHttpTransport();
+public class GooglePlace {
 
     // Google API Key
-    private static final String API_KEY = "AIzaSyD_2BsiMZeRBBlN5jMtXWICNWZhwx9IgiY";
+    private static final String API_KEY = "AIzaSyAHmM1TPrxRq1a_RCqJ_Om4EwdI-P6MqKg";
 
     // Google Places serach url's
     private static final String PLACES_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/search/json?";
@@ -31,28 +31,32 @@ public class GooglePlaces {
     private double _latitude;
     private double _longitude;
     private double _radius;
-    public JSONObject d;
 
-    public JSONObject getValue(){
+    public JSONObject values;
+    public VolleyError errors ;
+    public JSONObject getValue(Context context){
+
+        RequestQueue queue = Volley.newRequestQueue(context.getApplicationContext());
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest
-                (Request.Method.GET, "https://maps.googleapis.com/maps/api/place/search/json?location=-33.88471,151.218237&radius=100&sensor=true&key=AIzaSyAHmM1TPrxRq1a_RCqJ_Om4EwdI-P6MqKg", null, new Response.Listener<JSONObject>() {
+                (Request.Method.GET, "https://maps.googleapis.com/maps/api/place/search/json?location=-33.88471,151.218237&radius=100&sensor=true&key=AIzaSyAHmM1TPrxRq1a_RCqJ_Om4EwdI-P6MqKg", null,
+                        new Response.Listener<JSONObject>() {
 
                     @Override
                     public void onResponse(JSONObject response) {
-                        Log.e(response + "", "places");
-                        System.out.println("Response: " + response.toString());
-                        d = response;
+                        values = response;
+                        Log.d("Response", response.toString());
                     }
                 }, new Response.ErrorListener() {
 
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        // TODO Auto-generated method stub
 
                     }
                 });
-        return d;
+
+        queue.add(jsObjRequest);
+        return values;
     }
 
 

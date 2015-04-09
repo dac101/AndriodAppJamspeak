@@ -2,12 +2,15 @@ package utility;
 
 import android.provider.UserDictionary;
 
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import catchmedia.jamaica.dictionary.R;
+import database.Marker;
 
 public class Helper {
 
@@ -22,7 +25,29 @@ public class Helper {
 	private Pattern pattern;
 	private Matcher matcher;
 
-	public boolean validate(final String hex) {
+    /*
+         * creating random postion around a location for testing purpose only
+         */
+    public static double[] createRandLocation(double latitude, double longitude) {
+
+        return new double[]{latitude + ((Math.random() - 0.5) / 500),
+                longitude + ((Math.random() - 0.5) / 500),
+                150 + ((Math.random() - 0.5) * 10)};
+    }
+
+    public static float setIconColor(Marker x) {
+
+        if(x.getType().contains("Sport")){
+        return  BitmapDescriptorFactory.HUE_GREEN;
+        }
+        else if(x.getType().equals("Beach")){
+         return BitmapDescriptorFactory.HUE_BLUE;
+        }else{
+          return BitmapDescriptorFactory.HUE_RED;
+        }
+    }
+
+    public boolean validate(final String hex) {
 
 		matcher = pattern.matcher(hex);
 		return matcher.matches();

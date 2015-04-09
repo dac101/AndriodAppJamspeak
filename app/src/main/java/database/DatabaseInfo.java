@@ -176,9 +176,9 @@ public class DatabaseInfo {
         words.add(new Word("rat-bat  ", "bat, the night-flying rodent.", "Expression", 1, ""));
 
         /*Place */
-        markers.add(new Marker("discovery bay St.ann",-77.3995230,18.4603030,"Antonet Bar","antonetbar@gmail.com","antonetbar.com","813-1787",1,"Sport's bar"));
+        markers.add(new Marker("discovery bay St.ann",-77.3995230,18.4603030,"Antonet Bar","antonetbar@gmail.com","antonetbar.com","813-1787",1,"Sports bar"));
         markers.add(new Marker("Appleton Estate",-77.7529073,18.1640921,"Appleton Sugar and Rum Factory","","","(876) 963-9215",1,"Agriculture"));
-        markers.add(new Marker("Discovery Bay ",-77.374478,18.460723,"green grotto caves jamaica ","","","",1,"Beach"));
+        markers.add(new Marker("Discovery Bay ",-77.374478,18.460723,"green grotto caves ","","","",1,"Beach"));
         markers.add(new Marker("Ocho Rios",-77.134854,18.414845,"Dunn's River Falls  ","","","",1,"Beach"));
         markers.add(new Marker("Ocho Rios",-77.13036,18.417266,"Dolphin Cove","","","",1,"Beach"));
         markers.add(new Marker("Falmouth",-77.62835,18.48295,"Glistening Waters ","","","",1,"Restaurant"));
