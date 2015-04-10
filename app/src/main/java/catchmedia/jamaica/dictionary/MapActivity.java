@@ -46,7 +46,7 @@ public class MapActivity extends FragmentActivity {
             DatabaseHandler db = new DatabaseHandler(this);
             java.util.List<Marker> markers = db.getAllMarker();
             GooglePlace place = new GooglePlace();
-            places = place.getValue(getApplicationContext());
+            places = place.getPlaces(getApplicationContext());
 
 
             for(Marker x : markers){

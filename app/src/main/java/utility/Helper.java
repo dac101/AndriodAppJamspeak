@@ -54,7 +54,12 @@ public class Helper {
 
 	}
 
-    public void getImages(String imageFilter,ArrayList<ImageInfo> info) {
+    /**
+     * @param @dyamically gets all the images id and name put it
+     * @param @class      call ImageInfo
+     * @by using fields
+     */
+    public static void getImages(String imageFilter,ArrayList<ImageInfo> info) {
         Field[] drawables = R.drawable.class.getFields();
         ArrayList<Integer> ids = new ArrayList<Integer>();
 
