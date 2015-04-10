@@ -175,6 +175,19 @@ public class DatabaseInfo {
         words.add(new Word("(to) raas     ", "really?, damn!  ", "Expression", 1, ""));
         words.add(new Word("rat-bat  ", "bat, the night-flying rodent.", "Expression", 1, ""));
 
+        words.add(new Word("renk ", " foul-smelling, raw-smelling or out of order", "Expression", 1, ""));
+        words.add(new Word("rhaatid   ", "A curse-exclamation, similar to what the hell", "Expression", 1, ""));
+        words.add(new Word("rockers  ", " reggae music  reggae music as it is played today, the latest sound", "Expression", 1, ""));
+        words.add(new Word("roots", "derived from the experience of the common people,      natural indigenous  ", "Expression", 1, ""));
+        words.add(new Word("rude boy   ", "a criminal, a hard hearted person, a tough guy .", "Expression", 1, ""));
+        words.add(new Word("ryal ", "royal", "Expression", 1, ""));
+        words.add(new Word("salt ", " adjective, broke, empty-handed, low on funds or food, as in tings salt or i' salt.", "Expression", 1, ""));
+        words.add(new Word("samfai man", " trickster, conman.   ", "Expression", 1, ""));
+        words.add(new Word("satta ", "  sit, rest, meditate  relax  ", "Expression", 1, ""));
+        words.add(new Word("science ", "    obeah, witchcraft   ", "Expression", 1, ""));
+        words.add(new Word("screechie  ", "to sneak by   ", "Expression", 1, ""));
+        words.add(new Word("sheg-up   ", " to be messed up, ruined   ", "Expression", 1, ""));
+
         /*Place */
         markers.add(new Marker("discovery bay St.ann",-77.3995230,18.4603030,"Antonet Bar","antonetbar@gmail.com","antonetbar.com","813-1787",1,"Sports bar"));
         markers.add(new Marker("Appleton Estate",-77.7529073,18.1640921,"Appleton Sugar and Rum Factory","","","(876) 963-9215",1,"Agriculture"));
