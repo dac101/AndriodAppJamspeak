@@ -52,15 +52,15 @@ public class MyPlaceFragment extends Fragment implements GoogleApiClient.Connect
 
         Helper.getImages("travel", info);
 
-        mGoogleApiClient = new GoogleApiClient.Builder(this.getActivity().getApplicationContext())
+       /* mGoogleApiClient = new GoogleApiClient.Builder(this.getActivity().getApplicationContext())
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
                 .addApi(LocationServices.API).build();
-        place = new GooglePlace(mGoogleApiClient);
+        place = new GooglePlace(mGoogleApiClient,getActivity().getApplicationContext());
+
         mGoogleApiClient.connect();
         place.geolocationData();
-        places = place.getPlaces(this.getActivity().getApplicationContext());
-
+        place.getPlaces(this.getActivity().getApplicationContext());*/
 
         gridView.setAdapter(new MyAdapter(rootView.getContext(), info));
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

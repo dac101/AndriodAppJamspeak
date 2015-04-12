@@ -14,6 +14,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -22,36 +25,92 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+
 import database.DatabaseHandler;
 import database.Marker;
 import utility.GooglePlace;
 import utility.Helper;
 import utility.MapUtilities;
 
-public class MapActivity extends FragmentActivity {
+public class MapActivity extends FragmentActivity  implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
     // Google Map
     private GoogleMap googleMap;
-    JSONObject places;
+    GoogleApiClient mGoogleApiClient;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
+
+
+
+
         try {
             initilizeMap();
             MapUtilities.setMapSetting(googleMap);
 
+            mGoogleApiClient = new GoogleApiClient.Builder(this.getApplicationContext())
+                    .addConnectionCallbacks(this)
+                    .addOnConnectionFailedListener(this)
+                    .addApi(LocationServices.API).build();
+
+            mGoogleApiClient.connect();
+
             Intent intent = getIntent();
             DatabaseHandler db = new DatabaseHandler(this);
-            java.util.List<Marker> markers = db.getAllMarker();
-            GooglePlace place = new GooglePlace();
-            places = place.getPlaces(getApplicationContext());
+            final java.util.List<Marker> markers = db.getAllMarker();
+            final GooglePlace place = new GooglePlace(mGoogleApiClient);
+            place.getPlaces(getApplicationContext());
 
+            RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
 
-            for(Marker x : markers){
+            JsonObjectRequest jsObjRequest = new JsonObjectRequest
+                    (Request.Method.GET, place.Url, null,
+                            new Response.Listener<JSONObject>() {
+
+                                @Override
+                                public void onResponse(JSONObject response) {
+
+                                    place.geolocation(getApplicationContext());
+                                    place.setJsonObject(response);
+                                    //  Log.d("Response", response.toString());
+
+                                    for(Marker x: place.parsePlaces(response))
+                                    {
+                                        markers.add(x);
+                                    }
+
+                                    for(Marker x : markers){
+                                        googleMap.addMarker(getMarkerOptions(x));
+                                    }
+
+                                }
+                            }, new Response.ErrorListener() {
+
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(getApplicationContext(),
+                                    "Network Related issue", Toast.LENGTH_LONG)
+                                    .show();
+
+                            for(Marker x : markers){
+                                googleMap.addMarker(getMarkerOptions(x));
+                            }
+
+                        }
+                    });
+
+            queue.add(jsObjRequest);
+
+            /*for(Marker x : markers){
                 googleMap.addMarker(getMarkerOptions(x));
-            }
+            }*/
+
+
 
             for(Marker x : markers)
             {
@@ -113,4 +172,18 @@ public class MapActivity extends FragmentActivity {
         initilizeMap();
     }
 
+    @Override
+    public void onConnected(Bundle bundle) {
+
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+    }
+
+    @Override
+    public void onConnectionFailed(ConnectionResult connectionResult) {
+
+    }
 }

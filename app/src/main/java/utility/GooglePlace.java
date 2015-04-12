@@ -2,6 +2,7 @@ package utility;
 
 import android.content.Context;
 import android.location.Location;
+import android.location.LocationManager;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -16,7 +17,13 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
+
+import database.Marker;
 
 
 /**
@@ -32,29 +39,37 @@ public class GooglePlace  {
 
     private double _latitude;
     private double _longitude;
-
     private Location mLastLocation;
+    private JSONObject jsonObject;
+
+    public String Url;
 
     // Google client to interact with Google API
     private GoogleApiClient mGoogleApiClient;
-
     private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
-
-    public JSONObject values;
 
     public GooglePlace(GoogleApiClient mGoogleApiClient) {
         this.mGoogleApiClient = mGoogleApiClient;
         geolocationData();
+        Url = PLACES_SEARCH_URL + "location=" + _latitude + "," + _longitude + "&radius=1000&sensor=true&key=" + API_KEY;
     }
+
+    public GooglePlace(GoogleApiClient mGoogleApiClient, Context context) {
+        this.mGoogleApiClient = mGoogleApiClient;
+        getPlaces(context);
+    }
+
+
 
     public GooglePlace() {
     }
 
-    public JSONObject getPlaces(final Context context){
+    public void getPlaces(final Context context){
+        final JSONObject[] jsonObject = {new JSONObject()};
 
         RequestQueue queue = Volley.newRequestQueue(context.getApplicationContext());
 
-        String Url = PLACES_SEARCH_URL + "location=" + _latitude + "," + _longitude + "&radius=1000&sensor=true&key=" + API_KEY;
+         Url = PLACES_SEARCH_URL + "location=" + _latitude + "," + _longitude + "&radius=1000&sensor=true&key=" + API_KEY;
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest
                 (Request.Method.GET, Url, null,
@@ -62,8 +77,9 @@ public class GooglePlace  {
 
                     @Override
                     public void onResponse(JSONObject response) {
-                        values = response;
-                        Log.d("Response", response.toString());
+                        setJsonObject(response);
+                      //  Log.d("Response", response.toString());
+                        parsePlaces(response);
                     }
                 }, new Response.ErrorListener() {
 
@@ -76,7 +92,44 @@ public class GooglePlace  {
                 });
 
         queue.add(jsObjRequest);
-        return values;
+
+    }
+
+
+    public void geolocation(Context context) {
+        LocationManager locationManager = (LocationManager)context. getSystemService(context.LOCATION_SERVICE);
+
+
+        mLastLocation = LocationServices.FusedLocationApi
+                .getLastLocation(mGoogleApiClient);
+
+        Location location;
+        location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        _latitude =location.getLatitude();
+        _longitude = location.getLongitude();
+
+    }
+
+    public ArrayList<Marker> parsePlaces(JSONObject jsonObject)  {
+        ArrayList<Marker> markers = new ArrayList<Marker>();
+        try {
+
+            JSONArray jsonArray = jsonObject.getJSONArray("results");
+            for(int i = 0; i < jsonArray.length(); i++){
+                JSONObject jsonfile = jsonArray.getJSONObject(i);
+               Marker mark = new Marker();
+               mark.setType(jsonfile.getJSONArray("types").get(0).toString());
+               mark.setLatitude(jsonfile.getJSONObject("geometry").getJSONObject("location").getDouble("lat"));
+               mark.setLongitude(jsonfile.getJSONObject("geometry").getJSONObject("location").getDouble("lng"));
+               mark.setName(jsonfile.getString("name"));
+               mark.setAddress(jsonfile.getString("vicinity"));
+               markers.add(mark);
+            }
+            Log.d("JSonArray", jsonArray.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+             return markers;
     }
 
     public void geolocationData() {
@@ -89,8 +142,8 @@ public class GooglePlace  {
              _longitude = mLastLocation.getLongitude();
 
         } else {
-          _latitude=  -33.88471;
-          _longitude =151.218237;
+          _latitude=  17.9833;
+          _longitude =-76.7484358;
 
         }
     }
@@ -110,5 +163,13 @@ public class GooglePlace  {
             return false;
         }
         return true;
+    }
+
+    public JSONObject getJsonObject() {
+        return jsonObject;
+    }
+
+    public void setJsonObject(JSONObject jsonObject) {
+        this.jsonObject = jsonObject;
     }
 }

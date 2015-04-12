@@ -42,6 +42,10 @@ public class Helper {
         }
         else if(x.getType().equals("Beach")){
          return BitmapDescriptorFactory.HUE_BLUE;
+        }
+
+        else if(x.getType().equals("staduim")){
+            return BitmapDescriptorFactory.HUE_CYAN;
         }else{
           return BitmapDescriptorFactory.HUE_RED;
         }
