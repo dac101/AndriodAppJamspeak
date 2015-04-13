@@ -188,6 +188,15 @@ public class DatabaseInfo {
         words.add(new Word("screechie  ", "to sneak by   ", "Expression", 1, ""));
         words.add(new Word("sheg-up   ", " to be messed up, ruined   ", "Expression", 1, ""));
 
+        words.add(new Word("sidung ", "  sit down    ", "Expression", 1, ""));
+        words.add(new Word("sight?", "do you understand?   ", "Expression", 1, ""));
+        words.add(new Word("sinkl-bible   ", " the aloevera plant.", "Expression", 1, ""));
+        words.add(new Word("sister, sistren", "a woman, a friend, woman rastafarians ", "Expression", 1, ""));
+        words.add(new Word("slackness ", " lewd, vulgar lyrics popular in dj singing   ", "Expression", 1, ""));
+        words.add(new Word("so-so ", " to be messed up, ruined   ", "Expression", 1, ""));
+        words.add(new Word("spliff ", " large, cone-shaped marijuana cigarette     ", "Expression", 1, ""));
+        words.add(new Word("step ", "to leave, to depart  briskly, quickly ", "Expression", 1, ""));
+
         /*Place */
         markers.add(new Marker("discovery bay St.ann",-77.3995230,18.4603030,"Antonet Bar","antonetbar@gmail.com","antonetbar.com","813-1787",1,"Sports bar"));
         markers.add(new Marker("Appleton Estate",-77.7529073,18.1640921,"Appleton Sugar and Rum Factory","","","(876) 963-9215",1,"Agriculture"));

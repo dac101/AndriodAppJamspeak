@@ -31,7 +31,7 @@ import utility.ImageInfo;
 
 public class MyPlaceFragment extends Fragment implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
-    JSONObject places;
+
     GooglePlace place;
     GoogleApiClient mGoogleApiClient;
 
@@ -51,16 +51,6 @@ public class MyPlaceFragment extends Fragment implements GoogleApiClient.Connect
         GridView gridView = (GridView) rootView.findViewById(R.id.grid_view);
 
         Helper.getImages("travel", info);
-
-       /* mGoogleApiClient = new GoogleApiClient.Builder(this.getActivity().getApplicationContext())
-                .addConnectionCallbacks(this)
-                .addOnConnectionFailedListener(this)
-                .addApi(LocationServices.API).build();
-        place = new GooglePlace(mGoogleApiClient,getActivity().getApplicationContext());
-
-        mGoogleApiClient.connect();
-        place.geolocationData();
-        place.getPlaces(this.getActivity().getApplicationContext());*/
 
         gridView.setAdapter(new MyAdapter(rootView.getContext(), info));
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

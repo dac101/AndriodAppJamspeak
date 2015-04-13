@@ -45,10 +45,6 @@ public class MapActivity extends FragmentActivity  implements GoogleApiClient.Co
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
-
-
-
-
         try {
             initilizeMap();
             MapUtilities.setMapSetting(googleMap);
@@ -57,16 +53,14 @@ public class MapActivity extends FragmentActivity  implements GoogleApiClient.Co
                     .addConnectionCallbacks(this)
                     .addOnConnectionFailedListener(this)
                     .addApi(LocationServices.API).build();
-
             mGoogleApiClient.connect();
 
             Intent intent = getIntent();
             DatabaseHandler db = new DatabaseHandler(this);
             final java.util.List<Marker> markers = db.getAllMarker();
             final GooglePlace place = new GooglePlace(mGoogleApiClient);
-            place.getPlaces(getApplicationContext());
-
             RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
+
 
             JsonObjectRequest jsObjRequest = new JsonObjectRequest
                     (Request.Method.GET, place.Url, null,
@@ -77,7 +71,6 @@ public class MapActivity extends FragmentActivity  implements GoogleApiClient.Co
 
                                     place.geolocation(getApplicationContext());
                                     place.setJsonObject(response);
-                                    //  Log.d("Response", response.toString());
 
                                     for(Marker x: place.parsePlaces(response))
                                     {
@@ -105,12 +98,6 @@ public class MapActivity extends FragmentActivity  implements GoogleApiClient.Co
                     });
 
             queue.add(jsObjRequest);
-
-            /*for(Marker x : markers){
-                googleMap.addMarker(getMarkerOptions(x));
-            }*/
-
-
 
             for(Marker x : markers)
             {
