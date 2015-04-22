@@ -6,11 +6,14 @@
 
 
     <ImageView android:id="@+id/wordImage"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="95dp"
+        android:clickable="false"
+        android:src="@drawable/wah_jamaicaword"
         android:layout_alignParentLeft="true"
-        android:layout_toStartOf="@+id/TypeOfWord"
-        android:layout_toLeftOf="@+id/TypeOfWord" />
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/TypeOfWord"
+        android:layout_toStartOf="@+id/TypeOfWord" />
 
 
     <!--word-->
@@ -18,7 +21,7 @@
         android:id="@+id/Wordname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="17sp"
+        android:textSize="18sp"
         android:text="you"
         android:textStyle="bold"
         android:textIsSelectable="false"
@@ -33,7 +36,7 @@
         android:id="@+id/wordMeaning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="11sp"
+        android:textSize="17sp"
         android:text="something else"
         android:textStyle="normal"
         android:layout_alignBottom="@+id/wordImage"
@@ -44,7 +47,7 @@
         android:id="@+id/TypeOfWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
+        android:textSize="17sp"
         android:text="something"
         android:textStyle="normal"
         android:layout_centerVertical="true"

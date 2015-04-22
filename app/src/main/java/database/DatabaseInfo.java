@@ -49,7 +49,7 @@ public class DatabaseInfo {
         words.add(new Word("bafan", "clumsy; awkward  ", "Greetings", 1, ""));
         words.add(new Word("baggy", " underpants for a woman or child. ", "Greetings", 1, ""));
         words.add(new Word("bald Head", "one without dreadlocks. ", "Greetings", 1, ""));
-        words.add(new Word("bandulu", "ne without dreadlocks. ", "Greetings", 1, ""));
+        words.add(new Word("bandulu", "bandit, criminal, one living by guile  bandit, criminal, one living by guile. ", "Greetings", 1, ""));
         words.add(new Word("bangarang", "uproar, disorder, disturbance. ", "Greetings", 1, ""));
         words.add(new Word("bex", " vex (verb), or vexed (adjective).", "Greeting", 1, ""));
         words.add(new Word("bly", " chance, must get a bly, must get a chance", "Greeting", 1, ""));
