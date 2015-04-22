@@ -152,7 +152,6 @@ public class DatabaseInfo {
         words.add(new Word("monks  ", "amongst", "Expression", 1, ""));
         words.add(new Word("mash up, mash down  ", "destroy", "Expression", 1, ""));
 
-
         words.add(new Word("no kya  ", " no matter, as in no kya weh im tun, no matter where he turns.   ", "Expression", 1, ""));
         words.add(new Word("obeah   ", " traditional african science", "Expression", 1, ""));
         words.add(new Word("ongle   ", "only", "Expression", 1, ""));
@@ -196,6 +195,37 @@ public class DatabaseInfo {
         words.add(new Word("so-so ", " to be messed up, ruined   ", "Expression", 1, ""));
         words.add(new Word("spliff ", " large, cone-shaped marijuana cigarette     ", "Expression", 1, ""));
         words.add(new Word("step ", "to leave, to depart  briskly, quickly ", "Expression", 1, ""));
+
+        words.add(new Word("stoosh ", " upper class, high tone, hitey-titey. ", "Expression", 1, ""));
+        words.add(new Word("sufferer  ", "a poor person stuggling to survive", "Expression", 1, ""));
+        words.add(new Word("tall  ", "long ", "Expression", 1, ""));
+        words.add(new Word("teif  ", " a theif, to steal", "Expression", 1, ""));
+        words.add(new Word("trace  ", " to curse or speak abusively to someone ", "Expression", 1, ""));
+        words.add(new Word("tumpa  ", "from stump, as in tumpa-foot man, a one-foot man. ", "Expression", 1, ""));
+        words.add(new Word("tunti  ", " female organ. ", "Expression", 1, ""));
+        words.add(new Word("unu ", "  you-all. ", "Expression", 1, ""));
+        words.add(new Word("uno ", "you-all.", "Expression", 1, ""));
+        words.add(new Word("vex ", "to leave, to depart  briskly, quickly ", "Expression", 1, ""));
+
+
+        words.add(new Word("wa day ", " the other day ", "Expression", 1, ""));
+        words.add(new Word("wa mek?", "why?", "Expression", 1, ""));
+        words.add(new Word("wanga-gut   ", " hungry-belly", "Expression", 1, ""));
+        words.add(new Word("wheels  ", "vehicle", "Expression", 1, ""));
+        words.add(new Word("whole heap  ", "a lot ", "Expression", 1, ""));
+        words.add(new Word("winjy   ", "thin and sickly looking ", "Expression", 1, ""));
+        words.add(new Word("wis   ", " vine, liana, from withe. ", "Expression", 1, ""));
+        words.add(new Word("ya no see it?  ", "you know?", "Expression", 1, ""));
+        words.add(new Word("ya  ", "hear, or here.", "Expression", 1, ""));
+        words.add(new Word("yabba  ", " a big clay pot.", "Expression", 1, ""));
+
+
+        words.add(new Word("yabba  ", " a big clay pot.", "Expression", 1, ""));
+        words.add(new Word("yahso   ", " home, one's gates  tenement.", "Expression", 1, ""));
+        words.add(new Word("youth   ", "  a child, a young man, an immature man", "Expression", 1, ""));
+        words.add(new Word("zion   ", "  ethiopia, africa, the rastafarian holy land.", "Expression", 1, ""));
+        words.add(new Word("zungu pan   ", "   zinc pan", "Expression", 1, ""));
+
 
         /*Place */
         markers.add(new Marker("discovery bay St.ann",-77.3995230,18.4603030,"Antonet Bar","antonetbar@gmail.com","antonetbar.com","813-1787",1,"Sports bar"));
