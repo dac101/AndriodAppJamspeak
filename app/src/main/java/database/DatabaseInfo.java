@@ -49,17 +49,17 @@ public class DatabaseInfo {
         words.add(new Word("bafan", "clumsy; awkward  ", "Greetings", 1, ""));
         words.add(new Word("baggy", " underpants for a woman or child. ", "Greetings", 1, ""));
         words.add(new Word("bald Head", "one without dreadlocks. ", "Greetings", 1, ""));
-        words.add(new Word("bandulu", "bandit, criminal, one living by guile  bandit, criminal, one living by guile. ", "Greetings", 1, ""));
+        words.add(new Word("bandulu", "bandit or criminal", "Greetings", 1, ""));
         words.add(new Word("bangarang", "uproar, disorder, disturbance. ", "Greetings", 1, ""));
         words.add(new Word("bex", " vex (verb), or vexed (adjective).", "Greeting", 1, ""));
         words.add(new Word("bly", " chance, must get a bly, must get a chance", "Greeting", 1, ""));
         words.add(new Word("bredren", " one's fellow male Rastas ", "Greeting", 1, ""));
         words.add(new Word("brindle", " to be angry ", "Greeting", 1, ""));
-        words.add(new Word("bun", "to have one's spouse or girl/boy-friend cheat on oneself ", "Greeting", 1, ""));
+        words.add(new Word("bun", "to have one's spouse  cheat on oneself ", "Greeting", 1, ""));
         words.add(new Word("cease & sekkle", "stop everything and relax!", "Greeting", 1, ""));
-        words.add(new Word("cha & cho", " a disdainful expletive  pshaw!  very common, mild explanation    expressing impatience, vexation or disappointment", "Greeting", 1, ""));
+        words.add(new Word("cha & cho", " expressing impatience, vexation or disappointment", "Greeting", 1, ""));
         words.add(new Word("chakachaka", "messy, disorderly, untidy.", "Greeting", 1, ""));
-        words.add(new Word("chalice", " a pipe for smoking herb, usually made from coconut shell and tubing, used ritually by Rastas .", "Greeting", 1, ""));
+        words.add(new Word("chalice", " A pipe for smoking herb", "Greeting", 1, ""));
 
         /**.
          * Things
@@ -71,7 +71,7 @@ public class DatabaseInfo {
         words.add(new Word("Higgla", "A street vendor.", "Things", 1, ""));
         words.add(new Word("Fren", "Friend", "Things", 1, ""));
         words.add(new Word("Fimi", " Shows possession. A fi mi car.", "Things", 1, ""));
-        words.add(new Word("bat", "  butterfly or moth. English bat, the flying rodent, is a rat-bat.", "Things", 1, ""));
+        words.add(new Word("bat", "  butterfly or moth", "Things", 1, ""));
         words.add(new Word("batty", "bottom; backside; anus.", "Things", 1, ""));
         words.add(new Word("coil", "money", "Greeting", 1, ""));
         words.add(new Word("chimmy", "chamber pot", "Greeting", 1, ""));
@@ -98,10 +98,10 @@ public class DatabaseInfo {
         words.add(new Word("duppy", "a ghost  ", "Things", 1, ""));
         words.add(new Word("dutchy", "  dutch cooking pot, low round-bottomed heavy pot. ", "Things", 1, ""));
         words.add(new Word("ease-up", " to forgive, to lighten up  ", "Things", 1, ""));
-        words.add(new Word("fassy", "eczema-like scratchy sores on the skin; also a verb meaning to cause    oneself to be covered with fassy by scratchin", "Things", 1, ""));
+        words.add(new Word("fassy", "Someone who is irritating or has done something to offend you.", "Expression", 1, ""));
         words.add(new Word("fayva", " to favour, resemble, or look like;", "Things", 1, ""));
         words.add(new Word("feel no way", " don't take offense, don't be sorry, don't worry", "Things", 1, ""));
-        words.add(new Word("fenky-fenky", "   (from finicky) choosy, proud, stuck-up.", "Things", 1, ""));
+        words.add(new Word("fenky-fenky", "(from finicky) choosy, proud, stuck-up.", "Things", 1, ""));
         words.add(new Word("fiesty", " impudent, rude, out of order, cheeky.", "Things", 1, ""));
         words.add(new Word("first light", "tomorrow     ", "Things", 1, ""));
         words.add(new Word("forward", "   1. to go, move on, set out 2. in the future      ", "Things", 1, ""));
@@ -113,7 +113,7 @@ public class DatabaseInfo {
         words.add(new Word("haffi ", "to have to. ", "Things", 1, ""));
         words.add(new Word("hail ", " a greeting  ", "Things", 1, ""));
         words.add(new Word("hard ", "excellent, proficient, skillful, uncompromising  ", "Things", 1, ""));
-        words.add(new Word("hiez-haad   ", " ears-hard, thick skulled, stubborn, unwilling or unable to hear.", "Things", 1, ""));
+        words.add(new Word("hiez-haad   ", " ears-hard, thick skulled, stubborn or unwilling", "Things", 1, ""));
         words.add(new Word("hitey-titey  ", " upper class, high tone, stoosh.", "Things", 1, ""));
         words.add(new Word("hot-stepper", " fugitive from jail or gun court ", "Things", 1, ""));
         words.add(new Word("ignorant ", " short-tempered, easy to vex, irate. ", "Things", 1, ""));
@@ -177,10 +177,10 @@ public class DatabaseInfo {
         words.add(new Word("renk ", " foul-smelling, raw-smelling or out of order", "Expression", 1, ""));
         words.add(new Word("rhaatid   ", "A curse-exclamation, similar to what the hell", "Expression", 1, ""));
         words.add(new Word("rockers  ", " reggae music  reggae music as it is played today, the latest sound", "Expression", 1, ""));
-        words.add(new Word("roots", "derived from the experience of the common people,      natural indigenous  ", "Expression", 1, ""));
+        words.add(new Word("roots", "derived from the experience of the common people, natural indigenous  ", "Expression", 1, ""));
         words.add(new Word("rude boy   ", "a criminal, a hard hearted person, a tough guy .", "Expression", 1, ""));
         words.add(new Word("ryal ", "royal", "Expression", 1, ""));
-        words.add(new Word("salt ", " adjective, broke, empty-handed, low on funds or food, as in tings salt or i' salt.", "Expression", 1, ""));
+        words.add(new Word("salt ", " adjective, broke, empty-handed, low on funds or food.", "Expression", 1, ""));
         words.add(new Word("samfai man", " trickster, conman.   ", "Expression", 1, ""));
         words.add(new Word("satta ", "  sit, rest, meditate  relax  ", "Expression", 1, ""));
         words.add(new Word("science ", "    obeah, witchcraft   ", "Expression", 1, ""));
@@ -193,7 +193,7 @@ public class DatabaseInfo {
         words.add(new Word("sister, sistren", "a woman, a friend, woman rastafarians ", "Expression", 1, ""));
         words.add(new Word("slackness ", " lewd, vulgar lyrics popular in dj singing   ", "Expression", 1, ""));
         words.add(new Word("so-so ", " to be messed up, ruined   ", "Expression", 1, ""));
-        words.add(new Word("spliff ", " large, cone-shaped marijuana cigarette     ", "Expression", 1, ""));
+        words.add(new Word("spliff ", " large, cone-shaped marijuana cigarette ", "Expression", 1, ""));
         words.add(new Word("step ", "to leave, to depart  briskly, quickly ", "Expression", 1, ""));
 
         words.add(new Word("stoosh ", " upper class, high tone, hitey-titey. ", "Expression", 1, ""));
@@ -214,10 +214,10 @@ public class DatabaseInfo {
         words.add(new Word("wheels  ", "vehicle", "Expression", 1, ""));
         words.add(new Word("whole heap  ", "a lot ", "Expression", 1, ""));
         words.add(new Word("winjy   ", "thin and sickly looking ", "Expression", 1, ""));
-        words.add(new Word("wis   ", " vine, liana, from withe. ", "Expression", 1, ""));
+        words.add(new Word("wis ", " vine, liana, from withe. ", "Expression", 1, ""));
         words.add(new Word("ya no see it?  ", "you know?", "Expression", 1, ""));
-        words.add(new Word("ya  ", "hear, or here.", "Expression", 1, ""));
-        words.add(new Word("yabba  ", " a big clay pot.", "Expression", 1, ""));
+        words.add(new Word("ya", "hear, or here.", "Expression", 1, ""));
+        words.add(new Word("yabba ", " a big clay pot.", "Expression", 1, ""));
 
 
         words.add(new Word("yabba  ", " a big clay pot.", "Expression", 1, ""));
