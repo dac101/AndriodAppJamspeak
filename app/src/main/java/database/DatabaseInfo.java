@@ -142,12 +142,12 @@ public class DatabaseInfo {
         words.add(new Word("licky-licky", "fawning,flattering,obsequious", "Expression", 1, ""));
         words.add(new Word("lilly bit ", "little bit, tiny", "Expression", 1, ""));
         words.add(new Word("(too) likky-likky", "look here!  ", "Expression", 1, ""));
-        words.add(new Word("maama man", "a gay person, an effeminate man, a weakling   ", "Expression", 1, ""));
+        words.add(new Word("maama man", " an effeminate man, a weakling   ", "Expression", 1, ""));
         words.add(new Word("maca ", "thorn, prickle.   ", "Expression", 1, ""));
         words.add(new Word("madda ", "mother", "Expression", 1, ""));
         words.add(new Word("maga dog ", "    mongrel  ", "Expression", 1, ""));
         words.add(new Word("maga ", "thin", "Expression", 1, ""));
-        words.add(new Word("marina ", "look here!  ", "a man's undershirt, guernsey; a tank-top style", 1, ""));
+        words.add(new Word("marina ", "A man's undershirt, guernsey; a tank-top style ", "thing", 1, ""));
         words.add(new Word("no true? ", "isn't it so?   ", "Expression", 1, ""));
         words.add(new Word("monks  ", "amongst", "Expression", 1, ""));
         words.add(new Word("mash up, mash down  ", "destroy", "Expression", 1, ""));

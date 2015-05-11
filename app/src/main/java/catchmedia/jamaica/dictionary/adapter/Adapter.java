@@ -11,6 +11,8 @@ import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 
@@ -86,11 +88,24 @@ public class Adapter extends ArrayAdapter<Word>{
             try {
                 String currentPic = drawables[i].getName().toLowerCase().split("_")[0];
                 if (currentPic.toLowerCase().contains(word.getWord().toLowerCase().replaceAll(" ",""))) {
-                    wordImage.setImageResource(drawables[i].getInt(null));
+
+                    //wordImage.setImageResource(drawables[i].getInt(null));
+                    Picasso.with(context)
+                            .load(drawables[i].getInt(null))
+                            .resize(250, 250)
+                            .centerCrop()
+                            .into(wordImage);
+
                     break;
                 }
                 if(currentPic.toLowerCase().contains(word.getWord().toLowerCase().substring(0,2))){
-                    wordImage.setImageResource(drawables[i].getInt(null));
+                    //wordImage.setImageResource(drawables[i].getInt(null));
+                    Picasso.with(context)
+                            .load(drawables[i].getInt(null))
+                            .resize(250,250)
+                            .centerCrop()
+                            .into(wordImage);
+
                 }
             } catch (IllegalAccessException e) {
                 // TODO Auto-generated catch block

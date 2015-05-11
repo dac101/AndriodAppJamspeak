@@ -25,32 +25,15 @@ public class MapUtilities {
     }
 
     public static void setMapSetting(GoogleMap googleMap) {
+
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        // googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-        // googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-        // googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
-        // googleMap.setMapType(GoogleMap.MAP_TYPE_NONE);
-
-        // Showing / hiding your current location
         googleMap.setMyLocationEnabled(true);
-
-        // Enable / Disable zooming controls
         googleMap.getUiSettings().setZoomControlsEnabled(true);
-
-        // Enable / Disable my location button
         googleMap.getUiSettings().setMyLocationButtonEnabled(true);
-
-        // Enable / Disable Compass icon
         googleMap.getUiSettings().setCompassEnabled(true);
-
-        // Enable / Disable Rotate gesture
         googleMap.getUiSettings().setRotateGesturesEnabled(true);
-
-        // Enable / Disable zooming functionality
         googleMap.getUiSettings().setZoomGesturesEnabled(true);
-
         googleMap.getUiSettings().isScrollGesturesEnabled();
-
         googleMap.getUiSettings().setAllGesturesEnabled(true);
     }
 

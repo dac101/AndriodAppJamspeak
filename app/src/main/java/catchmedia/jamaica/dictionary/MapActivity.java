@@ -99,14 +99,14 @@ public class MapActivity extends FragmentActivity  implements GoogleApiClient.Co
 
             queue.add(jsObjRequest);
 
-            for(Marker x : markers)
-            {
-                if(intent.getStringExtra("name").equals(x.getName()))
+            String name = intent.getStringExtra("name").replace(" ","").toLowerCase();
+
+            for(Marker x : markers) {
+                if(name.equals(x.getName().replace(" ","").toLowerCase()))
                 {
                     MapUtilities.setCameraPosition(x, 9, googleMap);
                     break;
                 }
-                MapUtilities.setCameraPosition(x, 9, googleMap);
             }
 
         } catch (Exception e) {

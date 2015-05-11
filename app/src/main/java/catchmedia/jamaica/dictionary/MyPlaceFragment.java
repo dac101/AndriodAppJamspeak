@@ -15,9 +15,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationServices;
-
-import org.json.JSONObject;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,7 +60,15 @@ public class MyPlaceFragment extends Fragment implements GoogleApiClient.Connect
                 markers = db.getAllMarker();
 
                 for (Marker marker : markers) {
-                    if (marker.getName().contains(info.get(position).getName())) {
+                    String item1 = marker.getName().toLowerCase().replace(" ", "");
+
+                    String item2 = info.get(position).getName()
+                            .toLowerCase()
+                            .replace(" ", "")
+                            .replace("_", "")
+                            .replace("travel", "");
+
+                    if (item1.equals(item2)) {
                         mark = marker;
                         break;
                     } else {
@@ -147,7 +153,11 @@ public class MyPlaceFragment extends Fragment implements GoogleApiClient.Connect
 
             Item item = (Item) getItem(i);
 
-            picture.setImageResource(item.drawableId);
+            Picasso.with(getActivity().getApplicationContext())
+                    .load(item.drawableId)
+                    .into(picture);
+
+
             name.setText(item.name);
 
             return v;

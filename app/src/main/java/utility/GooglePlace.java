@@ -97,7 +97,7 @@ public class GooglePlace  {
 
 
     public void geolocation(Context context) {
-        LocationManager locationManager = (LocationManager)context. getSystemService(context.LOCATION_SERVICE);
+        LocationManager locationManager = (LocationManager)context. getSystemService(Context.LOCATION_SERVICE);
 
 
         mLastLocation = LocationServices.FusedLocationApi
@@ -105,8 +105,15 @@ public class GooglePlace  {
 
         Location location;
         location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-        _latitude =location.getLatitude();
-        _longitude = location.getLongitude();
+
+        if(location == null){
+            _latitude =  18.0233783 ;
+            _longitude = -76.7681047;
+
+        }else{
+            _latitude =location.getLatitude();
+            _longitude = location.getLongitude();
+        }
 
     }
 
@@ -142,10 +149,11 @@ public class GooglePlace  {
              _longitude = mLastLocation.getLongitude();
 
         } else {
-          _latitude=  17.9833;
-          _longitude =-76.7484358;
+            _latitude = 17.9833;
+            _longitude = -76.7484358;
 
         }
+
     }
 
     public boolean checkPlayServices(Context context) {
