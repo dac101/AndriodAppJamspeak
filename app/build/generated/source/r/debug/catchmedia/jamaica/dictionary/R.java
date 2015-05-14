@@ -528,133 +528,247 @@ containing a value of this type.
         public static final int ab_transparent_jamspeak=0x7f02000a;
         public static final int ab_transparent_style=0x7f02000b;
         public static final int ackee_jamaicaword=0x7f02000c;
-        public static final int antonetbar_travel=0x7f02000d;
-        public static final int appleton_estate_travel=0x7f02000e;
-        public static final int apptheme_btn_default_holo_dark=0x7f02000f;
-        public static final int arial_travel=0x7f020010;
-        public static final int backgradient=0x7f020011;
-        public static final int blue_lagoon_travel=0x7f020012;
-        public static final int btn_cab_done_default_jamspeak=0x7f020013;
-        public static final int btn_cab_done_default_style=0x7f020014;
-        public static final int btn_cab_done_focused_jamspeak=0x7f020015;
-        public static final int btn_cab_done_focused_style=0x7f020016;
-        public static final int btn_cab_done_jamspeak=0x7f020017;
-        public static final int btn_cab_done_pressed_jamspeak=0x7f020018;
-        public static final int btn_cab_done_pressed_style=0x7f020019;
-        public static final int btn_cab_done_style=0x7f02001a;
-        public static final int bulla_jamaicaword=0x7f02001b;
-        public static final int cab_background_bottom_jamspeak=0x7f02001c;
-        public static final int cab_background_bottom_style=0x7f02001d;
-        public static final int cab_background_top_jamspeak=0x7f02001e;
-        public static final int cab_background_top_style=0x7f02001f;
-        public static final int common_full_open_on_phone=0x7f020020;
-        public static final int common_ic_googleplayservices=0x7f020021;
-        public static final int common_signin_btn_icon_dark=0x7f020022;
-        public static final int common_signin_btn_icon_disabled_dark=0x7f020023;
-        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020024;
-        public static final int common_signin_btn_icon_disabled_focus_light=0x7f020025;
-        public static final int common_signin_btn_icon_disabled_light=0x7f020026;
-        public static final int common_signin_btn_icon_focus_dark=0x7f020027;
-        public static final int common_signin_btn_icon_focus_light=0x7f020028;
-        public static final int common_signin_btn_icon_light=0x7f020029;
-        public static final int common_signin_btn_icon_normal_dark=0x7f02002a;
-        public static final int common_signin_btn_icon_normal_light=0x7f02002b;
-        public static final int common_signin_btn_icon_pressed_dark=0x7f02002c;
-        public static final int common_signin_btn_icon_pressed_light=0x7f02002d;
-        public static final int common_signin_btn_text_dark=0x7f02002e;
-        public static final int common_signin_btn_text_disabled_dark=0x7f02002f;
-        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020030;
-        public static final int common_signin_btn_text_disabled_focus_light=0x7f020031;
-        public static final int common_signin_btn_text_disabled_light=0x7f020032;
-        public static final int common_signin_btn_text_focus_dark=0x7f020033;
-        public static final int common_signin_btn_text_focus_light=0x7f020034;
-        public static final int common_signin_btn_text_light=0x7f020035;
-        public static final int common_signin_btn_text_normal_dark=0x7f020036;
-        public static final int common_signin_btn_text_normal_light=0x7f020037;
-        public static final int common_signin_btn_text_pressed_dark=0x7f020038;
-        public static final int common_signin_btn_text_pressed_light=0x7f020039;
-        public static final int dunns_river_travel=0x7f02003a;
-        public static final int fimi_jamaicaworld=0x7f02003b;
-        public static final int fren_jamaicaword=0x7f02003c;
-        public static final int gradient_background=0x7f02003d;
-        public static final int green_grotto_travel=0x7f02003e;
-        public static final int greeting=0x7f02003f;
-        public static final int higgla_jamaicaword=0x7f020040;
-        public static final int ic_launcher=0x7f020041;
-        public static final int ic_launcher_jamspeak=0x7f020042;
-        public static final int ic_plusone_medium_off_client=0x7f020043;
-        public static final int ic_plusone_small_off_client=0x7f020044;
-        public static final int ic_plusone_standard_off_client=0x7f020045;
-        public static final int ic_plusone_tall_off_client=0x7f020046;
-        public static final int innadilates_jamaicaword=0x7f020047;
-        public static final int irie_jamaicaword=0x7f020048;
-        public static final int jahguide_jamaicaword=0x7f020049;
-        public static final int jamdown_jamaicaword=0x7f02004a;
-        public static final int leggo_jamaicaword=0x7f02004b;
-        public static final int lights_jamaicaword=0x7f02004c;
-        public static final int likklemore_jamaicaword=0x7f02004d;
-        public static final int linkup_jamaicaword=0x7f02004e;
-        public static final int list_focused_jamspeak=0x7f02004f;
-        public static final int list_focused_style=0x7f020050;
-        public static final int list_pressed_jamspeak=0x7f020051;
-        public static final int list_pressed_style=0x7f020052;
-        public static final int list_row_bg=0x7f020053;
-        public static final int list_row_bg_hover=0x7f020054;
-        public static final int list_row_selector=0x7f020055;
-        public static final int mashitup_jamaicaword=0x7f020056;
-        public static final int menu_dropdown_panel_jamspeak=0x7f020057;
-        public static final int menu_dropdown_panel_style=0x7f020058;
-        public static final int monn_jamaicaword=0x7f020059;
-        public static final int moretime_jamaicaword=0x7f02005a;
-        public static final int mystic_mountain_travel=0x7f02005b;
-        public static final int myyute_jamaicaword=0x7f02005c;
-        public static final int naa_jamaciaword=0x7f02005d;
-        public static final int nyam_jamaicaword=0x7f02005e;
-        public static final int nyami_jamaicaword=0x7f02005f;
-        public static final int patty=0x7f020060;
-        public static final int place_jamaciaword=0x7f020061;
-        public static final int powered_by_google_dark=0x7f020062;
-        public static final int powered_by_google_light=0x7f020063;
-        public static final int progress_bg_jamspeak=0x7f020064;
-        public static final int progress_bg_style=0x7f020065;
-        public static final int progress_horizontal_jamspeak=0x7f020066;
-        public static final int progress_horizontal_style=0x7f020067;
-        public static final int progress_primary_jamspeak=0x7f020068;
-        public static final int progress_primary_style=0x7f020069;
-        public static final int progress_secondary_jamspeak=0x7f02006a;
-        public static final int progress_secondary_style=0x7f02006b;
-        public static final int search=0x7f02006c;
-        public static final int selectable_background_jamspeak=0x7f02006d;
-        public static final int selectable_background_style=0x7f02006e;
-        public static final int shop=0x7f02006f;
-        public static final int spinner_ab_default_jamspeak=0x7f020070;
-        public static final int spinner_ab_default_style=0x7f020071;
-        public static final int spinner_ab_disabled_jamspeak=0x7f020072;
-        public static final int spinner_ab_disabled_style=0x7f020073;
-        public static final int spinner_ab_focused_jamspeak=0x7f020074;
-        public static final int spinner_ab_focused_style=0x7f020075;
-        public static final int spinner_ab_pressed_jamspeak=0x7f020076;
-        public static final int spinner_ab_pressed_style=0x7f020077;
-        public static final int spinner_background_ab_jamspeak=0x7f020078;
-        public static final int spinner_background_ab_style=0x7f020079;
-        public static final int tab_indicator_ab_jamspeak=0x7f02007a;
-        public static final int tab_indicator_ab_style=0x7f02007b;
-        public static final int tab_selected_focused_jamspeak=0x7f02007c;
-        public static final int tab_selected_focused_style=0x7f02007d;
-        public static final int tab_selected_jamspeak=0x7f02007e;
-        public static final int tab_selected_pressed_jamspeak=0x7f02007f;
-        public static final int tab_selected_pressed_style=0x7f020080;
-        public static final int tab_selected_style=0x7f020081;
-        public static final int tab_unselected_focused_jamspeak=0x7f020082;
-        public static final int tab_unselected_focused_style=0x7f020083;
-        public static final int tab_unselected_jamspeak=0x7f020084;
-        public static final int tab_unselected_pressed_jamspeak=0x7f020085;
-        public static final int tab_unselected_pressed_style=0x7f020086;
-        public static final int tab_unselected_style=0x7f020087;
-        public static final int tanks_jamaicaword=0x7f020088;
-        public static final int wah_jamaicaword=0x7f020089;
-        public static final int wappun_jamaicaword=0x7f02008a;
-        public static final int yeh_jamaicaword=0x7f02008b;
+        public static final int agony_jamaicaword=0x7f02000d;
+        public static final int anger_jamaicaword=0x7f02000e;
+        public static final int antonetbar_travel=0x7f02000f;
+        public static final int appleton_estate_travel=0x7f020010;
+        public static final int apptheme_btn_default_holo_dark=0x7f020011;
+        public static final int babylon_jamaicaword=0x7f020012;
+        public static final int backgradient=0x7f020013;
+        public static final int badness_jamaicaword=0x7f020014;
+        public static final int bafan_jamaicaword=0x7f020015;
+        public static final int baggy_jamaicaword=0x7f020016;
+        public static final int baldhead_jamaicaword=0x7f020017;
+        public static final int bammy_jamaicaword=0x7f020018;
+        public static final int bangarang_jamaicaword=0x7f020019;
+        public static final int batty_jamaicaword=0x7f02001a;
+        public static final int bex_jamaicaword=0x7f02001b;
+        public static final int blue_lagoon_travel=0x7f02001c;
+        public static final int bly_jamaicaword=0x7f02001d;
+        public static final int bredren_jamaicaword=0x7f02001e;
+        public static final int brindle_jamaicaword=0x7f02001f;
+        public static final int btn_cab_done_default_jamspeak=0x7f020020;
+        public static final int btn_cab_done_default_style=0x7f020021;
+        public static final int btn_cab_done_focused_jamspeak=0x7f020022;
+        public static final int btn_cab_done_focused_style=0x7f020023;
+        public static final int btn_cab_done_jamspeak=0x7f020024;
+        public static final int btn_cab_done_pressed_jamspeak=0x7f020025;
+        public static final int btn_cab_done_pressed_style=0x7f020026;
+        public static final int btn_cab_done_style=0x7f020027;
+        public static final int bulla_jamaicaword=0x7f020028;
+        public static final int bun_jamaicaword=0x7f020029;
+        public static final int cab_background_bottom_jamspeak=0x7f02002a;
+        public static final int cab_background_bottom_style=0x7f02002b;
+        public static final int cab_background_top_jamspeak=0x7f02002c;
+        public static final int cab_background_top_style=0x7f02002d;
+        public static final int can_jamaicaword=0x7f02002e;
+        public static final int ceasesekkle_jamaicaword=0x7f02002f;
+        public static final int chakachaka_jamaicaword=0x7f020030;
+        public static final int chalice_jamaicaword=0x7f020031;
+        public static final int chimmy_jamaicaword=0x7f020032;
+        public static final int coil_jamaicaword=0x7f020033;
+        public static final int common_full_open_on_phone=0x7f020034;
+        public static final int common_ic_googleplayservices=0x7f020035;
+        public static final int common_signin_btn_icon_dark=0x7f020036;
+        public static final int common_signin_btn_icon_disabled_dark=0x7f020037;
+        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020038;
+        public static final int common_signin_btn_icon_disabled_focus_light=0x7f020039;
+        public static final int common_signin_btn_icon_disabled_light=0x7f02003a;
+        public static final int common_signin_btn_icon_focus_dark=0x7f02003b;
+        public static final int common_signin_btn_icon_focus_light=0x7f02003c;
+        public static final int common_signin_btn_icon_light=0x7f02003d;
+        public static final int common_signin_btn_icon_normal_dark=0x7f02003e;
+        public static final int common_signin_btn_icon_normal_light=0x7f02003f;
+        public static final int common_signin_btn_icon_pressed_dark=0x7f020040;
+        public static final int common_signin_btn_icon_pressed_light=0x7f020041;
+        public static final int common_signin_btn_text_dark=0x7f020042;
+        public static final int common_signin_btn_text_disabled_dark=0x7f020043;
+        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020044;
+        public static final int common_signin_btn_text_disabled_focus_light=0x7f020045;
+        public static final int common_signin_btn_text_disabled_light=0x7f020046;
+        public static final int common_signin_btn_text_focus_dark=0x7f020047;
+        public static final int common_signin_btn_text_focus_light=0x7f020048;
+        public static final int common_signin_btn_text_light=0x7f020049;
+        public static final int common_signin_btn_text_normal_dark=0x7f02004a;
+        public static final int common_signin_btn_text_normal_light=0x7f02004b;
+        public static final int common_signin_btn_text_pressed_dark=0x7f02004c;
+        public static final int common_signin_btn_text_pressed_light=0x7f02004d;
+        public static final int coolie_jamaicaword=0x7f02004e;
+        public static final int craven_jamword=0x7f02004f;
+        public static final int cris_jamaicaword=0x7f020050;
+        public static final int crosses_jamaicaword=0x7f020051;
+        public static final int crucial_jamaicaword=0x7f020052;
+        public static final int cusscuss_jamaicaword=0x7f020053;
+        public static final int dada_jamaicaword=0x7f020054;
+        public static final int dandada_jamword=0x7f020055;
+        public static final int dawta_jamword=0x7f020056;
+        public static final int default_jamaicaword=0x7f020057;
+        public static final int djew_jamaicaword=0x7f020058;
+        public static final int don_jamaicaword=0x7f020059;
+        public static final int donkya_jamaicaword=0x7f02005a;
+        public static final int draed_jamaicaword=0x7f02005b;
+        public static final int dread_jamaicaword=0x7f02005c;
+        public static final int duckants_jamaicaword=0x7f02005d;
+        public static final int dunns_river_travel=0x7f02005e;
+        public static final int duppy_jamaicaword=0x7f02005f;
+        public static final int dutchy_jamaicaword=0x7f020060;
+        public static final int fayva_jamaicaword=0x7f020061;
+        public static final int feelnoway_jamaicaword=0x7f020062;
+        public static final int fenkyfenky_jamaicaword=0x7f020063;
+        public static final int fiesty_jamaicaword=0x7f020064;
+        public static final int fimi_jamaicaworld=0x7f020065;
+        public static final int forgive_jamaicaword=0x7f020066;
+        public static final int forward_jamaicword=0x7f020067;
+        public static final int fren_jamaicaword=0x7f020068;
+        public static final int ganja_jamaicaword=0x7f020069;
+        public static final int gansey_jamaicaword=0x7f02006a;
+        public static final int glistening_waters_travel=0x7f02006b;
+        public static final int gradient_background=0x7f02006c;
+        public static final int green_grotto_travel=0x7f02006d;
+        public static final int greeting=0x7f02006e;
+        public static final int hail_jamaicaword=0x7f02006f;
+        public static final int hard_jamaicaword=0x7f020070;
+        public static final int hiez_haad_jamaicaword=0x7f020071;
+        public static final int higgla_jamaicaword=0x7f020072;
+        public static final int hiteytitey_jamaicaword=0x7f020073;
+        public static final int hotstepper_jamaicaword=0x7f020074;
+        public static final int ic_launcher=0x7f020075;
+        public static final int ic_launcher_jamspeak=0x7f020076;
+        public static final int ic_plusone_medium_off_client=0x7f020077;
+        public static final int ic_plusone_small_off_client=0x7f020078;
+        public static final int ic_plusone_standard_off_client=0x7f020079;
+        public static final int ic_plusone_tall_off_client=0x7f02007a;
+        public static final int innadilates_jamaicaword=0x7f02007b;
+        public static final int irie_jamaicaword=0x7f02007c;
+        public static final int jah_jamaicaword=0x7f02007d;
+        public static final int jahguide_jamaicaword=0x7f02007e;
+        public static final int jamdown_jamaicaword=0x7f02007f;
+        public static final int jammin_jamaicaword=0x7f020080;
+        public static final int janga_jamaicaword=0x7f020081;
+        public static final int jelly_jamaicaword=0x7f020082;
+        public static final int jook_jamaicaword=0x7f020083;
+        public static final int judgin_jamaicaword=0x7f020084;
+        public static final int kallaloo_jamaicaword=0x7f020085;
+        public static final int kissmeneck_jamaicaword=0x7f020086;
+        public static final int kyai_jamaicaword=0x7f020087;
+        public static final int labalaba_jamaicaword=0x7f020088;
+        public static final int labrish_jamaicaword=0x7f020089;
+        public static final int large_jamaicaword=0x7f02008a;
+        public static final int leggo_jamaicaword=0x7f02008b;
+        public static final int leggobeas_jamaicaword=0x7f02008c;
+        public static final int lickylicky_jamaicaword=0x7f02008d;
+        public static final int lights_jamaicaword=0x7f02008e;
+        public static final int likklemore_jamaicaword=0x7f02008f;
+        public static final int likky_likky_jamaicaword=0x7f020090;
+        public static final int lillybit_jamaicaword=0x7f020091;
+        public static final int linkup_jamaicaword=0x7f020092;
+        public static final int list_focused_jamspeak=0x7f020093;
+        public static final int list_focused_style=0x7f020094;
+        public static final int list_pressed_jamspeak=0x7f020095;
+        public static final int list_pressed_style=0x7f020096;
+        public static final int list_row_bg=0x7f020097;
+        public static final int list_row_bg_hover=0x7f020098;
+        public static final int list_row_selector=0x7f020099;
+        public static final int look_here_jamword=0x7f02009a;
+        public static final int maca_jamaicaword=0x7f02009b;
+        public static final int madda_jamaicaword=0x7f02009c;
+        public static final int maga_jamaicaword=0x7f02009d;
+        public static final int magadog_jamaicaword=0x7f02009e;
+        public static final int marina_jamaicaword=0x7f02009f;
+        public static final int mashitup_jamaicaword=0x7f0200a0;
+        public static final int menu_dropdown_panel_jamspeak=0x7f0200a1;
+        public static final int menu_dropdown_panel_style=0x7f0200a2;
+        public static final int monks_jamaicaword=0x7f0200a3;
+        public static final int monn_jamaicaword=0x7f0200a4;
+        public static final int moretime_jamaicaword=0x7f0200a5;
+        public static final int mystic_mountain_travel=0x7f0200a6;
+        public static final int myyute_jamaicaword=0x7f0200a7;
+        public static final int naa_jamaciaword=0x7f0200a8;
+        public static final int nyam_jamaicaword=0x7f0200a9;
+        public static final int nyami_jamaicaword=0x7f0200aa;
+        public static final int obeah_jamaicaword=0x7f0200ab;
+        public static final int ongle_jamaicaword=0x7f0200ac;
+        public static final int patty=0x7f0200ad;
+        public static final int patu_jamaicaword=0x7f0200ae;
+        public static final int peenywally_jamaicaword=0x7f0200af;
+        public static final int peer_kamaicaword=0x7f0200b0;
+        public static final int picky_jamaicaword=0x7f0200b1;
+        public static final int pikny_jamaicaword=0x7f0200b2;
+        public static final int pinda_jamaicaword=0x7f0200b3;
+        public static final int place_jamaciaword=0x7f0200b4;
+        public static final int polytricks_jamaicaword=0x7f0200b5;
+        public static final int poppyshow_jamaicaword=0x7f0200b6;
+        public static final int powered_by_google_dark=0x7f0200b7;
+        public static final int powered_by_google_light=0x7f0200b8;
+        public static final int progress_bg_jamspeak=0x7f0200b9;
+        public static final int progress_bg_style=0x7f0200ba;
+        public static final int progress_horizontal_jamspeak=0x7f0200bb;
+        public static final int progress_horizontal_style=0x7f0200bc;
+        public static final int progress_primary_jamspeak=0x7f0200bd;
+        public static final int progress_primary_style=0x7f0200be;
+        public static final int progress_secondary_jamspeak=0x7f0200bf;
+        public static final int progress_secondary_style=0x7f0200c0;
+        public static final int raatid_jamaicaword=0x7f0200c1;
+        public static final int ratbat_jamaicaword=0x7f0200c2;
+        public static final int renk_jamaicaword=0x7f0200c3;
+        public static final int rockers_jamaicaword=0x7f0200c4;
+        public static final int roots_jamaicaword=0x7f0200c5;
+        public static final int rudeboy_jamaicaword=0x7f0200c6;
+        public static final int ryal_jamaicaword=0x7f0200c7;
+        public static final int salt_jamaicaword=0x7f0200c8;
+        public static final int samfaiman_jamaicaword=0x7f0200c9;
+        public static final int satta_jamaicaword=0x7f0200ca;
+        public static final int screechie_jamaicaword=0x7f0200cb;
+        public static final int search=0x7f0200cc;
+        public static final int selectable_background_jamspeak=0x7f0200cd;
+        public static final int selectable_background_style=0x7f0200ce;
+        public static final int shegup_jamaicaword=0x7f0200cf;
+        public static final int shop=0x7f0200d0;
+        public static final int sidung_jamaicaword=0x7f0200d1;
+        public static final int sinklbible_jamaicaword=0x7f0200d2;
+        public static final int sistren_jamaicaword=0x7f0200d3;
+        public static final int soso_jamaicaword=0x7f0200d4;
+        public static final int spinner_ab_default_jamspeak=0x7f0200d5;
+        public static final int spinner_ab_default_style=0x7f0200d6;
+        public static final int spinner_ab_disabled_jamspeak=0x7f0200d7;
+        public static final int spinner_ab_disabled_style=0x7f0200d8;
+        public static final int spinner_ab_focused_jamspeak=0x7f0200d9;
+        public static final int spinner_ab_focused_style=0x7f0200da;
+        public static final int spinner_ab_pressed_jamspeak=0x7f0200db;
+        public static final int spinner_ab_pressed_style=0x7f0200dc;
+        public static final int spinner_background_ab_jamspeak=0x7f0200dd;
+        public static final int spinner_background_ab_style=0x7f0200de;
+        public static final int spliff_jamaicaword=0x7f0200df;
+        public static final int step_jamaicaword=0x7f0200e0;
+        public static final int sufferer_jamaicaword=0x7f0200e1;
+        public static final int tab_indicator_ab_jamspeak=0x7f0200e2;
+        public static final int tab_indicator_ab_style=0x7f0200e3;
+        public static final int tab_selected_focused_jamspeak=0x7f0200e4;
+        public static final int tab_selected_focused_style=0x7f0200e5;
+        public static final int tab_selected_jamspeak=0x7f0200e6;
+        public static final int tab_selected_pressed_jamspeak=0x7f0200e7;
+        public static final int tab_selected_pressed_style=0x7f0200e8;
+        public static final int tab_selected_style=0x7f0200e9;
+        public static final int tab_unselected_focused_jamspeak=0x7f0200ea;
+        public static final int tab_unselected_focused_style=0x7f0200eb;
+        public static final int tab_unselected_jamspeak=0x7f0200ec;
+        public static final int tab_unselected_pressed_jamspeak=0x7f0200ed;
+        public static final int tab_unselected_pressed_style=0x7f0200ee;
+        public static final int tab_unselected_style=0x7f0200ef;
+        public static final int tanks_jamaicaword=0x7f0200f0;
+        public static final int teif_jamaicaword=0x7f0200f1;
+        public static final int toraass_jamword=0x7f0200f2;
+        public static final int trace_jamaicaword=0x7f0200f3;
+        public static final int tumpa_jamaicaword=0x7f0200f4;
+        public static final int vex_jamaicaword=0x7f0200f5;
+        public static final int wah_jamaicaword=0x7f0200f6;
+        public static final int wappun_jamaicaword=0x7f0200f7;
+        public static final int wheels_jamaicaword=0x7f0200f8;
+        public static final int wholeheap_jamaicaword=0x7f0200f9;
+        public static final int wis_jamaicaword=0x7f0200fa;
+        public static final int yabba_jamaicaword=0x7f0200fb;
+        public static final int yeh_jamaicaword=0x7f0200fc;
+        public static final int zion_jamaicaword=0x7f0200fd;
     }
     public static final class id {
         public static final int About_Us=0x7f0c0049;
@@ -901,9 +1015,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize catchmedia.jamaica.dictionary:adSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes catchmedia.jamaica.dictionary:adSizes}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId catchmedia.jamaica.dictionary:adUnitId}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSize catchmedia.jam.speak:adSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSizes catchmedia.jam.speak:adSizes}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId catchmedia.jam.speak:adUnitId}</code></td><td></td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
@@ -913,7 +1027,7 @@ containing a value of this type.
             0x7f010000, 0x7f010001, 0x7f010002
         };
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#adSize}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#adSize}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -923,11 +1037,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:adSize
+          @attr name catchmedia.jam.speak:adSize
         */
         public static final int AdsAttrs_adSize = 0;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#adSizes}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#adSizes}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -937,11 +1051,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:adSizes
+          @attr name catchmedia.jam.speak:adSizes
         */
         public static final int AdsAttrs_adSizes = 1;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#adUnitId}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#adUnitId}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -951,7 +1065,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:adUnitId
+          @attr name catchmedia.jam.speak:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a CustomWalletTheme.
@@ -960,7 +1074,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CustomWalletTheme_windowTransitionStyle catchmedia.jamaica.dictionary:windowTransitionStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomWalletTheme_windowTransitionStyle catchmedia.jam.speak:windowTransitionStyle}</code></td><td></td></tr>
            </table>
            @see #CustomWalletTheme_windowTransitionStyle
          */
@@ -968,7 +1082,7 @@ containing a value of this type.
             0x7f010003
         };
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#windowTransitionStyle}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#windowTransitionStyle}
           attribute's value can be found in the {@link #CustomWalletTheme} array.
 
 
@@ -981,7 +1095,7 @@ containing a value of this type.
 <tr><td><code>slide</code></td><td>1</td><td></td></tr>
 <tr><td><code>none</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:windowTransitionStyle
+          @attr name catchmedia.jam.speak:windowTransitionStyle
         */
         public static final int CustomWalletTheme_windowTransitionStyle = 0;
         /** Attributes that can be used with a GridLayout.
@@ -990,13 +1104,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #GridLayout_alignmentMode catchmedia.jamaica.dictionary:alignmentMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #GridLayout_columnCount catchmedia.jamaica.dictionary:columnCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #GridLayout_columnOrderPreserved catchmedia.jamaica.dictionary:columnOrderPreserved}</code></td><td></td></tr>
-           <tr><td><code>{@link #GridLayout_orientation catchmedia.jamaica.dictionary:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #GridLayout_rowCount catchmedia.jamaica.dictionary:rowCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #GridLayout_rowOrderPreserved catchmedia.jamaica.dictionary:rowOrderPreserved}</code></td><td></td></tr>
-           <tr><td><code>{@link #GridLayout_useDefaultMargins catchmedia.jamaica.dictionary:useDefaultMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_alignmentMode catchmedia.jam.speak:alignmentMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_columnCount catchmedia.jam.speak:columnCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_columnOrderPreserved catchmedia.jam.speak:columnOrderPreserved}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_orientation catchmedia.jam.speak:orientation}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_rowCount catchmedia.jam.speak:rowCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_rowOrderPreserved catchmedia.jam.speak:rowOrderPreserved}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_useDefaultMargins catchmedia.jam.speak:useDefaultMargins}</code></td><td></td></tr>
            </table>
            @see #GridLayout_alignmentMode
            @see #GridLayout_columnCount
@@ -1011,7 +1125,7 @@ containing a value of this type.
             0x7f010008, 0x7f010009, 0x7f01000a
         };
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#alignmentMode}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#alignmentMode}
           attribute's value can be found in the {@link #GridLayout} array.
 
 
@@ -1024,11 +1138,11 @@ containing a value of this type.
 <tr><td><code>alignBounds</code></td><td>0</td><td></td></tr>
 <tr><td><code>alignMargins</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:alignmentMode
+          @attr name catchmedia.jam.speak:alignmentMode
         */
         public static final int GridLayout_alignmentMode = 4;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#columnCount}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#columnCount}
           attribute's value can be found in the {@link #GridLayout} array.
 
 
@@ -1038,11 +1152,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:columnCount
+          @attr name catchmedia.jam.speak:columnCount
         */
         public static final int GridLayout_columnCount = 2;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#columnOrderPreserved}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#columnOrderPreserved}
           attribute's value can be found in the {@link #GridLayout} array.
 
 
@@ -1052,11 +1166,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:columnOrderPreserved
+          @attr name catchmedia.jam.speak:columnOrderPreserved
         */
         public static final int GridLayout_columnOrderPreserved = 6;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#orientation}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#orientation}
           attribute's value can be found in the {@link #GridLayout} array.
 
 
@@ -1069,11 +1183,11 @@ containing a value of this type.
 <tr><td><code>horizontal</code></td><td>0</td><td></td></tr>
 <tr><td><code>vertical</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:orientation
+          @attr name catchmedia.jam.speak:orientation
         */
         public static final int GridLayout_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#rowCount}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#rowCount}
           attribute's value can be found in the {@link #GridLayout} array.
 
 
@@ -1083,11 +1197,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:rowCount
+          @attr name catchmedia.jam.speak:rowCount
         */
         public static final int GridLayout_rowCount = 1;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#rowOrderPreserved}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#rowOrderPreserved}
           attribute's value can be found in the {@link #GridLayout} array.
 
 
@@ -1097,11 +1211,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:rowOrderPreserved
+          @attr name catchmedia.jam.speak:rowOrderPreserved
         */
         public static final int GridLayout_rowOrderPreserved = 5;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#useDefaultMargins}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#useDefaultMargins}
           attribute's value can be found in the {@link #GridLayout} array.
 
 
@@ -1111,7 +1225,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:useDefaultMargins
+          @attr name catchmedia.jam.speak:useDefaultMargins
         */
         public static final int GridLayout_useDefaultMargins = 3;
         /** Attributes that can be used with a GridLayout_Layout.
@@ -1127,11 +1241,11 @@ containing a value of this type.
            <tr><td><code>{@link #GridLayout_Layout_android_layout_marginRight android:layout_marginRight}</code></td><td></td></tr>
            <tr><td><code>{@link #GridLayout_Layout_android_layout_marginTop android:layout_marginTop}</code></td><td></td></tr>
            <tr><td><code>{@link #GridLayout_Layout_android_layout_width android:layout_width}</code></td><td></td></tr>
-           <tr><td><code>{@link #GridLayout_Layout_layout_column catchmedia.jamaica.dictionary:layout_column}</code></td><td></td></tr>
-           <tr><td><code>{@link #GridLayout_Layout_layout_columnSpan catchmedia.jamaica.dictionary:layout_columnSpan}</code></td><td></td></tr>
-           <tr><td><code>{@link #GridLayout_Layout_layout_gravity catchmedia.jamaica.dictionary:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #GridLayout_Layout_layout_row catchmedia.jamaica.dictionary:layout_row}</code></td><td></td></tr>
-           <tr><td><code>{@link #GridLayout_Layout_layout_rowSpan catchmedia.jamaica.dictionary:layout_rowSpan}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_Layout_layout_column catchmedia.jam.speak:layout_column}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_Layout_layout_columnSpan catchmedia.jam.speak:layout_columnSpan}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_Layout_layout_gravity catchmedia.jam.speak:layout_gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_Layout_layout_row catchmedia.jam.speak:layout_row}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridLayout_Layout_layout_rowSpan catchmedia.jam.speak:layout_rowSpan}</code></td><td></td></tr>
            </table>
            @see #GridLayout_Layout_android_layout_height
            @see #GridLayout_Layout_android_layout_margin
@@ -1194,7 +1308,7 @@ containing a value of this type.
         */
         public static final int GridLayout_Layout_android_layout_width = 0;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#layout_column}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#layout_column}
           attribute's value can be found in the {@link #GridLayout_Layout} array.
 
 
@@ -1204,11 +1318,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:layout_column
+          @attr name catchmedia.jam.speak:layout_column
         */
         public static final int GridLayout_Layout_layout_column = 9;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#layout_columnSpan}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#layout_columnSpan}
           attribute's value can be found in the {@link #GridLayout_Layout} array.
 
 
@@ -1218,11 +1332,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:layout_columnSpan
+          @attr name catchmedia.jam.speak:layout_columnSpan
         */
         public static final int GridLayout_Layout_layout_columnSpan = 10;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#layout_gravity}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#layout_gravity}
           attribute's value can be found in the {@link #GridLayout_Layout} array.
 
 
@@ -1247,11 +1361,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:layout_gravity
+          @attr name catchmedia.jam.speak:layout_gravity
         */
         public static final int GridLayout_Layout_layout_gravity = 11;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#layout_row}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#layout_row}
           attribute's value can be found in the {@link #GridLayout_Layout} array.
 
 
@@ -1261,11 +1375,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:layout_row
+          @attr name catchmedia.jam.speak:layout_row
         */
         public static final int GridLayout_Layout_layout_row = 7;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#layout_rowSpan}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#layout_rowSpan}
           attribute's value can be found in the {@link #GridLayout_Layout} array.
 
 
@@ -1275,7 +1389,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:layout_rowSpan
+          @attr name catchmedia.jam.speak:layout_rowSpan
         */
         public static final int GridLayout_Layout_layout_rowSpan = 8;
         /** Attributes that can be used with a LoadingImageView.
@@ -1284,9 +1398,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LoadingImageView_circleCrop catchmedia.jamaica.dictionary:circleCrop}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatio catchmedia.jamaica.dictionary:imageAspectRatio}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust catchmedia.jamaica.dictionary:imageAspectRatioAdjust}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_circleCrop catchmedia.jam.speak:circleCrop}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio catchmedia.jam.speak:imageAspectRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust catchmedia.jam.speak:imageAspectRatioAdjust}</code></td><td></td></tr>
            </table>
            @see #LoadingImageView_circleCrop
            @see #LoadingImageView_imageAspectRatio
@@ -1296,7 +1410,7 @@ containing a value of this type.
             0x7f010010, 0x7f010011, 0x7f010012
         };
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#circleCrop}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#circleCrop}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -1306,11 +1420,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:circleCrop
+          @attr name catchmedia.jam.speak:circleCrop
         */
         public static final int LoadingImageView_circleCrop = 2;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#imageAspectRatio}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#imageAspectRatio}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -1320,11 +1434,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:imageAspectRatio
+          @attr name catchmedia.jam.speak:imageAspectRatio
         */
         public static final int LoadingImageView_imageAspectRatio = 1;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#imageAspectRatioAdjust}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#imageAspectRatioAdjust}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -1338,7 +1452,7 @@ containing a value of this type.
 <tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:imageAspectRatioAdjust
+          @attr name catchmedia.jam.speak:imageAspectRatioAdjust
         */
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;
         /** Attributes that can be used with a MapAttrs.
@@ -1347,22 +1461,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing catchmedia.jamaica.dictionary:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat catchmedia.jamaica.dictionary:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng catchmedia.jamaica.dictionary:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt catchmedia.jamaica.dictionary:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom catchmedia.jamaica.dictionary:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_liteMode catchmedia.jamaica.dictionary:liteMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType catchmedia.jamaica.dictionary:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass catchmedia.jamaica.dictionary:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiMapToolbar catchmedia.jamaica.dictionary:uiMapToolbar}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures catchmedia.jamaica.dictionary:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures catchmedia.jamaica.dictionary:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures catchmedia.jamaica.dictionary:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls catchmedia.jamaica.dictionary:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures catchmedia.jamaica.dictionary:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle catchmedia.jamaica.dictionary:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop catchmedia.jamaica.dictionary:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing catchmedia.jam.speak:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat catchmedia.jam.speak:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng catchmedia.jam.speak:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt catchmedia.jam.speak:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom catchmedia.jam.speak:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_liteMode catchmedia.jam.speak:liteMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType catchmedia.jam.speak:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass catchmedia.jam.speak:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiMapToolbar catchmedia.jam.speak:uiMapToolbar}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures catchmedia.jam.speak:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures catchmedia.jam.speak:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures catchmedia.jam.speak:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls catchmedia.jam.speak:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures catchmedia.jam.speak:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle catchmedia.jam.speak:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop catchmedia.jam.speak:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_cameraBearing
            @see #MapAttrs_cameraTargetLat
@@ -1388,7 +1502,7 @@ containing a value of this type.
             0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022
         };
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1398,11 +1512,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:cameraBearing
+          @attr name catchmedia.jam.speak:cameraBearing
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1412,11 +1526,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:cameraTargetLat
+          @attr name catchmedia.jam.speak:cameraTargetLat
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1426,11 +1540,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:cameraTargetLng
+          @attr name catchmedia.jam.speak:cameraTargetLng
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1440,11 +1554,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:cameraTilt
+          @attr name catchmedia.jam.speak:cameraTilt
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1454,11 +1568,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:cameraZoom
+          @attr name catchmedia.jam.speak:cameraZoom
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#liteMode}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#liteMode}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1468,11 +1582,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:liteMode
+          @attr name catchmedia.jam.speak:liteMode
         */
         public static final int MapAttrs_liteMode = 6;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#mapType}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1488,11 +1602,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:mapType
+          @attr name catchmedia.jam.speak:mapType
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1502,11 +1616,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiCompass
+          @attr name catchmedia.jam.speak:uiCompass
         */
         public static final int MapAttrs_uiCompass = 7;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiMapToolbar}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#uiMapToolbar}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1516,11 +1630,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiMapToolbar
+          @attr name catchmedia.jam.speak:uiMapToolbar
         */
         public static final int MapAttrs_uiMapToolbar = 15;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1530,11 +1644,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiRotateGestures
+          @attr name catchmedia.jam.speak:uiRotateGestures
         */
         public static final int MapAttrs_uiRotateGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1544,11 +1658,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiScrollGestures
+          @attr name catchmedia.jam.speak:uiScrollGestures
         */
         public static final int MapAttrs_uiScrollGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1558,11 +1672,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiTiltGestures
+          @attr name catchmedia.jam.speak:uiTiltGestures
         */
         public static final int MapAttrs_uiTiltGestures = 10;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1572,11 +1686,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiZoomControls
+          @attr name catchmedia.jam.speak:uiZoomControls
         */
         public static final int MapAttrs_uiZoomControls = 11;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1586,11 +1700,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:uiZoomGestures
+          @attr name catchmedia.jam.speak:uiZoomGestures
         */
         public static final int MapAttrs_uiZoomGestures = 12;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1600,11 +1714,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:useViewLifecycle
+          @attr name catchmedia.jam.speak:useViewLifecycle
         */
         public static final int MapAttrs_useViewLifecycle = 13;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1614,7 +1728,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:zOrderOnTop
+          @attr name catchmedia.jam.speak:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 14;
         /** Attributes that can be used with a WalletFragmentOptions.
@@ -1623,10 +1737,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_appTheme catchmedia.jamaica.dictionary:appTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_environment catchmedia.jamaica.dictionary:environment}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode catchmedia.jamaica.dictionary:fragmentMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle catchmedia.jamaica.dictionary:fragmentStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_appTheme catchmedia.jam.speak:appTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_environment catchmedia.jam.speak:environment}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode catchmedia.jam.speak:fragmentMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle catchmedia.jam.speak:fragmentStyle}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentOptions_appTheme
            @see #WalletFragmentOptions_environment
@@ -1637,7 +1751,7 @@ containing a value of this type.
             0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026
         };
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#appTheme}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#appTheme}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -1650,11 +1764,11 @@ containing a value of this type.
 <tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
 <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:appTheme
+          @attr name catchmedia.jam.speak:appTheme
         */
         public static final int WalletFragmentOptions_appTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#environment}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#environment}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -1668,11 +1782,11 @@ containing a value of this type.
 <tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:environment
+          @attr name catchmedia.jam.speak:environment
         */
         public static final int WalletFragmentOptions_environment = 1;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#fragmentMode}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#fragmentMode}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -1685,17 +1799,17 @@ containing a value of this type.
 <tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:fragmentMode
+          @attr name catchmedia.jam.speak:fragmentMode
         */
         public static final int WalletFragmentOptions_fragmentMode = 3;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#fragmentStyle}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#fragmentStyle}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name catchmedia.jamaica.dictionary:fragmentStyle
+          @attr name catchmedia.jam.speak:fragmentStyle
         */
         public static final int WalletFragmentOptions_fragmentStyle = 2;
         /** Attributes that can be used with a WalletFragmentStyle.
@@ -1704,17 +1818,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance catchmedia.jamaica.dictionary:buyButtonAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight catchmedia.jamaica.dictionary:buyButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText catchmedia.jamaica.dictionary:buyButtonText}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth catchmedia.jamaica.dictionary:buyButtonWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground catchmedia.jamaica.dictionary:maskedWalletDetailsBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground catchmedia.jamaica.dictionary:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance catchmedia.jamaica.dictionary:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance catchmedia.jamaica.dictionary:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType catchmedia.jamaica.dictionary:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor catchmedia.jamaica.dictionary:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance catchmedia.jamaica.dictionary:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance catchmedia.jam.speak:buyButtonAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight catchmedia.jam.speak:buyButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText catchmedia.jam.speak:buyButtonText}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth catchmedia.jam.speak:buyButtonWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground catchmedia.jam.speak:maskedWalletDetailsBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground catchmedia.jam.speak:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance catchmedia.jam.speak:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance catchmedia.jam.speak:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType catchmedia.jam.speak:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor catchmedia.jam.speak:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance catchmedia.jam.speak:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentStyle_buyButtonAppearance
            @see #WalletFragmentStyle_buyButtonHeight
@@ -1734,7 +1848,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01002f, 0x7f010030, 0x7f010031
         };
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#buyButtonAppearance}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#buyButtonAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1748,11 +1862,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:buyButtonAppearance
+          @attr name catchmedia.jam.speak:buyButtonAppearance
         */
         public static final int WalletFragmentStyle_buyButtonAppearance = 3;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#buyButtonHeight}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#buyButtonHeight}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1773,11 +1887,11 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:buyButtonHeight
+          @attr name catchmedia.jam.speak:buyButtonHeight
         */
         public static final int WalletFragmentStyle_buyButtonHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#buyButtonText}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#buyButtonText}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1792,11 +1906,11 @@ containing a value of this type.
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
 <tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:buyButtonText
+          @attr name catchmedia.jam.speak:buyButtonText
         */
         public static final int WalletFragmentStyle_buyButtonText = 2;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#buyButtonWidth}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#buyButtonWidth}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1817,11 +1931,11 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:buyButtonWidth
+          @attr name catchmedia.jam.speak:buyButtonWidth
         */
         public static final int WalletFragmentStyle_buyButtonWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsBackground}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#maskedWalletDetailsBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1829,11 +1943,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsBackground
+          @attr name catchmedia.jam.speak:maskedWalletDetailsBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsButtonBackground}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#maskedWalletDetailsButtonBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1841,31 +1955,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsButtonBackground
+          @attr name catchmedia.jam.speak:maskedWalletDetailsButtonBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsButtonTextAppearance}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#maskedWalletDetailsButtonTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsButtonTextAppearance
+          @attr name catchmedia.jam.speak:maskedWalletDetailsButtonTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsHeaderTextAppearance}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#maskedWalletDetailsHeaderTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsHeaderTextAppearance
+          @attr name catchmedia.jam.speak:maskedWalletDetailsHeaderTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsLogoImageType}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#maskedWalletDetailsLogoImageType}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1878,11 +1992,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>classic</code></td><td>1</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsLogoImageType
+          @attr name catchmedia.jam.speak:maskedWalletDetailsLogoImageType
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsLogoTextColor}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#maskedWalletDetailsLogoTextColor}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1893,17 +2007,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsLogoTextColor
+          @attr name catchmedia.jam.speak:maskedWalletDetailsLogoTextColor
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
         /**
-          <p>This symbol is the offset where the {@link catchmedia.jamaica.dictionary.R.attr#maskedWalletDetailsTextAppearance}
+          <p>This symbol is the offset where the {@link catchmedia.jam.speak.R.attr#maskedWalletDetailsTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name catchmedia.jamaica.dictionary:maskedWalletDetailsTextAppearance
+          @attr name catchmedia.jam.speak:maskedWalletDetailsTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
     };

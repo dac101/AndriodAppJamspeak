@@ -31,7 +31,8 @@ import database.DatabaseHandler;
 import database.Word;
 import utility.ImageInfo;
 
-public class HomeLessonActivity extends Activity {
+public class
+        HomeLessonActivity extends Activity {
 
     private TextView answer;
     DatabaseHandler db = new DatabaseHandler(this);
@@ -58,12 +59,12 @@ public class HomeLessonActivity extends Activity {
         // Create an ad request. Check logcat output for the hashed device ID to
         // get test ads on a physical device. e.g.
         // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
-        AdRequest adRequest = new AdRequest.Builder()
+        //AdRequest adRequest = new AdRequest.Builder()
 
-                .build();
+        //        .build();
 
         // Start loading the ad in the background.
-        mAdView.loadAd(adRequest);
+       // mAdView.loadAd(adRequest);
 
         getImages();
         generateQuestion();

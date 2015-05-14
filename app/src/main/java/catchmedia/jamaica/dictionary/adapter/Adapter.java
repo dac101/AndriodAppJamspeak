@@ -1,13 +1,10 @@
 package catchmedia.jamaica.dictionary.adapter;
 
 import android.content.Context;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -87,7 +84,7 @@ public class Adapter extends ArrayAdapter<Word>{
         for (int i = 0; i < drawables.length; i++) {
             try {
                 String currentPic = drawables[i].getName().toLowerCase().split("_")[0];
-                if (currentPic.toLowerCase().contains(word.getWord().toLowerCase().replaceAll(" ",""))) {
+                if (currentPic.toLowerCase().contains(word.getWord().toLowerCase().replaceAll(" ","").replace("&","").replace("!",""))) {
 
                     //wordImage.setImageResource(drawables[i].getInt(null));
                     Picasso.with(context)
@@ -97,12 +94,12 @@ public class Adapter extends ArrayAdapter<Word>{
                             .into(wordImage);
 
                     break;
-                }
-                if(currentPic.toLowerCase().contains(word.getWord().toLowerCase().substring(0,2))){
+                }else
+                if(currentPic.toLowerCase().contains("default")){
                     //wordImage.setImageResource(drawables[i].getInt(null));
                     Picasso.with(context)
                             .load(drawables[i].getInt(null))
-                            .resize(250,250)
+                            .resize(250, 250)
                             .centerCrop()
                             .into(wordImage);
 

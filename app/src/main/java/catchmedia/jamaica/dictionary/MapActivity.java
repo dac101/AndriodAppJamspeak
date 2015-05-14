@@ -4,7 +4,6 @@ package catchmedia.jamaica.dictionary;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.widget.Toast;
 
@@ -24,8 +23,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONObject;
-
-import java.util.ArrayList;
 
 import database.DatabaseHandler;
 import database.Marker;
@@ -102,7 +99,7 @@ public class MapActivity extends FragmentActivity  implements GoogleApiClient.Co
             String name = intent.getStringExtra("name").replace(" ","").toLowerCase();
 
             for(Marker x : markers) {
-                if(name.equals(x.getName().replace(" ","").toLowerCase()))
+                if(name.equals(x.getName().replace(" ", "").toLowerCase()))
                 {
                     MapUtilities.setCameraPosition(x, 9, googleMap);
                     break;

@@ -37,7 +37,7 @@ public class HomeActivity extends FragmentActivity implements
     DatabaseHandler db = new DatabaseHandler(this);
     AdView mAdView;
 
-    private String[] tabsTitles = {"Words", "Classroom" ,"Places"};
+    private String[] tabsTitles = {"Words","Places"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,9 +62,9 @@ public class HomeActivity extends FragmentActivity implements
                     .setTabListener(this));
         }
 
-         AdRequest adRequest = new AdRequest.Builder()
-         .build();
-          mAdView.loadAd(adRequest);
+       //  AdRequest adRequest = new AdRequest.Builder()
+        // .build();
+       //   mAdView.loadAd(adRequest);
 
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
