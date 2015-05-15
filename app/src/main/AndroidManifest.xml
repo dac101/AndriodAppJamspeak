@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="catchmedia.jamaica.dictionary"
-    android:versionCode="3"
-    android:versionName="1.2" >
+    android:versionCode="4"
+    android:versionName="2" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -61,6 +61,11 @@
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".HomeActivity" />
+
         <activity
             android:name=".SearchResultsActivity"
             android:label="@string/title_activity_search_results"
@@ -68,7 +73,10 @@
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
+            <intent-filter >
 
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />

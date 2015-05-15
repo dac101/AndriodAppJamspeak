@@ -112,7 +112,6 @@ public class MyPlaceFragment extends Fragment implements GoogleApiClient.Connect
         private List<Item> items = new ArrayList<Item>();
         private LayoutInflater inflater;
 
-
         public MyAdapter(Context context, ArrayList<ImageInfo> info) {
             inflater = LayoutInflater.from(context);
 

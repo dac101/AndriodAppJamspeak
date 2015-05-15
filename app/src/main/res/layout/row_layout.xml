@@ -39,9 +39,9 @@
         android:textSize="17sp"
         android:text="something else"
         android:textStyle="normal"
-        android:layout_alignBottom="@+id/wordImage"
-        android:layout_toRightOf="@+id/wordImage"
-        android:layout_toEndOf="@+id/wordImage" />
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/TypeOfWord"
+        android:layout_alignStart="@+id/TypeOfWord" />
 
     <TextView
         android:id="@+id/TypeOfWord"
@@ -50,7 +50,7 @@
         android:textSize="17sp"
         android:text="something"
         android:textStyle="normal"
-        android:layout_centerVertical="true"
+        android:layout_alignBottom="@+id/wordImage"
         android:layout_centerHorizontal="true" />
 
 

@@ -3,15 +3,19 @@ package catchmedia.jamaica.dictionary;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.SearchManager;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -77,7 +81,17 @@ public class SearchResultsActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_search_results, menu);
+       // getMenuInflater().inflate(R.menu.menu_search_results, menu);
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.home_lesson, menu);
+        // Associate searchable configuration with the SearchView
+
+
+
+        SearchManager searchManager =  (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(new ComponentName(getApplicationContext(), SearchResultsActivity.class)));
         return true;
     }
 

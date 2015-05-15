@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.FragmentTransaction;
 import android.app.SearchManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -99,15 +100,20 @@ public class HomeActivity extends FragmentActivity implements
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
 
+
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.home_lesson, menu);
         // Associate searchable configuration with the SearchView
 
+
+
         SearchManager searchManager =  (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
-        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(new ComponentName(getApplicationContext(), SearchResultsActivity.class)));
+
         return super.onCreateOptionsMenu(menu);
     }
+
 
     @Override
     public void onTabReselected(Tab arg0, FragmentTransaction arg1) {
@@ -131,11 +137,6 @@ public class HomeActivity extends FragmentActivity implements
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on  the action bar items
-        if(item.getItemId() == R.id.About_Us)
-        {
-
-        }
-
         switch (item.getItemId()) {
             case R.id.action_search:
                 // search action
