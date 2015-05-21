@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    tools:context="catchmedia.jamaica.dictionary.SearchResultsActivity">
+    tools:context="ui.SearchResultsActivity">
 
     <ListView
         android:id="@+id/list_view"
