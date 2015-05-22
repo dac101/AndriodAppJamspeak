@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="catchmedia.jamaica.dictionary.AddWordToServerActivity">
+    tools:context="ui.AddWordToServerActivity">
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

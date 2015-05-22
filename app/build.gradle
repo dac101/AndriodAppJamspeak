@@ -12,6 +12,7 @@ android {
     compileSdkVersion 'Google Inc.:Google APIs:19'
     buildToolsVersion "21.1.2"
     defaultConfig {
+        /*Two different ApplicationId one for the preminum and one for the first version */
       //  applicationId "catchmedia.jamaica.dictionary"
         applicationId "catchmedia.jam.speak"
         minSdkVersion 14
@@ -37,5 +38,5 @@ dependencies {
     compile 'com.google.api-client:google-api-client-android:1.18.0-rc'
     compile 'com.google.apis:google-api-services-drive:v2-rev155-1.19.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile files('src/main/java/utility/volley.jar')
+    compile files('src/main/java/lib/volley.jar')
 }

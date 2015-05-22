@@ -10,6 +10,9 @@ import java.util.ArrayList;
 
 import java.util.List;
 
+import model.Marker;
+import model.Word;
+
 
 /**
  * Created by Dacorie Smith on 10/9/13.

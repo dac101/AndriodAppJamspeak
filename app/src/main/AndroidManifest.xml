@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="catchmedia.jamaica.dictionary"
-    android:versionCode="4"
-    android:versionName="2" >
+    android:versionCode="6"
+    android:versionName="2.1" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -19,12 +19,14 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
+        android:largeHeap="true"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher_jamspeak"
         android:label="@string/app_name"
         android:theme="@style/Theme.Style" >
         <activity
-            android:name=".HomeActivity"
+            android:name="ui.HomeActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <meta-data
@@ -37,19 +39,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".HomeLessonActivity"
-            android:label="@string/title_activity_home_lesson"
-            android:parentActivityName=".HomeActivity"
-            android:screenOrientation="portrait" >
-        </activity>
 
         <Fragment
-            android:name="catchmedia.jamaica.dictionary.FragmentLesson"
+            android:name="ui.FragmentLesson"
             android:label="@string/title_activity_fragment_lesson" >
         </Fragment>
         <Fragment
-            android:name="catchmedia.jamaica.dictionary.FragmentWord"
+            android:name="ui.FragmentWord"
             android:label="@string/title_activity_fragment_word" >
         </Fragment>
 
@@ -67,9 +63,9 @@
             android:value=".HomeActivity" />
 
         <activity
-            android:name=".SearchResultsActivity"
+            android:name="ui.SearchResultsActivity"
             android:label="@string/title_activity_search_results"
-            android:parentActivityName=".HomeActivity" >
+            android:parentActivityName="ui.HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -82,26 +78,22 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name=".AboutUs"
+            android:name="ui.AboutUs"
             android:label="@string/title_activity_about_us"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName="ui.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
-            android:name=".MapActivity"
+            android:name="ui.MapActivity"
             android:label="@string/title_activity_map" >
         </activity>
         <activity
-            android:name=".TranslatorActivity"
+            android:name="ui.TranslatorActivity"
             android:label="@string/title_activity_translator" >
         </activity>
         <activity
-            android:name=".PlacesToSeeActivity"
-            android:label="@string/title_activity_places_to_see" >
-        </activity>
-        <activity
-            android:name=".AddWordToServerActivity"
+            android:name="ui.AddWordToServerActivity"
             android:label="@string/title_activity_add_word_to_server" >
         </activity>
         <!-- Goolge Maps API Key -->
