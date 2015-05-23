@@ -10,19 +10,33 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.SearchView;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
+import org.json.JSONObject;
+
+import java.io.IOException;
 import java.util.List;
 
 import adapter.TabsPagerAdapter;
+import api.JamaicaDataApi;
 import catchmedia.jamaica.dictionary.R;
 import database.DatabaseHandler;
 import database.DatabaseInfo;
+import model.Marker;
 import model.Word;
 
 public class HomeActivity extends FragmentActivity implements
@@ -43,6 +57,27 @@ public class HomeActivity extends FragmentActivity implements
 
         initializeDatabase();
 
+
+
+       /* Thread thread = new Thread(new Runnable(){
+            @Override
+            public void run() {
+                try {
+                    try {
+                        JamaicaDataApi jamaicaDataApi = new JamaicaDataApi();
+                        jamaicaDataApi.GetAllTourismAttractionOkHttp("http://www.catchmedia.co/api/BlogPostApi/GetAllTourismAttraction");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        thread.start();*/
+
+
         viewPager = (ViewPager) findViewById(R.id.pager);
         actionBar = getActionBar();
         mAdView = (AdView)findViewById(R.id.adView);
@@ -59,9 +94,9 @@ public class HomeActivity extends FragmentActivity implements
                     .setTabListener(this));
         }
 
-       //  AdRequest adRequest = new AdRequest.Builder()
-        // .build();
-       //   mAdView.loadAd(adRequest);
+        AdRequest adRequest = new AdRequest.Builder()
+         .build();
+        mAdView.loadAd(adRequest);
 
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 

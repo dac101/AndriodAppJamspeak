@@ -85,5 +85,6 @@
     <string name="title_activity_places_to_see">PlacesToSeeActivity</string>
     <string name="title_activity_add_word_to_server">AddWordToServerActivity</string>
     <string name="send_feed_back">Send Feedback</string>
+    <string name="ApiAddress">http://www.catchmedia.co/api/BlogPostApi/GetAllTourismAttraction</string>
 
 </resources>
