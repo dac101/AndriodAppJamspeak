@@ -11,3 +11,4 @@ Features:
 -Continuous update of app with new words added to the dictionary 
 - Interactive Map with several location to visit suggest school,hotels,beaches,jamaican restaurants, sport venues and other location
 
+URL: https://play.google.com/store/apps/details?id=catchmedia.jam.speak&hl=en
